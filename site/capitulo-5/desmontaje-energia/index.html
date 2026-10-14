@@ -1,0 +1,3007 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A new project generated from the default template project.">
+      
+      
+        <meta name="author" content="<your name here>">
+      
+      
+      
+        <link rel="prev" href="../../capitulo-4/configuracion/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.36">
+    
+    
+      
+        <title>Capítulo 5. Desmontaje y energía - Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.1e981d71.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-5-desmontaje-y-energia" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 5. Desmontaje y energía
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-1/introduccion-completa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1 - Introducción al mundo de IT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-2/conectividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2 - Conectividad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-3/placa-madre/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3 - Placa madre
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-4/configuracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4 - Introducción a la configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5 - Desmontaje y energía
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5 - Desmontaje y energía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-del-desmontaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general del desmontaje
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descarga-electrostatica-esd" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descarga electrostática (ESD)
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descarga electrostática (ESD)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-las-condiciones-atmosfericas-afectan-la-electricidad-estatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: las condiciones atmosféricas afectan la electricidad estática
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuando-no-usar-una-pulsera-antiestatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cuándo no usar una pulsera antiestática
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-buenas-noticias-sobre-la-esd" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: buenas noticias sobre la ESD
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interferencia-electromagnetica-emi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Interferencia electromagnética (EMI)
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interferencia electromagnética (EMI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-reemplazar-las-tapas-de-ranura-vacias" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: reemplazar las tapas de ranura vacías
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herramientas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Herramientas
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Herramientas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-recuperar-esos-tornillos-rebeldes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: recuperar esos tornillos rebeldes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desmontaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Desmontaje
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Desmontaje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-retirar-la-energia-y-los-cables-externos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 1. Retirar la energía y los cables externos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-abrir-el-chasis" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 2. Abrir el chasis
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-retirar-los-cables-y-conectores-internos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 3. Retirar los cables y conectores internos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-conexiones-firmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: conexiones firmes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-conectar-con-cuidado-los-cables-del-panel-frontal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: conectar con cuidado los cables del panel frontal
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-retirar-los-adaptadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 4. Retirar los adaptadores
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-5-retirar-los-dispositivos-de-almacenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 5. Retirar los dispositivos de almacenamiento
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-6-retirar-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 6. Retirar la placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computadoras-todo-en-uno" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Computadoras todo-en-uno
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reensamblaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reensamblaje
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mantenimiento-preventivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mantenimiento preventivo
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mantenimiento preventivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-limpiar-con-cuidado-los-monitores-lcd-y-las-pantallas-de-laptop" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: limpiar con cuidado los monitores LCD y las pantallas de laptop
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-conocer-las-leyes-estatales-sobre-eliminacion-de-aerosoles" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: conocer las leyes estatales sobre eliminación de aerosoles
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-electronica-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de electrónica básica
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general de electrónica básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronica-terminologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Electrónica: terminología
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-la-polaridad-solo-es-importante-al-medir-voltaje-de-cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: la polaridad solo es importante al medir voltaje de CC
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-la-corriente-es-lo-que-mata-a-las-personas-cuando-se-recibe-una-descarga-electrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: la corriente es lo que mata a las personas cuando se recibe una descarga eléctrica
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-desenchufa-siempre-una-computadora-antes-de-trabajar-dentro-de-ella" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: desenchufa siempre una computadora antes de trabajar dentro de ella
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-como-manejar-conexiones-pequenas-con-un-medidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cómo manejar conexiones pequeñas con un medidor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general de la fuente de alimentación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-encender-una-fuente-de-alimentacion-sin-nada-conectado-podria-danarla" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: encender una fuente de alimentación sin nada conectado podría dañarla
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factores-de-forma-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Factores de forma de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conectores-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Conectores de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-la-placa-madre-el-chasis-y-la-fuente-de-alimentacion-deben-ser-compatibles-en-tamano" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: la placa madre, el chasis y la fuente de alimentación deben ser compatibles en tamaño
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propositos-de-una-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Propósitos de una fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-comprobar-el-selector-de-voltaje-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: comprobar el selector de voltaje de entrada
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-no-bloquear-las-rejillas-de-ventilacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: no bloquear las rejillas de ventilación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-flujo-de-aire-y-ventilacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: flujo de aire y ventilación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-tener-cuidado-al-instalar-un-ventilador-auxiliar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: tener cuidado al instalar un ventilador auxiliar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaz-avanzada-de-configuracion-y-energia-acpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Interfaz avanzada de configuración y energía (ACPI)
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interfaz avanzada de configuración y energía (ACPI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-que-opcion-de-energia-seleccionar-suspension-o-hibernacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿qué opción de energía seleccionar, suspensión o hibernación?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-por-que-dejar-las-computadoras-encendidas-en-la-oficina" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿por qué dejar las computadoras encendidas en la oficina?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reemplazar-o-actualizar-una-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reemplazar o actualizar una fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-vigilar-el-vataje" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: vigilar el vataje
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cantidad-de-dispositivostipos-de-dispositivos-que-se-van-a-alimentar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Cantidad de dispositivos/tipos de dispositivos que se van a alimentar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elegir-una-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Elegir una fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-no-todas-las-fuentes-de-alimentacion-son-iguales" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: no todas las fuentes de alimentación son iguales
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-valores-de-energia-para-monitores-de-bajo-consumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: valores de energía para monitores de bajo consumo
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proteccion-de-energia" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Protección de energía
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sintomas-de-problemas-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Síntomas de problemas de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobar-los-voltajes-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Comprobar los voltajes de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolver-problemas-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Resolver problemas de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-no-desmontar-una-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: no desmontar una fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-comprobar-la-senal-de-power-good" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: comprobar la señal de "power good"
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilidades-blandas-habilidades-de-comunicacion-escrita" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades blandas: habilidades de comunicación escrita
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-del-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Resumen del capítulo
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consejos-para-el-examen-de-certificacion-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejos para el examen de certificación A+
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Términos clave
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Preguntas de repaso
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicios
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actividades
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-del-desmontaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general del desmontaje
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descarga-electrostatica-esd" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descarga electrostática (ESD)
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descarga electrostática (ESD)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-las-condiciones-atmosfericas-afectan-la-electricidad-estatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: las condiciones atmosféricas afectan la electricidad estática
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuando-no-usar-una-pulsera-antiestatica" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cuándo no usar una pulsera antiestática
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-buenas-noticias-sobre-la-esd" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: buenas noticias sobre la ESD
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interferencia-electromagnetica-emi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Interferencia electromagnética (EMI)
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interferencia electromagnética (EMI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-reemplazar-las-tapas-de-ranura-vacias" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: reemplazar las tapas de ranura vacías
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#herramientas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Herramientas
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Herramientas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-recuperar-esos-tornillos-rebeldes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: recuperar esos tornillos rebeldes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desmontaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Desmontaje
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Desmontaje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#paso-1-retirar-la-energia-y-los-cables-externos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 1. Retirar la energía y los cables externos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-2-abrir-el-chasis" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 2. Abrir el chasis
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-3-retirar-los-cables-y-conectores-internos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 3. Retirar los cables y conectores internos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-conexiones-firmes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: conexiones firmes
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-conectar-con-cuidado-los-cables-del-panel-frontal" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: conectar con cuidado los cables del panel frontal
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-4-retirar-los-adaptadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 4. Retirar los adaptadores
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-5-retirar-los-dispositivos-de-almacenamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 5. Retirar los dispositivos de almacenamiento
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paso-6-retirar-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Paso 6. Retirar la placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#computadoras-todo-en-uno" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Computadoras todo-en-uno
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reensamblaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reensamblaje
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mantenimiento-preventivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mantenimiento preventivo
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mantenimiento preventivo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-limpiar-con-cuidado-los-monitores-lcd-y-las-pantallas-de-laptop" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: limpiar con cuidado los monitores LCD y las pantallas de laptop
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-conocer-las-leyes-estatales-sobre-eliminacion-de-aerosoles" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: conocer las leyes estatales sobre eliminación de aerosoles
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-electronica-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de electrónica básica
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general de electrónica básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#electronica-terminologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Electrónica: terminología
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-la-polaridad-solo-es-importante-al-medir-voltaje-de-cc" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: la polaridad solo es importante al medir voltaje de CC
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-la-corriente-es-lo-que-mata-a-las-personas-cuando-se-recibe-una-descarga-electrica" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: la corriente es lo que mata a las personas cuando se recibe una descarga eléctrica
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-desenchufa-siempre-una-computadora-antes-de-trabajar-dentro-de-ella" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: desenchufa siempre una computadora antes de trabajar dentro de ella
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-como-manejar-conexiones-pequenas-con-un-medidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cómo manejar conexiones pequeñas con un medidor
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general de la fuente de alimentación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-encender-una-fuente-de-alimentacion-sin-nada-conectado-podria-danarla" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: encender una fuente de alimentación sin nada conectado podría dañarla
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#factores-de-forma-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Factores de forma de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conectores-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Conectores de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-la-placa-madre-el-chasis-y-la-fuente-de-alimentacion-deben-ser-compatibles-en-tamano" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: la placa madre, el chasis y la fuente de alimentación deben ser compatibles en tamaño
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#propositos-de-una-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Propósitos de una fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-comprobar-el-selector-de-voltaje-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: comprobar el selector de voltaje de entrada
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-no-bloquear-las-rejillas-de-ventilacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: no bloquear las rejillas de ventilación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-flujo-de-aire-y-ventilacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: flujo de aire y ventilación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-tener-cuidado-al-instalar-un-ventilador-auxiliar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: tener cuidado al instalar un ventilador auxiliar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interfaz-avanzada-de-configuracion-y-energia-acpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Interfaz avanzada de configuración y energía (ACPI)
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interfaz avanzada de configuración y energía (ACPI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-que-opcion-de-energia-seleccionar-suspension-o-hibernacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿qué opción de energía seleccionar, suspensión o hibernación?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-por-que-dejar-las-computadoras-encendidas-en-la-oficina" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿por qué dejar las computadoras encendidas en la oficina?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reemplazar-o-actualizar-una-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reemplazar o actualizar una fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-vigilar-el-vataje" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: vigilar el vataje
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cantidad-de-dispositivostipos-de-dispositivos-que-se-van-a-alimentar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Cantidad de dispositivos/tipos de dispositivos que se van a alimentar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elegir-una-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Elegir una fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-no-todas-las-fuentes-de-alimentacion-son-iguales" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: no todas las fuentes de alimentación son iguales
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-valores-de-energia-para-monitores-de-bajo-consumo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: valores de energía para monitores de bajo consumo
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proteccion-de-energia" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Protección de energía
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sintomas-de-problemas-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Síntomas de problemas de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobar-los-voltajes-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Comprobar los voltajes de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolver-problemas-de-la-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Resolver problemas de la fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-no-desmontar-una-fuente-de-alimentacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: no desmontar una fuente de alimentación
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-comprobar-la-senal-de-power-good" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: comprobar la señal de "power good"
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilidades-blandas-habilidades-de-comunicacion-escrita" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades blandas: habilidades de comunicación escrita
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-del-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Resumen del capítulo
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consejos-para-el-examen-de-certificacion-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejos para el examen de certificación A+
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Términos clave
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Preguntas de repaso
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicios
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actividades
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="capitulo-5-desmontaje-y-energia">Capítulo 5. Desmontaje y energía<a class="headerlink" href="#capitulo-5-desmontaje-y-energia" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Traducción al español del Capítulo 5 («Disassembly and Power») de <em>Complete A+ Guide to IT Hardware and Software: CompTIA A+ Exams 220-1101 &amp; 220-1102</em> (Cheryl A. Schmidt, Christopher Lee) — material de estudio de uso personal.</p>
+<p>Nota: las figuras del libro son imágenes y no se incluyen aquí; se conserva su leyenda traducida como referencia. Las tablas se transcriben como tablas de Markdown.</p>
+</blockquote>
+<p>En este capítulo aprenderás:</p>
+<ul>
+<li>Cómo evitar que la electricidad estática, la RFI y la EMI dañen o interfieran con una computadora</li>
+<li>Las herramientas necesarias para trabajar en computadoras</li>
+<li>Cómo desarmar una computadora y volver a armarla</li>
+<li>Cómo realizar comprobaciones básicas de voltaje y continuidad</li>
+<li>Cómo instalar, actualizar o reemplazar una fuente de alimentación</li>
+<li>Consejos para una buena comunicación escrita</li>
+</ul>
+<p><strong>Objetivos del examen CompTIA:</strong></p>
+<ul>
+<li>1101-3.1 Explicar los tipos básicos de cable y sus conectores, características y propósitos.</li>
+<li>1101-3.4 Dado un escenario, instalar y configurar placas madre, unidades centrales de procesamiento (CPU) y tarjetas adicionales.</li>
+<li>1101-3.5 Dado un escenario, instalar o reemplazar la fuente de alimentación adecuada.</li>
+<li>1101-5.2 Dado un escenario, diagnosticar problemas comunes relacionados con placas madre, RAM, CPU y energía.</li>
+<li>1102-4.4 Dado un escenario, usar procedimientos de seguridad comunes.</li>
+<li>1102-4.5 Resumir los impactos ambientales y los controles ambientales locales.</li>
+<li>1102-4.7 Dado un escenario, usar técnicas de comunicación y profesionalismo adecuadas.</li>
+</ul>
+<h2 id="descripcion-general-del-desmontaje">Descripción general del desmontaje<a class="headerlink" href="#descripcion-general-del-desmontaje" title="Permanent link">&para;</a></h2>
+<p>Rara vez es necesario desmontar por completo una computadora. Sin embargo, cuando un técnico recién está aprendiendo sobre las PC, el desmontaje puede ser tanto informativo como divertido. Un técnico podría desmontar una computadora cuando tiene un problema de causa indeterminada o un problema de conexión a tierra. Un <strong>problema de conexión a tierra</strong> del equipo ocurre cuando la placa madre o el adaptador no está instalado correctamente y una pista (una línea de metal en la placa madre o el adaptador) toca el chasis de la computadora, lo que hace que el adaptador y posiblemente otros componentes dejen de funcionar.</p>
+<h2 id="descarga-electrostatica-esd">Descarga electrostática (ESD)<a class="headerlink" href="#descarga-electrostatica-esd" title="Permanent link">&para;</a></h2>
+<p>Debes tomar precauciones al desmontar una computadora. Los circuitos electrónicos ubicados en la placa madre y en los adaptadores están sujetos a la ESD. La <strong>descarga electrostática (ESD)</strong> es una diferencia de potencial entre dos elementos que provoca electricidad estática. La electricidad estática puede dañar el equipo electrónico. La persona promedio no puede sentir una descarga estática hasta que alcanza los 3000 volts. Un componente electrónico puede dañarse con tan solo 30 volts. Es posible que algunos componentes electrónicos no se dañen la primera vez que ocurre la electricidad estática. Sin embargo, los efectos de la electricidad estática pueden ser acumulativos, debilitando o eventualmente destruyendo un componente. Un evento de ESD no es recuperable: no se puede hacer nada respecto del daño que indujo. Los chips electrónicos y los módulos de memoria son los más susceptibles a los impactos de ESD.</p>
+<h3 id="consejo-tecnico-las-condiciones-atmosfericas-afectan-la-electricidad-estatica">Consejo técnico: las condiciones atmosféricas afectan la electricidad estática<a class="headerlink" href="#consejo-tecnico-las-condiciones-atmosfericas-afectan-la-electricidad-estatica" title="Permanent link">&para;</a></h3>
+<p>Cuando la humedad es baja, el potencial de ESD es mayor que en cualquier otro momento; sin embargo, demasiada humedad es mala para la electrónica. Mantén la humedad entre el 45 % y el 55 % para reducir la amenaza de ESD.</p>
+<p>Un técnico puede prevenir la ESD usando una variedad de métodos. La táctica más común es usar una <strong>pulsera antiestática</strong>, también llamada <strong>correa ESD</strong>. Una pulsera antiestática permite que un técnico y una computadora estén al mismo potencial de voltaje. Mientras el técnico y la computadora o la pieza electrónica estén al mismo potencial, no se produce electricidad estática. Ver la Figura 5.1.</p>
+<blockquote>
+<p>Figura 5.1 Pulsera antiestática</p>
+</blockquote>
+<p>Un extremo rodea la muñeca del técnico y el otro extremo se sujeta a la computadora. El clip se sujeta a un poste de conexión a tierra o a una parte metálica, como la fuente de alimentación o el chasis, como se muestra en la Figura 5.2. Es posible que veas el símbolo electrónico de tierra, ⏚, cerca de un poste de tierra.</p>
+<blockquote>
+<p>Figura 5.2 Dónde sujetar una pulsera antiestática</p>
+</blockquote>
+<h3 id="consejo-tecnico-cuando-no-usar-una-pulsera-antiestatica">Consejo técnico: cuándo no usar una pulsera antiestática<a class="headerlink" href="#consejo-tecnico-cuando-no-usar-una-pulsera-antiestatica" title="Permanent link">&para;</a></h3>
+<p>Los técnicos no deben usar una correa de muñeca ESD cuando trabajan dentro de un monitor de tubo de rayos catódicos (CRT) o de una fuente de alimentación, debido a los altos voltajes que hay allí. Por supuesto, un técnico no debería estar dentro de estos dispositivos a menos que esté debidamente capacitado en electrónica.</p>
+<p>Se pueden usar <strong>guantes antiestáticos</strong> (ver la Figura 5.3) en lugar de una pulsera antiestática. Las laptops y otros dispositivos móviles con frecuencia no tienen buenos lugares para sujetar una pulsera y, en tal caso, los guantes antiestáticos funcionan mejor.</p>
+<blockquote>
+<p>Figura 5.3 Guantes antiestáticos</p>
+</blockquote>
+<p>Las <strong>bolsas antiestáticas</strong> son buenas para almacenar adaptadores y placas madre de repuesto cuando las piezas no están en uso. Sin embargo, las bolsas antiestáticas pierden su eficacia después de unos años. La Figura 5.4 muestra una bolsa antiestática con un adaptador dentro. Hay <strong>tapetes ESD</strong> disponibles para colocar debajo de una computadora que se está reparando, y dicho tapete puede tener un broche para conectar una pulsera antiestática.</p>
+<blockquote>
+<p>Figura 5.4 Bolsa antiestática</p>
+</blockquote>
+<p>Si no hay disponible una pulsera antiestática, aún puedes reducir la posibilidad de daño por ESD. Después de quitar la cubierta de la computadora, mantente en contacto con una parte metálica no pintada de la computadora, como la fuente de alimentación. Retira las piezas de la computadora una por una, manteniendo siempre el codo (o alguna otra parte descubierta del brazo) tocando la fuente de alimentación. Este método de <strong>autoconexión a tierra</strong> es una forma eficaz de mantener a un técnico y a una computadora al mismo potencial de voltaje, reduciendo así la posibilidad de daño por ESD. Sin embargo, no es tan seguro como usar una pulsera antiestática. Además, retira el cable de alimentación de la parte trasera de la computadora porque una fuente de alimentación proporciona una pequeña cantidad de energía a la placa madre incluso cuando la computadora está apagada. ¡Siempre desenchufa la computadora y usa una pulsera antiestática cuando retires o reemplaces piezas dentro de una computadora!</p>
+<h3 id="consejo-tecnico-buenas-noticias-sobre-la-esd">Consejo técnico: buenas noticias sobre la ESD<a class="headerlink" href="#consejo-tecnico-buenas-noticias-sobre-la-esd" title="Permanent link">&para;</a></h3>
+<p>Los fabricantes de electrónica están diseñando componentes menos susceptibles a la ESD. Sin embargo, aún debes conectarte a tierra usando cualquier medio posible. ¡Cada descarga debilita un componente!</p>
+<h2 id="interferencia-electromagnetica-emi">Interferencia electromagnética (EMI)<a class="headerlink" href="#interferencia-electromagnetica-emi" title="Permanent link">&para;</a></h2>
+<p>La <strong>interferencia electromagnética (EMI)</strong> es el ruido causado por dispositivos eléctricos, como una computadora, un sacapuntas eléctrico, un motor, una aspiradora, un aire acondicionado y la iluminación fluorescente. Los dispositivos eléctricos alrededor del chasis de la computadora, incluidos los altavoces, causan más problemas de EMI que la propia computadora.</p>
+<p>Un tipo específico de interferencia electromagnética que afecta negativamente a las computadoras es la <strong>interferencia de radiofrecuencia (RFI)</strong>. La RFI son simplemente ruidos que ocurren en el rango de radiofrecuencia. Si una computadora tiene un problema intermitente, revisa los dispositivos circundantes para encontrar la fuente de ese problema. Los problemas de EMI son muy difíciles de rastrear hasta su origen. Cualquier dispositivo electrónico, incluidas las computadoras e impresoras, puede ser una fuente de EMI o RFI. La EMI también puede llegar a través de las líneas eléctricas. Mueve la computadora a un tomacorriente diferente o a un circuito totalmente distinto para determinar si el tomacorriente es la fuente del problema. La EMI también puede afectar los archivos de un disco duro.</p>
+<h3 id="consejo-tecnico-reemplazar-las-tapas-de-ranura-vacias">Consejo técnico: reemplazar las tapas de ranura vacías<a class="headerlink" href="#consejo-tecnico-reemplazar-las-tapas-de-ranura-vacias" title="Permanent link">&para;</a></h3>
+<p>Para ayudar con los problemas de EMI y RFI, vuelve a colocar las tapas de ranura para las ranuras de expansión que ya no se usan. Las tapas de ranura se muestran en la Figura 4.13 (consulta el Capítulo 4, «Introducción a la configuración»). Las tapas de ranura también evitan el polvo y mejoran el flujo de aire dentro del chasis.</p>
+<h2 id="herramientas">Herramientas<a class="headerlink" href="#herramientas" title="Permanent link">&para;</a></h2>
+<p>Ningún capítulo sobre desmontaje y reensamblaje estaría completo sin mencionar las herramientas. Las herramientas se usan para retirar/reemplazar unidades reemplazables en campo (FRU), que son partes de la computadora u otros dispositivos electrónicos, como la fuente de alimentación o la placa madre.</p>
+<p>Muchos técnicos no van a una visita de reparación con un maletín de herramientas completo. La gran mayoría de todas las reparaciones se completan con las siguientes herramientas básicas que se muestran en la Figura 5.5:</p>
+<blockquote>
+<p>Figura 5.5 Herramientas básicas del técnico de PC</p>
+</blockquote>
+<ul>
+<li>Destornilladores de punta plana pequeños y medianos</li>
+<li>Destornilladores Phillips n.º 0, n.º 1 y n.º 2</li>
+<li>Llaves de tuercas hexagonales de &frac14; y 3/16 de pulgada</li>
+<li>Alicates de corte diagonal pequeños</li>
+<li>Alicates de punta larga (pinza de puntas)</li>
+</ul>
+<p>Los destornilladores se encargan de la mayoría de los desmontajes y reensamblajes. A veces los fabricantes colocan bridas (amarres) en piezas nuevas, cables nuevos o los cables dentro del chasis de la computadora. Los alicates de corte diagonal son excelentes para quitar estas bridas sin cortar los cables ni dañar las piezas. Los alicates de punta larga son buenos para enderezar pines doblados en cables o conectores, y son útiles para un millón de otras cosas. Los destornilladores pequeños de precisión y los alicates de punta larga son indispensables.</p>
+<h3 id="consejo-tecnico-recuperar-esos-tornillos-rebeldes">Consejo técnico: recuperar esos tornillos rebeldes<a class="headerlink" href="#consejo-tecnico-recuperar-esos-tornillos-rebeldes" title="Permanent link">&para;</a></h3>
+<p>Los destornilladores magnéticos son prácticos para recoger tornillos caídos. Sin embargo, pueden afectar la memoria, así que evita usarlos si es posible. Si un tornillo rueda debajo de la placa madre y no se puede alcanzar, inclina la computadora para que el tornillo ruede hacia afuera. A veces hay que inclinar el chasis en diferentes direcciones hasta que el tornillo se desprenda.</p>
+<h2 id="desmontaje">Desmontaje<a class="headerlink" href="#desmontaje" title="Permanent link">&para;</a></h2>
+<p>Antes de que un técnico desmonte una computadora, deben considerarse los siguientes pasos de desmontaje:</p>
+<ul>
+<li>No retires la batería de la placa madre; si lo haces, se perderá la información de configuración del CMOS.</li>
+<li>Usa procedimientos de conexión a tierra adecuados para evitar daños por ESD.</li>
+<li>Ten papel, un bolígrafo, un teléfono o una cámara digital cerca para tomar notas, hacer diagramas y tomar fotos. Aunque hayas desarmado computadoras durante años, puedes encontrar algo único o diferente dentro de esta.</li>
+<li>Ten un espacio de trabajo amplio, plano y limpio.</li>
+<li>Al retirar adaptadores, no apiles los adaptadores uno sobre otro.</li>
+<li>Si es posible, coloca los adaptadores retirados dentro de una bolsa protectora ESD especial.</li>
+<li>Maneja cada adaptador, placa madre o procesador por los bordes laterales. Evita tocar los contactos dorados en la parte inferior de los adaptadores. El sudor, el aceite y la suciedad causan problemas.</li>
+<li>Recuerda que los discos duros requieren un manejo cuidadoso. Un golpe muy pequeño puede dañar los datos almacenados.</li>
+<li>Puedes retirar una fuente de alimentación, pero no la desmontes sin la capacitación y las herramientas adecuadas.</li>
+<li>Documenta las ubicaciones de tornillos y cables. Etiquétalos si es posible.</li>
+</ul>
+<p>La siguiente sección describe los pasos para desmontar una computadora.</p>
+<h3 id="paso-1-retirar-la-energia-y-los-cables-externos">Paso 1. Retirar la energía y los cables externos<a class="headerlink" href="#paso-1-retirar-la-energia-y-los-cables-externos" title="Permanent link">&para;</a></h3>
+<p>El primer paso al desmontar una computadora es retirar el cable de alimentación. Se envía una pequeña cantidad de energía a la placa madre incluso cuando la computadora está apagada, de modo que la computadora pueda "despertarse" en un entorno corporativo y se puedan aplicar actualizaciones. Lo siguiente es retirar los cables externos. Toma notas sobre qué cable se conecta a cada puerto específico. La Figura 5.6 muestra la parte trasera de la computadora, donde se hace esto.</p>
+<blockquote>
+<p>Figura 5.6 Retirar la energía y los cables externos</p>
+</blockquote>
+<h3 id="paso-2-abrir-el-chasis">Paso 2. Abrir el chasis<a class="headerlink" href="#paso-2-abrir-el-chasis" title="Permanent link">&para;</a></h3>
+<p>Abrir o retirar el chasis es a veces la parte más difícil del desmontaje. Algunos fabricantes tienen lengüetas o cubiertas sobre los tornillos de retención, y otros tienen palancas o lengüetas de retención que deben presionarse antes de que la cubierta se deslice para abrirse o separarse. En algunas computadoras, debes presionar hacia abajo una lengüeta en la parte superior de la computadora mientras presionas simultáneamente hacia arriba una lengüeta en la parte inferior de la computadora. Una vez que se presionan las lengüetas, se puede hacer palanca para abrir la cubierta. Algunos chasis tienen tornillos que se aflojan pero que no tienen que retirarse por completo para quitar o abrir el chasis. Para todos los tornillos de la computadora, haz diagramas y coloca los tornillos en una huevera con cada sección de la huevera etiquetada con el lugar de donde tomaste los tornillos. Recuerda que para retirar o aflojar un tornillo, gira el destornillador hacia la izquierda. Cuando sea posible, consulta las instrucciones del fabricante al abrir un chasis. La mayoría de las veces, puedes acceder al interior de la computadora simplemente retirando los tornillos que sujetan el panel lateral, como se muestra en la Figura 5.7.</p>
+<blockquote>
+<p>Figura 5.7 Retirar los tornillos del chasis</p>
+</blockquote>
+<h3 id="paso-3-retirar-los-cables-y-conectores-internos">Paso 3. Retirar los cables y conectores internos<a class="headerlink" href="#paso-3-retirar-los-cables-y-conectores-internos" title="Permanent link">&para;</a></h3>
+<p>Los cables internos comúnmente conectan un dispositivo a la placa madre, la fuente de alimentación a un dispositivo, la placa madre a los botones o puertos del panel frontal, y/o desde una tarjeta que ocupa un espacio de expansión hasta un dispositivo. Los cables pueden ser complicados. Insertar un cable al revés en un dispositivo o un adaptador puede dañar el dispositivo, la placa madre o el adaptador. La mayoría de los cables tienen una muesca de manera que el cable se inserta de una sola forma en el conector. Sin embargo, algunos cables o conectores no tienen muesca. Algunos cables tienen una lengüeta de tracción o una pieza de plástico que se usa para retirar el cable del conector y/o del dispositivo. Úsala si es posible o sujeta firmemente el conector, no el cable. Si un conector tiene una lengüeta de bloqueo, libera la lengüeta antes de desconectar el cable para evitar dañar el cable y/o el conector.</p>
+<p>Ten cuidado con los cables de las unidades. Algunos de los cables estrechos de las unidades, como los cables Serial Advanced Technology Attachment (SATA), no son muy robustos y no se conectan con tanta firmeza como algunos de los otros cables de la computadora. Además, con este tipo particular de cable, no importa qué extremo del cable se conecte al dispositivo. Una versión en ángulo de 90° de este cable (ver la Figura 5.8) podría conectarse a dispositivos en un chasis de diseño de espacio limitado y podría tener un pestillo de liberación.</p>
+<blockquote>
+<p>Figura 5.8 Cables SATA, incluido el cable en ángulo de 90° con pestillo a la derecha</p>
+</blockquote>
+<h3 id="consejo-tecnico-conexiones-firmes">Consejo técnico: conexiones firmes<a class="headerlink" href="#consejo-tecnico-conexiones-firmes" title="Permanent link">&para;</a></h3>
+<p>Al conectar cables a una placa madre o a componentes internos, asegúrate de que cada cable esté conectado firmemente, de manera uniforme y segura.</p>
+<p>Por lo general, los conectores de la placa madre tienen muescas de manera que el cable se inserta de una sola forma; sin embargo, no todos los cables tienen muescas. Algunas placas madre tienen el pin 1 (o el pin opuesto) etiquetado. Consulta siempre la documentación de la placa madre para la orientación correcta de un cable en un conector de la placa madre.</p>
+<p>Cada cable tiene un cierto número de pines, y todos los cables tienen un pin 1. El pin 1 de un cable se conecta al pin 1 de un conector. El conector del cable generalmente tiene una flecha grabada en su molde que muestra la conexión del pin 1. La Figura 5.9 muestra el pin 1 en un cable Internal Drive Electronics (IDE).</p>
+<blockquote>
+<p>Figura 5.9 Pin 1 en un cable plano IDE PATA de 40 pines</p>
+</blockquote>
+<p>La Figura 5.10 muestra los conectores SATA usados para los cables de la Figura 5.8 que se conectan a discos duros y/o unidades ópticas. Estos conectores comúnmente tienen discos duros y/o unidades ópticas conectados. La Figura 5.11 muestra otros dos conectores de la placa madre: el conector superior es un conector IDE para unidades Parallel ATA (PATA) más antiguas, y el inferior es para la alimentación de la placa madre. Observa que el conector superior tiene una muesca (abertura). Observa también que el conector inferior tiene ciertas aberturas de conector que son diferentes de las cuadradas para evitar insertar el cable en la dirección incorrecta.</p>
+<blockquote>
+<p>Figura 5.10 Conectores SATA de unidad en la placa madre</p>
+<p>Figura 5.11 Dos conectores de placa madre (IDE más antiguo arriba y alimentación de placa madre abajo)</p>
+</blockquote>
+<p>Cables específicos se conectan desde los conectores del panel frontal de la placa madre hasta luces, puertos o botones del panel frontal. Estos incluyen el botón de encendido, un botón de reinicio, puertos USB, un puerto de micrófono, un puerto de auriculares, altavoces, ventiladores, la luz de actividad de la unidad y la luz de encendido, por nombrar algunos. Ten mucho cuidado al retirar y reinstalar estos cables. Por lo general, cada uno de ellos tiene un conector que debe sujetarse a los pines correspondientes de la placa madre. Asegúrate de revisar todos los puertos y botones después de haber reconectado estos cables. Consulta la documentación de la placa madre si tus diagramas, fotos o notas están incompletos. La Figura 5.12 muestra los pines de la placa madre y los cables.</p>
+<blockquote>
+<p>Figura 5.12 Cables del panel frontal de la placa madre</p>
+</blockquote>
+<h3 id="consejo-tecnico-conectar-con-cuidado-los-cables-del-panel-frontal">Consejo técnico: conectar con cuidado los cables del panel frontal<a class="headerlink" href="#consejo-tecnico-conectar-con-cuidado-los-cables-del-panel-frontal" title="Permanent link">&para;</a></h3>
+<p>Asegúrate de conectar los cables del panel frontal a los pines adecuados y en la dirección correcta. Algunos fabricantes etiquetan los cables. Como se muestra en la Figura 5.12, una vez que tienes uno orientado correctamente (por ejemplo, con las palabras hacia el exterior de la placa madre), los demás comúnmente se orientan en la misma dirección. Observa también en esta figura que todos los cables blancos se orientan en la misma dirección.</p>
+<p>La placa madre también contiene pines que se usan para conectar cables como los que van a la CPU o a los ventiladores del chasis. Vuelve a mirar la Figura 3.24 (consulta el Capítulo 3, «En la placa madre») para ver cómo se conectan los ventiladores a los pines de la placa madre.</p>
+<h3 id="paso-4-retirar-los-adaptadores">Paso 4. Retirar los adaptadores<a class="headerlink" href="#paso-4-retirar-los-adaptadores" title="Permanent link">&para;</a></h3>
+<p>Los adaptadores comúnmente tienen tornillos de retención o una barra que mantiene los adaptadores firmemente en el chasis. (Consulta la Figura 4.13 del Capítulo 4 para ver una ilustración de estos dos métodos.) Usa los bordes del adaptador para tirar de él hacia arriba y sacarlo de la ranura de expansión. No toques los contactos en la parte inferior del adaptador. Nunca apiles adaptadores uno sobre otro. Si un adaptador no se va a reinstalar, inserta una cubierta en blanco de ranura de expansión en la ranura de expansión vacía para que se mantenga un flujo de aire adecuado dentro del chasis. La Figura 5.13 muestra un adaptador que se está retirando.</p>
+<blockquote>
+<p>Figura 5.13 Retiro de un adaptador</p>
+</blockquote>
+<h3 id="paso-5-retirar-los-dispositivos-de-almacenamiento">Paso 5. Retirar los dispositivos de almacenamiento<a class="headerlink" href="#paso-5-retirar-los-dispositivos-de-almacenamiento" title="Permanent link">&para;</a></h3>
+<p>Los discos duros deben manejarse con cuidado al desmontar una computadora. Dentro de los discos duros mecánicos tradicionales hay platos duros con cabezas de lectura/escritura diminutas ubicadas a solo milímetros por encima de los platos. Si se caen, las cabezas de lectura/escritura podrían tocar el plato, causando daño al plato y/o a las cabezas de lectura/escritura. El plato contiene los datos y las aplicaciones. Los discos duros mecánicos actuales tienen cabezas de autoestacionamiento que alejan las cabezas hacia un área segura cuando la computadora está apagada o en un modo de ahorro de energía. Incluso con cabezas de autoestacionamiento, el manejo inadecuado puede causar daño al disco duro.</p>
+<p>Una <strong>unidad de estado sólido (SSD)</strong> no contiene cabezas frágiles. Sin embargo, estas unidades son susceptibles a la ESD. Usa procedimientos de manejo antiestático adecuados al retirarlas/instalarlas. Guarda una unidad de estado sólido en una bolsa antiestática cuando no esté en uso.</p>
+<p>Una unidad se desliza dentro de una bahía de unidades. Algunos chasis requieren que la unidad tenga rieles que se sujeten a los lados de la unidad. Otros chasis requieren que la unidad se atornille en la bahía del disco duro. La Figura 5.14 muestra un disco duro que se está retirando. Puedes ver que este chasis en particular requiere tornillos para asegurar las unidades insertadas en las bahías de unidades.</p>
+<blockquote>
+<p>Figura 5.14 Retirar un disco duro</p>
+</blockquote>
+<p>La Figura 5.15 muestra un disco duro que tiene un riel guía sujeto y un conjunto diferente de rieles guía debajo de la unidad. Al reemplazar una unidad, los rieles de la unidad tendrían que retirarse de la unidad antigua y sujetarse a la unidad de reemplazo. Al instalar una unidad nueva, es posible que haya que comprar los rieles de la unidad.</p>
+<blockquote>
+<p>Figura 5.15 Rieles de disco duro</p>
+</blockquote>
+<h3 id="paso-6-retirar-la-placa-madre">Paso 6. Retirar la placa madre<a class="headerlink" href="#paso-6-retirar-la-placa-madre" title="Permanent link">&para;</a></h3>
+<p>El Capítulo 3 cubre el reemplazo de la placa madre ampliamente, así que aquí analizamos cuestiones relacionadas con construir una computadora desde cero o desmontar una computadora. Algunos chasis incluyen un escudo de panel de E/S estándar que podría necesitar retirarse para instalar el escudo de E/S que viene con algunas placas madre. El <strong>escudo de E/S</strong> es una pieza que permite un flujo de aire y una conexión a tierra óptimos para los puertos de la placa madre. El escudo de E/S ayuda a garantizar que la placa madre esté instalada correctamente y alineada adecuadamente con el chasis. La Figura 5.16 muestra un escudo de E/S de placa madre.</p>
+<blockquote>
+<p>Figura 5.16 Escudo de E/S de la placa madre</p>
+</blockquote>
+<p>Algunos chasis de computadora tienen separadores de plástico o metal (comúnmente de latón) que permiten atornillar la placa madre en el chasis sin que las soldaduras de la placa madre toquen y se conecten a tierra con el chasis de la computadora, lo que haría que la placa madre no funcione. Algunos separadores son de plástico y se deslizan en las ranuras del chasis de la computadora. No retires este tipo de separadores; simplemente déjalos sujetos y desliza la placa madre fuera de las ranuras. Un tipo de separador metálico se atornilla en el chasis; este separador tiene un lado roscado sobre el que se asienta la placa madre y un tornillo que sujeta la placa madre al separador, como se muestra en la Figura 5.17.</p>
+<blockquote>
+<p>Figura 5.17 Separador (standoff) de la placa madre</p>
+</blockquote>
+<p>Algunas placas madre no solo tienen tornillos que las sujetan a los separadores metálicos, sino también uno o más clips de retención. Es posible que haya que presionar hacia abajo, levantar o doblar hacia arriba un clip de retención para poder deslizar la placa madre fuera del chasis. El chasis podría contener una o más muescas, y es posible que haya que deslizar la placa madre en una dirección particular (por lo general, en la dirección que va en sentido contrario a los puertos de E/S traseros) antes de levantarla del chasis.</p>
+<h3 id="computadoras-todo-en-uno">Computadoras todo-en-uno<a class="headerlink" href="#computadoras-todo-en-uno" title="Permanent link">&para;</a></h3>
+<p>Los mismos conceptos de desmontaje se aplican a las computadoras todo-en-uno que a las computadoras de escritorio en cuanto al cableado, el retiro de dispositivos de almacenamiento, el retiro de RAM, el retiro de la placa madre y la energía. La diferencia es el espacio en el que se instalan los dispositivos: una computadora todo-en-uno tiene todo instalado en la parte trasera de la pantalla, como se muestra en la Figura 5.18.</p>
+<blockquote>
+<p>Figura 5.18 Partes de una computadora todo-en-uno</p>
+</blockquote>
+<h2 id="reensamblaje">Reensamblaje<a class="headerlink" href="#reensamblaje" title="Permanent link">&para;</a></h2>
+<p>Reensamblar una computadora es fácil si el técnico es cuidadoso y documenta adecuadamente el desmontaje. Tareas simples, como insertar la unidad óptica en la bahía de unidades correcta, se vuelven confusas después de retirar muchas piezas. Escribir recordatorios o tomar fotos toma menos tiempo que tener que diagnosticar una computadora debido a un mal reensamblaje. Un técnico debe volver a insertar todos los componentes en sus lugares correctos, teniendo cuidado de reemplazar todos los tornillos y piezas e instalar las cubiertas de ranura faltantes, si es posible.</p>
+<p>Al reinstalar una placa madre, invierte el procedimiento usado durante el desmontaje. Asegúrate de que la placa madre esté asentada de forma segura en el chasis y de que se reemplacen todos los clips de retención y/o tornillos. La inspección visual también puede ayudar. Asegúrate de que los puertos se extiendan completamente desde el chasis a través del escudo de E/S. Como paso final, asegúrate de que las unidades y la cubierta estén alineadas correctamente cuando se reinstale el chasis.</p>
+<p>Los cables y conectores son las fuentes más comunes de problemas de reensamblaje una vez que la placa madre está instalada. Asegúrate de que los cables estén completamente sujetos a los dispositivos y al mismo conector de la placa madre. Asegúrate de que los cables de alimentación estén firmemente sujetos.</p>
+<h2 id="mantenimiento-preventivo">Mantenimiento preventivo<a class="headerlink" href="#mantenimiento-preventivo" title="Permanent link">&para;</a></h2>
+<p>En el curso del uso diario, las computadoras se ensucian (ver la Figura 5.19), especialmente por dentro. Se acumula el polvo, creando así aislamiento y aumentando la cantidad de calor generado. El calor adicional puede hacer que los componentes electrónicos se sobrecalienten y fallen. También puede hacer que el procesador funcione de manera constante a una velocidad más baja. El polvo es un enemigo de las computadoras.</p>
+<blockquote>
+<p>Figura 5.19 Polvo dentro de un compartimento</p>
+</blockquote>
+<p>El <strong>mantenimiento preventivo</strong> incluye ciertos procedimientos realizados para prolongar la vida de una computadora. Una computadora en un entorno de trabajo normal debe limpiarse al menos una vez al año. Las medidas preventivas típicas incluyen aspirar la computadora y limpiar el láser de la unidad óptica, las teclas del teclado, la impresora y la pantalla de visualización. Asegúrate de apagar una computadora y retirar el cable de alimentación, retirar la batería y el adaptador de CA de una laptop u otro dispositivo móvil, y permitir que una impresora láser se enfríe antes de acceder a las piezas internas. Las medidas preventivas para muchos dispositivos individuales se describen en sus respectivos capítulos. Por ejemplo, los pasos que detallan cómo limpiar discos ópticos se incluyen en el Capítulo 8, «Dispositivos multimedia». Esta sección da una descripción general de un programa de mantenimiento preventivo y algunos consejos generales sobre la limpieza de solventes.</p>
+<h3 id="consejo-tecnico-limpiar-con-cuidado-los-monitores-lcd-y-las-pantallas-de-laptop">Consejo técnico: limpiar con cuidado los monitores LCD y las pantallas de laptop<a class="headerlink" href="#consejo-tecnico-limpiar-con-cuidado-los-monitores-lcd-y-las-pantallas-de-laptop" title="Permanent link">&para;</a></h3>
+<p>Usa uno de los siguientes elementos para limpiar monitores LCD y pantallas de laptop: (1) toallitas diseñadas específicamente para LCD o (2) un paño suave sin pelusa humedecido con agua o con una mezcla de alcohol isopropílico y agua. Nunca pongas líquido directamente sobre la pantalla y asegúrate de que la pantalla esté seca antes de cerrar la laptop.</p>
+<p>Al realizar mantenimiento preventivo, enciende la computadora para asegurarte de que funcione. Realiza una inspección auditiva y visual de la computadora mientras arranca. Asegúrate de que la temperatura ambiente sea adecuada para el dispositivo. El equipo electrónico, como las PC y los dispositivos móviles, está diseñado para funcionar a temperatura ambiente (alrededor de 73 °F [23 °C]). Cualquier valor por encima de 80 °F (27 °C) debería justificar métodos de enfriamiento adicionales para el dispositivo.</p>
+<p>Es una sensación terrible realizar mantenimiento preventivo en una computadora pero luego encenderla y descubrir que no funciona. Te preguntarás si la limpieza que realizaste causó el problema o si la computadora tenía un problema antes del mantenimiento preventivo.</p>
+<p>A veces los fabricantes tienen un kit de mantenimiento preventivo para las visitas de servicio. El kit normalmente incluye los componentes enumerados y descritos en la Tabla 5.1.</p>
+<blockquote>
+<p>Tabla 5.1 Artículos de mantenimiento preventivo</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Artículo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aspiradora portátil</td>
+<td>Se usa para aspirar la suciedad del interior de una computadora. Asegúrate de usar accesorios no metálicos. Con una aspiradora que tenga la capacidad de soplar aire, aspira primero y luego configura la aspiradora para que sople y saque el polvo de los lugares de difícil acceso. Sujeta las aspas del ventilador en su lugar mientras aspiras.</td>
+</tr>
+<tr>
+<td>Aspiradora para tóner</td>
+<td>Se usa para limpiar computadoras e impresoras láser. Se usan bolsas de aspiradora especiales para evitar que el tóner se derrita y potencialmente dañe la aspiradora.</td>
+</tr>
+<tr>
+<td>Bolsas de aspiradora especiales</td>
+<td>Se usan para impresoras láser para que el tóner no se derrita en el motor de la aspiradora.</td>
+</tr>
+<tr>
+<td>Aire comprimido</td>
+<td>Se usa para eliminar el polvo en lugares de difícil acceso (preferiblemente después de aspirar).</td>
+</tr>
+<tr>
+<td>Hisopos de uretano</td>
+<td>Se usan para limpiar entre las teclas de un teclado. Si una tecla se atasca, desconecta el teclado antes de rociar o usar limpiador de contactos en él.</td>
+</tr>
+<tr>
+<td>Toallitas para monitor</td>
+<td>Se usan en el frente de la pantalla. Las toallitas con una solución antiestática funcionan mejor.</td>
+</tr>
+<tr>
+<td>Paños sin pelusa</td>
+<td>Se usan para limpiar los touchpads de las laptops y otros componentes. Humedece el paño para eliminar los restos de grasa de los dedos.</td>
+</tr>
+<tr>
+<td>Paños de uso general</td>
+<td>Se usan para limpiar el exterior del chasis y limpiar las áreas del escritorio debajo y alrededor de una computadora.</td>
+</tr>
+<tr>
+<td>Limpiador de uso general</td>
+<td>Se usa con paños suaves sin pelusa o hisopos sin pelusa. Nunca rocíes ni viertas líquido sobre ninguna pieza de la computadora.</td>
+</tr>
+<tr>
+<td>Alcohol desnaturalizado</td>
+<td>Se usa en rodillos de goma, como los que están dentro de las impresoras.</td>
+</tr>
+<tr>
+<td>Cepillo antiestático</td>
+<td>Se usa para cepillar la suciedad de lugares de difícil acceso.</td>
+</tr>
+<tr>
+<td>Kit de limpieza de unidad óptica</td>
+<td>Puede incluir un limpiador de lentes que elimina el polvo y los residuos de una lente óptica; un limpiador de discos que elimina el polvo, la suciedad, las huellas dactilares y los aceites del disco; y un kit de reparación de rayones para restaurar, limpiar y pulir CD, DVD y BD.</td>
+</tr>
+<tr>
+<td>Limpiador de contactos de oro</td>
+<td>Se usa para limpiar los contactos de los adaptadores, así como los contactos de las baterías de laptop y los contactos donde se inserta la batería.</td>
+</tr>
+<tr>
+<td>Gafas de seguridad</td>
+<td>Se usan en entornos polvorientos o cuando se trabaja con sustancias químicas en un área mal ventilada. Las gafas con ventilación indirecta evitan que una salpicadura entre en contacto con los ojos. Las gafas sin ventilación protegen contra polvo, salpicaduras y vapores químicos.</td>
+</tr>
+<tr>
+<td>Mascarilla de filtración de aire</td>
+<td>Se usa para protegerse de vapores, polvo y humo transportados por el aire. Hay dos tipos de filtros: los de vapores y los de partículas. La filtración de vapores ayuda cuando se usan limpiadores y solventes químicos. La filtración de partículas ayuda con cosas que te hacen estornudar, como polvo, polen y moho. Inserta una capa adicional en la mascarilla para protección adicional.</td>
+</tr>
+</tbody>
+</table>
+<p>Una empresa de soluciones de limpieza puede proporcionar una hoja de datos de seguridad de materiales (MSDS) o una hoja de datos de seguridad (SDS) que contiene información sobre un producto, incluida su toxicidad, almacenamiento, eliminación y preocupaciones de salud/seguridad. Los componentes de la computadora tienen el potencial de contener sustancias tóxicas. Las empresas más grandes tienen reglas muy específicas sobre cómo se manejan los desechos electrónicos, pero tanto en empresas grandes como pequeñas, una persona de TI que trabaja con hardware necesita estar familiarizada con el manejo de desechos tóxicos. Cada estado comúnmente tiene procedimientos específicos de eliminación para solventes químicos y desechos tóxicos. Consulta con el coordinador de seguridad de la empresa para obtener información sobre el almacenamiento y la eliminación, usa la MSDS/SDS e investiga las pautas de manejo y eliminación de acuerdo con las regulaciones del gobierno local.</p>
+<h3 id="consejo-tecnico-conocer-las-leyes-estatales-sobre-eliminacion-de-aerosoles">Consejo técnico: conocer las leyes estatales sobre eliminación de aerosoles<a class="headerlink" href="#consejo-tecnico-conocer-las-leyes-estatales-sobre-eliminacion-de-aerosoles" title="Permanent link">&para;</a></h3>
+<p>Algunos estados tienen requisitos especiales para la eliminación de latas de aerosol, especialmente las que están obstruidas y aún contienen algo de producto. Cumple siempre con las regulaciones gubernamentales.</p>
+<p>Para realizar el mantenimiento preventivo, apaga la computadora, retira el cable de alimentación y aspira la computadora con un accesorio no metálico. No comiences con aire comprimido ni soplando el polvo fuera de la computadora, porque la suciedad y el polvo simplemente irán al aire y eventualmente volverán a caer en la computadora y el equipo circundante. La Figura 5.20 muestra cómo aspirar el interior de una computadora. Recuerda sujetar con el dedo o un cepillo el aspa del ventilador para que no gire fuera de control y dañe el ventilador.</p>
+<blockquote>
+<p>Figura 5.20 Aspirado de mantenimiento preventivo</p>
+</blockquote>
+<p>Después de aspirar todo lo posible, usa aire comprimido para soplar el polvo de los lugares de difícil acceso, como el interior de la fuente de alimentación y debajo de la placa madre (ver la Figura 5.21). Si estás realizando mantenimiento en una laptop, retira tantos módulos como sea posible antes de aspirar o usar aire comprimido. Informa a las personas en el área inmediata que quizás quieran salir del área si tienen alergias. Usa el equipo de seguridad adecuado, incluidas gafas de seguridad y una mascarilla, al realizar mantenimiento preventivo.</p>
+<blockquote>
+<p>Figura 5.21 Mantenimiento preventivo con aire comprimido</p>
+</blockquote>
+<h2 id="descripcion-general-de-electronica-basica">Descripción general de electrónica básica<a class="headerlink" href="#descripcion-general-de-electronica-basica" title="Permanent link">&para;</a></h2>
+<p>Un técnico necesita conocer algunos términos y conceptos electrónicos básicos al probar componentes. El mejor lugar para comenzar es con la electricidad. Hay dos tipos de electricidad: CA y CC. La electricidad proporcionada por un tomacorriente de pared es <strong>corriente alterna (CA)</strong>, y el tipo de electricidad usada por los componentes de la computadora es <strong>corriente continua (CC)</strong>. Dispositivos como radios, televisores y tostadoras usan energía de CA. Se usa energía de CC de bajo voltaje para los componentes internos de una computadora y para cualquier cosa alimentada por baterías. La fuente de alimentación de una computadora convierte la electricidad de CA del tomacorriente de pared a CC para los componentes internos. La electricidad implica electrones que fluyen a través de un conductor, de manera similar a como el agua corre por una tubería. Con la CA, los electrones fluyen alternadamente en ambas direcciones. Con la CC, los electrones fluyen en una sola dirección.</p>
+<h3 id="electronica-terminologia">Electrónica: terminología<a class="headerlink" href="#electronica-terminologia" title="Permanent link">&para;</a></h3>
+<p>Voltaje, corriente, potencia y resistencia son términos comúnmente usados en la industria de las computadoras. El <strong>voltaje</strong>, que es una medida de la presión que empuja los electrones a través de un circuito, se mide en volts y se muestra como un valor seguido de una V mayúscula. La salida de una fuente de alimentación se mide en volts. Las fuentes de alimentación típicamente emiten +3.3 volts, +5 volts, +12 volts y −12 volts. Comúnmente verás estos voltajes de salida mostrados en la documentación de la fuente de alimentación como +3.3V, +5V o +12V. Otra designación es +5VSB. Esta es para la energía en espera de la computadora, que siempre se proporciona, incluso cuando la computadora está apagada. Este voltaje suministrado es la razón por la que tienes que desenchufar una computadora cuando trabajas dentro de ella.</p>
+<h3 id="consejo-tecnico-la-polaridad-solo-es-importante-al-medir-voltaje-de-cc">Consejo técnico: la polaridad solo es importante al medir voltaje de CC<a class="headerlink" href="#consejo-tecnico-la-polaridad-solo-es-importante-al-medir-voltaje-de-cc" title="Permanent link">&para;</a></h3>
+<p>Cuando un técnico mide el voltaje proveniente de una fuente de alimentación, la punta negra del medidor (que es negativa) se conecta al cable negro de la fuente de alimentación (que es tierra). La punta roja del medidor se conecta a los cables de +5 o +12 volts de la fuente de alimentación.</p>
+<p>El término volts también se usa para describir el voltaje de un tomacorriente de pared. El voltaje de un tomacorriente de pared normalmente es 120 VCA (120 volts de CA). Un <strong>multímetro</strong> es una herramienta que se usa para tomar lecturas de voltaje, como las de los conectores de la fuente de alimentación y los tomacorrientes de pared. La Figura 5.22 muestra un multímetro usado para tomar una lectura de voltaje de CC en los conectores de alimentación que salen de una fuente de alimentación. Cuando las puntas del medidor se insertan correctamente, el nivel de voltaje mostrado es de la polaridad correcta. Un multímetro también se puede usar para medir corriente (amperios) y resistencia (ohmios), que se analizan a continuación.</p>
+<blockquote>
+<p>Figura 5.22 Lectura de voltaje de CC</p>
+</blockquote>
+<p>La lectura en el medidor podría ser la opuesta de lo que debería ser si las puntas del medidor están invertidas. La polaridad no es importante al medir CA. La Figura 5.23 muestra las reglas que se deben observar al trabajar con medidores.</p>
+<blockquote>
+<p>Figura 5.23 Reglas del medidor</p>
+</blockquote>
+<p>Las fuentes de alimentación, las pantallas de panel plano y las pantallas de dispositivos móviles también contienen altos niveles de voltaje. Hay 120 volts de CA presentes dentro de la fuente de alimentación de una computadora de escritorio. Las fuentes de alimentación y los monitores tienen <strong>capacitores</strong> en su interior. Un capacitor es un componente que mantiene una carga incluso después de apagar la computadora.</p>
+<p>La <strong>corriente</strong> se mide en amperios (amperes), que es el número de electrones que pasan a través de un circuito cada segundo. En la analogía de la tubería de agua, el voltaje es la cantidad de presión aplicada para forzar el agua a través de la tubería, y la corriente es la cantidad de agua que fluye. Cada dispositivo necesita una cierta cantidad de corriente para funcionar. Una fuente de alimentación está clasificada según la cantidad de corriente total (en amperios) que puede suministrar en cada nivel de voltaje. Por ejemplo, una fuente de alimentación podría estar clasificada a 20 amperios para el nivel de 5 volts y 8 amperios para el nivel de 12 volts.</p>
+<p>La <strong>potencia</strong> se mide en vatios (watts), que es una medida de cuánto trabajo se está realizando. Se determina multiplicando volts por amperios. Las fuentes de alimentación se describen como que proporcionan un número máximo de vatios o que tienen una <strong>clasificación de vataje</strong> específica. Es la suma de todas las salidas (por ejemplo, [5 volts × 20 amperios] + [12V × 8 amperios] = 100 vatios + 96 vatios = 196 vatios).</p>
+<h3 id="consejo-tecnico-la-corriente-es-lo-que-mata-a-las-personas-cuando-se-recibe-una-descarga-electrica">Consejo técnico: la corriente es lo que mata a las personas cuando se recibe una descarga eléctrica<a class="headerlink" href="#consejo-tecnico-la-corriente-es-lo-que-mata-a-las-personas-cuando-se-recibe-una-descarga-electrica" title="Permanent link">&para;</a></h3>
+<p>El voltaje determina cuánta corriente fluye a través del cuerpo. Una situación de alta corriente y bajo voltaje es la más peligrosa.</p>
+<p>La <strong>resistencia</strong> se mide en ohmios, que es la cantidad de oposición a la corriente en un circuito electrónico. El rango de resistencia de un medidor se puede usar para comprobar la continuidad o verificar si un fusible está en buen estado. Una comprobación de <strong>continuidad</strong> se usa para determinar si un cable tiene una rotura. Un conductor (cable) en un cable o un fusible en buen estado tendrá muy baja resistencia a la electricidad (cerca de 0 ohmios). Un cable roto o un fusible en mal estado tendrá una resistencia muy alta (millones de ohmios, a veces mostrada como ohmios infinitos, o OL). Por ejemplo, un cable normalmente está formado por varios alambres que van de un conector a otro. Si mides la continuidad de un extremo de un alambre al otro, debería mostrar ninguna resistencia. Si el alambre tiene una rotura, el medidor muestra resistencia infinita. La Figura 5.24 muestra ejemplos de una lectura de un cable en buen estado y una lectura de un cable roto.</p>
+<blockquote>
+<p>Figura 5.24 Lecturas de ejemplo de un medidor de resistencia</p>
+</blockquote>
+<h3 id="consejo-tecnico-desenchufa-siempre-una-computadora-antes-de-trabajar-dentro-de-ella">Consejo técnico: desenchufa siempre una computadora antes de trabajar dentro de ella<a class="headerlink" href="#consejo-tecnico-desenchufa-siempre-una-computadora-antes-de-trabajar-dentro-de-ella" title="Permanent link">&para;</a></h3>
+<p>La fuente de alimentación proporciona energía a la placa madre incluso si la computadora está apagada. Dejar el cable de alimentación conectado puede causar daños al reemplazar componentes como el procesador o la RAM.</p>
+<p>Los medidores digitales tienen diferentes formas de mostrar el infinito. Consulta siempre el manual del medidor. Al comprobar la continuidad, el medidor se coloca en la configuración de ohmios, como se muestra en la Figura 5.24. La configuración de ohmios generalmente se ilustra con un símbolo omega (Ω).</p>
+<h3 id="consejo-tecnico-como-manejar-conexiones-pequenas-con-un-medidor">Consejo técnico: cómo manejar conexiones pequeñas con un medidor<a class="headerlink" href="#consejo-tecnico-como-manejar-conexiones-pequenas-con-un-medidor" title="Permanent link">&para;</a></h3>
+<p>Con conectores que tienen conexiones de pines pequeñas, usa una sonda de medidor delgada o inserta un alambre delgado, como un clip, en el orificio y toca el medidor con el alambre para tomar tu lectura.</p>
+<p>La polaridad no es importante al realizar una comprobación de continuidad. Cualquiera de las puntas del medidor (roja o negra) se puede colocar en cualquiera de los extremos del alambre. Sin embargo, necesitas un diagrama de distribución de pines (lista de cableado) para el cable antes de poder comprobar la continuidad, porque el pin 1 de un extremo podría conectarse a un número de pin diferente en el otro extremo.</p>
+<p>Un técnico necesita estar familiarizado con los términos y las comprobaciones electrónicas básicas. La Tabla 5.2 consolida esta información.</p>
+<blockquote>
+<p>Tabla 5.2 Términos básicos de electrónica</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Valor</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Voltaje</td>
+<td>Volts</td>
+<td>El voltaje es relevante al comprobar el voltaje de CA de un tomacorriente de pared (típicamente 120 VCA) y al comprobar el voltaje de salida de CC de una fuente de alimentación (típicamente +12, +3.3 y +5 VCC).</td>
+</tr>
+<tr>
+<td>Corriente</td>
+<td>Amperios (amperes)</td>
+<td>Cada dispositivo necesita una cierta cantidad de corriente para funcionar. Una fuente de alimentación está clasificada para la corriente total en amperios de cada nivel de voltaje (por ejemplo, 24 amperios para energía de 5 volts y 50 amperios para energía de 12 volts).</td>
+</tr>
+<tr>
+<td>Resistencia</td>
+<td>Ohmios</td>
+<td>La resistencia es la cantidad de oposición a la corriente eléctrica. Las mediciones de resistencia se usan para comprobar la continuidad de cables y fusibles. Un cable que muestra poca o ninguna resistencia no tiene roturas. Un fusible en buen estado no muestra resistencia. Si un cable tiene una rotura o si un fusible está en mal estado, la resistencia es infinita.</td>
+</tr>
+<tr>
+<td>Vataje (potencia)</td>
+<td>Watts</td>
+<td>Los vatios son una medida de potencia y se derivan multiplicando amperios por volts. La salida de una fuente de alimentación se mide en vatios.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="descripcion-general-de-la-fuente-de-alimentacion">Descripción general de la fuente de alimentación<a class="headerlink" href="#descripcion-general-de-la-fuente-de-alimentacion" title="Permanent link">&para;</a></h2>
+<p>Una fuente de alimentación es un componente esencial dentro de una computadora; ningún componente/dispositivo interno de la computadora funciona sin ella. Una fuente de alimentación convierte CA a CC, distribuye energía de CC de bajo voltaje (voltaje de salida de 3.3V, 5V y 12V) a los componentes de toda la computadora y proporciona enfriamiento mediante el uso de un ventilador ubicado dentro de la fuente de alimentación. El voltaje de CA que acepta una fuente de alimentación normalmente es de 100 a 120 volts o de 200 a 240 volts. Ten en cuenta que los objetivos del examen de certificación A+ enumeran esto como <strong>voltaje de entrada de 110V vs. 220V</strong>. Algunas fuentes de alimentación de doble voltaje pueden aceptar cualquiera de los dos. Este tipo de fuente de alimentación puede tener un interruptor selector en la parte trasera o puede detectar automáticamente el nivel de voltaje de entrada.</p>
+<p>Las fuentes de alimentación también pueden ser de conmutación automática. Una <strong>fuente de alimentación de conmutación automática</strong> monitorea el voltaje entrante del tomacorriente de pared y se conmuta automáticamente en consecuencia. Las fuentes de alimentación de conmutación automática aceptan voltajes de 100 a 240 VCA a 50 a 60 Hz. Estas fuentes de alimentación son populares en dispositivos móviles y son excelentes para viajes internacionales.</p>
+<h3 id="consejo-tecnico-encender-una-fuente-de-alimentacion-sin-nada-conectado-podria-danarla">Consejo técnico: encender una fuente de alimentación sin nada conectado podría dañarla<a class="headerlink" href="#consejo-tecnico-encender-una-fuente-de-alimentacion-sin-nada-conectado-podria-danarla" title="Permanent link">&para;</a></h3>
+<p>No enciendas una fuente de alimentación sin conectarla a la placa madre y posiblemente a un dispositivo como una unidad óptica o un disco duro. Una fuente de alimentación ATX generalmente requiere como mínimo una conexión a la placa madre.</p>
+<h3 id="factores-de-forma-de-la-fuente-de-alimentacion">Factores de forma de la fuente de alimentación<a class="headerlink" href="#factores-de-forma-de-la-fuente-de-alimentacion" title="Permanent link">&para;</a></h3>
+<p>Así como las placas madre vienen en diferentes formas y tamaños, también las fuentes de alimentación. Los factores de forma de las fuentes de alimentación actuales son ATX, ATX12V y micro-ATX. El factor de forma de la fuente de alimentación ATX fue el primero en permitir que se proporcionara una pequeña cantidad de voltaje a la placa madre para que tanto el hardware como el software pudieran usarse para "despertar" el dispositivo y/o reducir el voltaje para ahorrar energía. Esto se conocía como <strong>interruptor suave</strong> (soft switch).</p>
+<p>El factor de forma de la fuente de alimentación micro-ATX es una versión más pequeña que una fuente de alimentación ATX de tamaño completo para caber en chasis más pequeños. Otros factores de forma incluyen LFX12V (perfil bajo), SFX12V (factor de forma pequeño), EPS12V (usado con placas madre de servidor), CFX12V (factor de forma compacto), SFX12V (factor de forma pequeño), TFX12V (factor de forma delgado), WTX12V (factor de forma de estación de trabajo para estaciones de trabajo de gama alta y servidores selectos) y FlexATX (para sistemas más pequeños).</p>
+<p>Intel, AMD y los fabricantes de tarjetas de video certifican fuentes de alimentación específicas que funcionan con sus procesadores y tarjetas de video. Un fabricante de computadoras también puede tener un factor de forma de fuente de alimentación propietario que no es compatible con diferentes modelos de computadora ni con máquinas de otros proveedores. Las fuentes de alimentación de las laptops comúnmente son propietarias.</p>
+<h3 id="conectores-de-la-fuente-de-alimentacion">Conectores de la fuente de alimentación<a class="headerlink" href="#conectores-de-la-fuente-de-alimentacion" title="Permanent link">&para;</a></h3>
+<p>La Tabla 5.3 enumera los posibles conectores de una fuente de alimentación ATX, y la Figura 5.25 los muestra.</p>
+<blockquote>
+<p>Tabla 5.3 Conectores de la fuente de alimentación ATX</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Conector</th>
+<th>Notas</th>
+<th>Voltaje(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conector de alimentación principal de 24 pines</td>
+<td>Alimentación ATX principal a la placa madre</td>
+<td>+3.3, +5, +12, −12</td>
+</tr>
+<tr>
+<td>Conector de alimentación SATA de 15 pines</td>
+<td>Alimentación SATA interna</td>
+<td>+3.3, +5, +12</td>
+</tr>
+<tr>
+<td>12V de 8 pines</td>
+<td>12V para la CPU, usado con una fuente de alimentación ATX12V v1</td>
+<td>+12</td>
+</tr>
+<tr>
+<td>PCIe de 8 pines</td>
+<td>Video PCIe; se conecta a un adaptador de video PCIe (Ten en cuenta que algunos conectores son de 6+2 pines, lo que significa que aceptan el cable de 6 u 8 pines).</td>
+<td>+12</td>
+</tr>
+<tr>
+<td>PCIe de 6 pines</td>
+<td>Video PCIe; se conecta a un adaptador de video PCIe</td>
+<td>+12</td>
+</tr>
+<tr>
+<td>6 pines</td>
+<td>A veces etiquetado como AUX; se conecta a la placa madre si esta tiene un conector</td>
+<td>+3.3, +5</td>
+</tr>
+<tr>
+<td>Molex de 4 pines</td>
+<td>Se conecta a dispositivos periféricos como discos duros y unidades de CD/DVD</td>
+<td>+5, +12</td>
+</tr>
+<tr>
+<td>Berg de 4 pines</td>
+<td>Se conecta a dispositivos periféricos como una unidad de disquete</td>
+<td>+5, +12</td>
+</tr>
+<tr>
+<td>12V de 4 pines</td>
+<td>A veces etiquetado como AUX o 12V; se conecta a la placa madre para la CPU</td>
+<td>+12</td>
+</tr>
+<tr>
+<td>3 pines</td>
+<td>Se usa para monitorear la velocidad del ventilador</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Figura 5.25 Conectores de la fuente de alimentación ATX</p>
+</blockquote>
+<h3 id="consejo-tecnico-la-placa-madre-el-chasis-y-la-fuente-de-alimentacion-deben-ser-compatibles-en-tamano">Consejo técnico: la placa madre, el chasis y la fuente de alimentación deben ser compatibles en tamaño<a class="headerlink" href="#consejo-tecnico-la-placa-madre-el-chasis-y-la-fuente-de-alimentacion-deben-ser-compatibles-en-tamano" title="Permanent link">&para;</a></h3>
+<p>El factor de forma de la placa madre y del chasis y el factor de forma de la fuente de alimentación deben caber en el chasis y deben funcionar juntos. Para un rendimiento óptimo, investiga qué conectores y factores de forma son compatibles con ambos componentes.</p>
+<p>La Figura 5.26 ilustra los estándares del conector de placa madre ATX de 24 pines. Las fuentes de alimentación más antiguas tenían un conector de placa madre de 20 pines que podías enchufar directamente en el zócalo de placa madre de 24 pines (dejando los pines 11, 12, 23 y 24 vacíos), o podías comprar un <strong>adaptador de placa madre de 20 a 24 pines</strong>. Observa en la Figura 5.26 que el cable de alimentación es solo un conector, y el cable se inserta en el conector de una sola forma. Observa también que una señal de "power good" (etiquetada PWR_OK en la Figura 5.26) va a la placa madre. Cuando se enciende la computadora, parte de la POST es permitir que la fuente de alimentación ejecute una prueba en cada uno de los niveles de voltaje. Los niveles de voltaje deben ser correctos antes de que se prueben y permitan inicializar otros dispositivos. Si la alimentación está bien, se envía una señal de "power good" a la placa madre. Si la fuente de alimentación no envía la señal de "power good", un chip temporizador en la placa madre reinicia la CPU. Una vez que se envía una señal de "power good", la CPU comienza a ejecutar software desde el BIOS/UEFI. La Figura 5.26 también muestra la conexión +5VSB para proporcionar energía en espera para funciones como Wake on LAN o Wake on Ring (tratadas más adelante en este capítulo).</p>
+<blockquote>
+<p>Figura 5.26 Conectividad de placa madre ATX de 24 pines</p>
+</blockquote>
+<p>La cantidad y el tipo de conectores disponibles en una fuente de alimentación dependen del fabricante de la fuente de alimentación. Si una tarjeta de video necesita un conector PCIe y hay dos conectores de alimentación Molex libres, se puede comprar un convertidor doble de Molex a PCIe. Si un dispositivo SATA necesita una conexión de alimentación y solo hay un cable Molex libre, hay disponible un convertidor de Molex a SATA. La Figura 5.27 muestra un convertidor doble de Molex a PCIe a la izquierda y un convertidor de Molex a SATA a la derecha.</p>
+<blockquote>
+<p>Figura 5.27 Convertidores dobles de Molex a PCIe y de Molex a SATA</p>
+</blockquote>
+<p>Los conectores de la fuente de alimentación pueden conectarse a cualquier dispositivo; no hay un conector específico para el disco duro, la unidad óptica, etc. Si no hay suficientes conectores de la fuente de alimentación para la cantidad de dispositivos instalados en una computadora, se puede comprar un conector de alimentación en Y en una tienda de computadoras o electrónica.</p>
+<h3 id="propositos-de-una-fuente-de-alimentacion">Propósitos de una fuente de alimentación<a class="headerlink" href="#propositos-de-una-fuente-de-alimentacion" title="Permanent link">&para;</a></h3>
+<p>La energía de un tomacorriente de pared es CA de alto voltaje. El tipo de energía que necesitan las computadoras es CC de bajo voltaje. Todas las piezas de la computadora (los chips electrónicos de la placa madre y los adaptadores, la electrónica de las unidades y los motores del disco duro y la unidad óptica) necesitan energía de CC para funcionar. Las fuentes de alimentación en general vienen en dos tipos: lineales y conmutadas. Las computadoras usan fuentes de alimentación conmutadas. Las funciones principales de una fuente de alimentación incluyen las siguientes:</p>
+<ul>
+<li>Convertir CA a CC</li>
+<li>Proporcionar voltaje de CC a la placa madre, los adaptadores y los dispositivos periféricos</li>
+<li>Proporcionar enfriamiento y facilitar el flujo de aire a través del chasis</li>
+</ul>
+<h3 id="consejo-tecnico-comprobar-el-selector-de-voltaje-de-entrada">Consejo técnico: comprobar el selector de voltaje de entrada<a class="headerlink" href="#consejo-tecnico-comprobar-el-selector-de-voltaje-de-entrada" title="Permanent link">&para;</a></h3>
+<p>Algunas fuentes de alimentación y laptops tienen selectores de voltaje de entrada; otras tienen la capacidad de aceptar entrada de 100 a 240 volts para usar en varios países (doble voltaje). Asegúrate de que una fuente de alimentación acepte o esté configurada al voltaje de entrada adecuado.</p>
+<p>Otro propósito de una fuente de alimentación es distribuir el voltaje de CC adecuado a cada componente. Varios cables con conectores salen de la fuente de alimentación. Con las placas madre ATX, solo hay un conector de 24 pines usado para conectar la energía a la placa madre. El conector de alimentación se inserta de una sola forma en el conector de la placa madre. La Figura 5.28 muestra un conector ATX que se inserta en una placa madre.</p>
+<blockquote>
+<p>Figura 5.28 Instalar un conector de alimentación ATX en una placa madre</p>
+</blockquote>
+<p>Otro propósito de una fuente de alimentación es proporcionar enfriamiento a la computadora. El ventilador de la fuente de alimentación hace circular el aire por toda la computadora. La mayoría de los chasis de computadora tienen rejillas de ventilación en un lado, en ambos lados o en la parte trasera. La fuente de alimentación de estilo ATX sopla el aire hacia el interior del chasis en lugar de sacarlo por la parte trasera; con este método de enfriamiento de flujo inverso, el aire sopla sobre el procesador y la memoria para mantenerlos fríos. Este tipo de fuente de alimentación mantiene el interior de la computadora más limpio que los estilos más antiguos.</p>
+<h3 id="consejo-tecnico-no-bloquear-las-rejillas-de-ventilacion">Consejo técnico: no bloquear las rejillas de ventilación<a class="headerlink" href="#consejo-tecnico-no-bloquear-las-rejillas-de-ventilacion" title="Permanent link">&para;</a></h3>
+<p>Ya sea que una computadora sea un modelo de escritorio, un modelo de torre o un modelo de escritorio montado en un soporte en el piso, asegúrate de que nada bloquee las rejillas de ventilación del chasis de la computadora.</p>
+<p>Debido a que los disipadores de calor generan mucho calor, es importante tener la cantidad adecuada de flujo de aire y en la dirección correcta. Se pueden instalar ventiladores adicionales para proporcionar enfriamiento adicional a una PC. La Figura 5.29 muestra ventiladores de enfriamiento adicionales instalados, así como luces LED que son populares en los chasis actuales.</p>
+<blockquote>
+<p>Figura 5.29 Ventilador auxiliar de chasis con iluminación LED</p>
+</blockquote>
+<h3 id="consejo-tecnico-flujo-de-aire-y-ventilacion">Consejo técnico: flujo de aire y ventilación<a class="headerlink" href="#consejo-tecnico-flujo-de-aire-y-ventilacion" title="Permanent link">&para;</a></h3>
+<p>El flujo de aire debe atravesar la computadora y pasar sobre la placa madre para proporcionar enfriamiento a los componentes de la placa madre.</p>
+<p>Los chasis tienen diferentes cantidades y ubicaciones de puntos de montaje para el o los ventiladores del chasis. La Figura 5.30 muestra dos posibles sitios de instalación para un ventilador adicional.</p>
+<h3 id="consejo-tecnico-tener-cuidado-al-instalar-un-ventilador-auxiliar">Consejo técnico: tener cuidado al instalar un ventilador auxiliar<a class="headerlink" href="#consejo-tecnico-tener-cuidado-al-instalar-un-ventilador-auxiliar" title="Permanent link">&para;</a></h3>
+<p>Coloca un ventilador de modo que el flujo de aire de salida se mueva en la misma dirección que el flujo de aire generado por la fuente de alimentación. Si un ventilador auxiliar se instala dentro de un chasis en la ubicación incorrecta, el flujo de aire auxiliar podría oponerse al flujo de aire de la fuente de alimentación, reduciendo el efecto de enfriamiento.</p>
+<blockquote>
+<p>Figura 5.30 Colocación de ventiladores auxiliares</p>
+</blockquote>
+<h2 id="interfaz-avanzada-de-configuracion-y-energia-acpi">Interfaz avanzada de configuración y energía (ACPI)<a class="headerlink" href="#interfaz-avanzada-de-configuracion-y-energia-acpi" title="Permanent link">&para;</a></h2>
+<p>La <strong>interfaz avanzada de configuración y energía (ACPI)</strong> da al BIOS/UEFI y al sistema operativo control sobre la energía y los modos de operación de varios dispositivos. La ACPI tiene varios estados operativos, como se muestra en la Tabla 5.4.</p>
+<blockquote>
+<p>Tabla 5.4 Estados operativos de ACPI</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Estado global del sistema</th>
+<th>Estado de suspensión</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>G0 — En funcionamiento</td>
+<td>S0</td>
+<td>La computadora es totalmente funcional. El software, como la función de autoguardado usada con productos de Microsoft, se puede optimizar para el rendimiento o para reducir el uso de la batería.</td>
+</tr>
+<tr>
+<td>G1 — Durmiendo</td>
+<td>(S1, S2, S3, S4)</td>
+<td>Requiere menos energía que el estado G0 y tiene múltiples estados de suspensión: S1, S2, S3 y S4.</td>
+</tr>
+<tr>
+<td></td>
+<td>S1</td>
+<td>La CPU sigue alimentada y los dispositivos no usados se apagan. La RAM se sigue refrescando. Los discos duros no están funcionando.</td>
+</tr>
+<tr>
+<td></td>
+<td>S2</td>
+<td>La CPU no está alimentada. La RAM se sigue refrescando. El sistema se restaura instantáneamente ante la intervención del usuario.</td>
+</tr>
+<tr>
+<td></td>
+<td>S3</td>
+<td>La salida de la fuente de alimentación se reduce. La RAM se sigue refrescando. Parte de la información de la RAM se restaura a la CPU y a la caché.</td>
+</tr>
+<tr>
+<td></td>
+<td>S4</td>
+<td>El modo de suspensión de menor consumo, que es el que más tarda en activarse. La información de la RAM se guarda en memoria no volátil, como un disco duro o un medio flash. Algunos fabricantes lo llaman estado de hibernación.</td>
+</tr>
+<tr>
+<td>G2 — Apagado suave (soft off)</td>
+<td>S5</td>
+<td>El consumo de energía es casi cero. Requiere que el sistema operativo se reinicie. No se guarda información en ningún lugar.</td>
+</tr>
+<tr>
+<td>G3 — Apagado mecánico</td>
+<td></td>
+<td>También llamado apagado. Este es el único estado en el que la computadora se puede desmontar. Debes encender la computadora para usarla de nuevo.</td>
+</tr>
+</tbody>
+</table>
+<p>La ACPI permite que las aplicaciones trabajen con el sistema operativo para administrar la energía, como cuando una aplicación está configurada para guardar automáticamente un documento, pero podría no hacerlo hasta que el disco duro se esté usando para otra cosa, a fin de conservar energía en una laptop. En el entorno de Windows, el modo de suspensión, también conocido como modo de espera (suspend mode), usa uno de los estados de suspensión G1 de la ACPI para permitir que el dispositivo se despierte y continúe trabajando. El modo de hibernación usa el modo G1 S4 y es el que más tarda en devolver un dispositivo a un estado de funcionamiento.</p>
+<h3 id="consejo-tecnico-que-opcion-de-energia-seleccionar-suspension-o-hibernacion">Consejo técnico: ¿qué opción de energía seleccionar, suspensión o hibernación?<a class="headerlink" href="#consejo-tecnico-que-opcion-de-energia-seleccionar-suspension-o-hibernacion" title="Permanent link">&para;</a></h3>
+<p>La mayoría de las personas que quieren volver a acceder rápidamente a un dispositivo seleccionarían la opción de suspensión (standby). Sin embargo, el modo de hibernación ahorra más energía.</p>
+<p>Dos funciones comunes del BIOS/UEFI y de los adaptadores que aprovechan la ACPI son Wake on LAN y Wake on Ring. La función <strong>Wake on LAN</strong> permite a un administrador de red controlar la energía de una estación de trabajo de forma remota y dirige a la computadora a salir del modo de suspensión. Las aplicaciones de software también pueden usar la función Wake on LAN para realizar actualizaciones, mejoras y tareas de mantenimiento. La función también se puede usar para encender las computadoras inmediatamente antes de que comience el día laboral. Wake on LAN se puede usar con cámaras web o de red para comenzar a grabar cuando se detecta movimiento o para encender una impresora de red para que se pueda usar cuando sea necesario.</p>
+<p><strong>Wake on Ring</strong> permite que una computadora salga del modo de suspensión cuando la línea telefónica tiene una llamada entrante. Le permite a la computadora recibir llamadas telefónicas, faxes y correos electrónicos cuando el usuario no está presente.</p>
+<h3 id="consejo-tecnico-por-que-dejar-las-computadoras-encendidas-en-la-oficina">Consejo técnico: ¿por qué dejar las computadoras encendidas en la oficina?<a class="headerlink" href="#consejo-tecnico-por-que-dejar-las-computadoras-encendidas-en-la-oficina" title="Permanent link">&para;</a></h3>
+<p>En Windows, cuando se apaga una computadora, se la pone en estado de apagado suave, o S5. Wake on LAN no es oficialmente compatible desde este estado, y por esta razón, los entornos corporativos solicitan que los usuarios dejen sus computadoras encendidas pero con la sesión cerrada en días específicos o todos los días.</p>
+<h3 id="reemplazar-o-actualizar-una-fuente-de-alimentacion">Reemplazar o actualizar una fuente de alimentación<a class="headerlink" href="#reemplazar-o-actualizar-una-fuente-de-alimentacion" title="Permanent link">&para;</a></h3>
+<p>Las fuentes de alimentación se clasifican en vatios. Las computadoras típicas de hoy tienen fuentes de alimentación con una clasificación de vataje que va de 250 a 500 vatios, aunque las computadoras potentes, como los servidores de red o los sistemas de juego de gama alta, pueden tener fuentes de alimentación clasificadas a 600 vatios o más. Los dispositivos internos y externos alimentados por un tipo particular de puerto, como USB, se ven afectados por la cantidad de amperios disponibles de la salida de energía de CC de +5 y +12V y la cantidad total de vataje disponible.</p>
+<p>Cada dispositivo dentro de una computadora usa una cierta cantidad de energía, y la fuente de alimentación debe proporcionar suficiente energía para ejecutar todos los dispositivos. La energía que requiere cada dispositivo o adaptador generalmente se define en la documentación del dispositivo o adaptador o en el sitio web del fabricante. La computadora usa el vataje necesario, no la capacidad total de una fuente de alimentación.</p>
+<h3 id="consejo-tecnico-vigilar-el-vataje">Consejo técnico: vigilar el vataje<a class="headerlink" href="#consejo-tecnico-vigilar-el-vataje" title="Permanent link">&para;</a></h3>
+<p>Muchos fabricantes exageran el vataje. El vataje anunciado no es el vataje disponible a temperaturas más altas, como cuando está montado dentro de una computadora. Investiga un modelo antes de comprarlo.</p>
+<p>Algunas fuentes de alimentación se anuncian como de doble o triple (o tri) riel. Una <strong>fuente de alimentación de doble riel</strong> tiene dos líneas de salida de +12V que se monitorean en busca de una condición de sobrecorriente. Una fuente de alimentación de triple riel simplemente tiene tres líneas de salida de +12V monitoreadas. Ten en cuenta que la mayoría de los fabricantes no tienen dos o más fuentes de 12V independientes; todas derivan de la misma fuente de 12V pero tienen líneas de salida independientes. La Figura 5.31 muestra cómo podrían usarse los rieles de +12V.</p>
+<blockquote>
+<p>Figura 5.31 Rieles de 12V</p>
+</blockquote>
+<p>Algunas personas están interesadas en exactamente cuánta energía consume su sistema. Cada dispositivo en una computadora consume energía, y cada dispositivo puede usar uno o más niveles de voltaje diferentes (por ejemplo, +5V, −5V, +12V, −12V y +3.3V). Una fuente de alimentación tiene un amperaje máximo para cada nivel de voltaje (por ejemplo, 30 amperios a +5 volts y 41 amperios a +12V). Para determinar la potencia máxima que se usa, en vatios, multiplica los amperios por los volts. Si sumas todos los niveles de potencia máximos, la cantidad será mayor que la clasificación de la fuente de alimentación. Esto significa que no puedes usar la potencia máxima en cada nivel de voltaje; sin embargo, debido a que −5V y −12V no se usan muy a menudo, normalmente esto no es un problema.</p>
+<h3 id="cantidad-de-dispositivostipos-de-dispositivos-que-se-van-a-alimentar">Cantidad de dispositivos/tipos de dispositivos que se van a alimentar<a class="headerlink" href="#cantidad-de-dispositivostipos-de-dispositivos-que-se-van-a-alimentar" title="Permanent link">&para;</a></h3>
+<p>Para determinar la energía que se consume, debes investigar cada dispositivo para determinar cuánta corriente usa en un nivel de voltaje específico. Hay calculadoras de energía disponibles en internet para ayudar con esta tarea. Es importante tener una fuente de alimentación lo suficientemente potente para la cantidad de dispositivos y los tipos de dispositivos instalados en la computadora. La Tabla 5.5 enumera requisitos de energía de ejemplo de componentes de computadora.</p>
+<blockquote>
+<p>Tabla 5.5 Requisitos de energía de ejemplo de componentes de computadora</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Consumo de energía</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Placa madre (sin procesador)</td>
+<td>5W a 150W</td>
+</tr>
+<tr>
+<td>Procesador</td>
+<td>10W a 140W</td>
+</tr>
+<tr>
+<td>Disco duro PATA IDE</td>
+<td>3W a 30W</td>
+</tr>
+<tr>
+<td>Disco duro SATA</td>
+<td>2W a 15W</td>
+</tr>
+<tr>
+<td>Unidad óptica</td>
+<td>10W a 30W</td>
+</tr>
+<tr>
+<td>Adaptador sin video</td>
+<td>4W a 25W</td>
+</tr>
+<tr>
+<td>Adaptador de video AGP</td>
+<td>20W a 50W</td>
+</tr>
+<tr>
+<td>Tarjeta de video PCIe con un conector de alimentación</td>
+<td>50W a 150W</td>
+</tr>
+<tr>
+<td>Tarjeta de video PCIe con dos conectores de alimentación</td>
+<td>100W a 300W</td>
+</tr>
+<tr>
+<td>Ventilador adicional</td>
+<td>3W</td>
+</tr>
+<tr>
+<td>Módulo de RAM</td>
+<td>15W</td>
+</tr>
+</tbody>
+</table>
+<h3 id="elegir-una-fuente-de-alimentacion">Elegir una fuente de alimentación<a class="headerlink" href="#elegir-una-fuente-de-alimentacion" title="Permanent link">&para;</a></h3>
+<p>Al elegir una fuente de alimentación, lo primero que hay que considerar son el tamaño y el factor de forma, porque la fuente de alimentación tiene que caber en el chasis. Hay disponibles diferentes tamaños físicos de fuentes de alimentación, y algunas computadoras (especialmente servidores o equipo de red) tienen una <strong>fuente de alimentación redundante</strong> que se puede usar si una fuente de alimentación falla. Lo segundo que hay que considerar es el vataje: debes comprar una fuente de alimentación que tenga el mismo vataje o más que la fuente de alimentación original. Por último, no olvides asegurarte de que el interruptor de encendido/apagado de la nueva fuente de alimentación esté en una ubicación que se ajuste al chasis de la computadora.</p>
+<h3 id="consejo-tecnico-no-todas-las-fuentes-de-alimentacion-son-iguales">Consejo técnico: no todas las fuentes de alimentación son iguales<a class="headerlink" href="#consejo-tecnico-no-todas-las-fuentes-de-alimentacion-son-iguales" title="Permanent link">&para;</a></h3>
+<p>Un técnico necesita reemplazar una fuente de alimentación por una que proporcione una cantidad de energía igual o mayor. Busca en internet reseñas de fuentes de alimentación. Una regla general es que si dos fuentes de alimentación son iguales en vataje, la más pesada es mejor porque usa un transformador más grande, disipadores de calor más grandes y componentes de mayor calidad.</p>
+<p>El <strong>80 PLUS</strong> es un sistema de clasificación de eficiencia de fuentes de alimentación que se ha incorporado a las especificaciones de ENERGY STAR. La eficiencia implica convertir más CA en CC. El sistema de clasificación consta de seis niveles de eficiencia, siendo 80 PLUS Titanium el más alto. Cada nivel debe proporcionar un nivel particular de eficiencia con una cantidad específica de carga (cantidad de componentes que se usan simultáneamente y que requieren energía).</p>
+<p>Que una fuente de alimentación no esté certificada como 80 PLUS no significa que no sea una fuente de alimentación energéticamente eficiente, pero el nivel te da una idea de la diferencia entre fuentes de alimentación. Al elegir una fuente de alimentación, las cosas más importantes que hay que considerar son las siguientes:</p>
+<ul>
+<li>Tamaño y factor de forma</li>
+<li>Vataje</li>
+<li>Cantidad y tipo de conectores</li>
+<li>Eficiencia energética</li>
+<li>Cantidad de rieles de 12V monitoreados en busca de una condición de sobrecorriente</li>
+</ul>
+<p>A algunas personas les gustan las funciones adicionales, como luces de colores dentro de la fuente de alimentación, el ventilador de la fuente de alimentación y/o los puertos. Una <strong>fuente de alimentación modular</strong> viene con cables desmontables (ver la Figura 5.32), de modo que los cables que no se usan simplemente no se sujetan a la fuente de alimentación para ayudar en la gestión de cables.</p>
+<blockquote>
+<p>Figura 5.32 Fuente de alimentación modular con puertos de cable desmontables</p>
+</blockquote>
+<h3 id="consejo-tecnico-valores-de-energia-para-monitores-de-bajo-consumo">Consejo técnico: valores de energía para monitores de bajo consumo<a class="headerlink" href="#consejo-tecnico-valores-de-energia-para-monitores-de-bajo-consumo" title="Permanent link">&para;</a></h3>
+<p>¡Mantén siempre el valor de tiempo de espera del protector de pantalla más corto que el valor de tiempo de espera del ahorro de energía, especialmente con monitores ecológicos (de bajo consumo)!</p>
+<h3 id="proteccion-de-energia">Protección de energía<a class="headerlink" href="#proteccion-de-energia" title="Permanent link">&para;</a></h3>
+<p>Las fuentes de alimentación tienen protección incorporada contra condiciones de energía adversas. Sin embargo, la mejor protección para una computadora es desenchufarla durante un corte de energía o una tormenta eléctrica. Los protectores contra sobretensiones y las <strong>fuentes de alimentación ininterrumpida (UPS)</strong> se usan comúnmente para protegerse contra condiciones de energía adversas. También se puede usar un acondicionador de línea. Cada dispositivo tiene un propósito específico y protege contra ciertas condiciones. Un técnico debe estar familiarizado con cada dispositivo para poder hacer recomendaciones a los clientes. La Figura 5.33 muestra un protector contra sobretensiones, y el Capítulo 19, «Procedimientos operativos», cubre estos dispositivos con más detalle.</p>
+<blockquote>
+<p>Figura 5.33 Protector contra sobretensiones Tripp Lite</p>
+</blockquote>
+<h3 id="sintomas-de-problemas-de-la-fuente-de-alimentacion">Síntomas de problemas de la fuente de alimentación<a class="headerlink" href="#sintomas-de-problemas-de-la-fuente-de-alimentacion" title="Permanent link">&para;</a></h3>
+<p>La fuente de alimentación a veces es una fuente de problemas inusuales. Los efectos de los problemas pueden ir desde los que el usuario no nota hasta los que apagan el sistema. La siguiente es una lista de síntomas de problemas de la fuente de alimentación:</p>
+<ul>
+<li>La luz de encendido está apagada y/o el dispositivo no se enciende (sin energía o pantalla negra).</li>
+<li>El ventilador de la fuente de alimentación no gira cuando se enciende la computadora.</li>
+<li>La computadora emite un pitido continuo. (Esto también podría ser una placa madre defectuosa o una tecla atascada en el teclado).</li>
+<li>Cuando se enciende la computadora, no emite ningún pitido. (Esto también podría ser una placa madre defectuosa).</li>
+<li>Cuando se enciende la computadora, emite pitidos cortos repetidos. (Esto también podría ser una placa madre defectuosa).</li>
+<li>Durante la POST, aparece un código de error de POST 02X o de paridad (donde X es cualquier número); una de las comprobaciones de la POST es una señal de "power good" de la fuente de alimentación, y un mensaje de error 021, 022, … indica que la fuente de alimentación no pasó la POST.</li>
+<li>La computadora se reinicia, se apaga sin previo aviso, tiene apagados intermitentes o se reinicia continuamente.</li>
+<li>El ventilador de la fuente de alimentación es ruidoso (emite un ruido fuerte o chirriante).</li>
+<li>La fuente de alimentación está demasiado caliente al tacto.</li>
+<li>La computadora emite olor a quemado, emite humo o se sobrecalienta.</li>
+<li>El ventilador de la fuente de alimentación gira, pero no llega energía a otros dispositivos.</li>
+<li>El monitor tiene una luz de encendido, pero no aparece nada en el monitor y no se ilumina ninguna luz de encendido de la PC.</li>
+</ul>
+<h3 id="comprobar-los-voltajes-de-la-fuente-de-alimentacion">Comprobar los voltajes de la fuente de alimentación<a class="headerlink" href="#comprobar-los-voltajes-de-la-fuente-de-alimentacion" title="Permanent link">&para;</a></h3>
+<p>Consulta la Figura 5.26 y observa cómo se emiten y suministran +3.3V, +5V, −5V, +12V y −12V a la placa madre (siendo +5V y +12V los voltajes más comunes suministrados a los dispositivos). La placa madre y los adaptadores usan +3.3V y +5V, pero rara vez se usa −5V. Las unidades mecánicas comúnmente usan +5V y +12V. El voltaje de +12V se usa para operar los motores de los dispositivos que se encuentran en las unidades, la CPU, los ventiladores de enfriamiento internos y la tarjeta de video. Los chips usan +5V y +3.3V, y +3.3V también se usa para la memoria, los adaptadores AGP/PCI/PCIe y algunos ventiladores de laptop. Los voltajes negativos rara vez se usan.</p>
+<p>Un técnico debe comprobar ocasionalmente los voltajes en un sistema. Hay cuatro comprobaciones básicas para situaciones de la fuente de alimentación: (1) voltaje de CA del tomacorriente de pared, (2) voltajes de CC que van a la placa madre, (3) voltajes de CC que van a un dispositivo y (4) conexión a tierra o ausencia de voltaje con un probador de tomacorriente. Se puede usar un <strong>probador de fuente de alimentación</strong> para comprobar los niveles de energía de CC en los diferentes conectores de la fuente de alimentación. La Figura 5.34 muestra un probador de fuente de alimentación de PC. El tipo de conectores varía de un proveedor a otro, así que asegúrate de conseguir un probador que pueda manejar Molex, SATA y la alimentación principal del sistema como mínimo.</p>
+<blockquote>
+<p>Figura 5.34 Probador de fuente de alimentación de PC</p>
+</blockquote>
+<h3 id="resolver-problemas-de-la-fuente-de-alimentacion">Resolver problemas de la fuente de alimentación<a class="headerlink" href="#resolver-problemas-de-la-fuente-de-alimentacion" title="Permanent link">&para;</a></h3>
+<p>Cuando sospeches que una fuente de alimentación está causando un problema, ¡cambia la fuente de alimentación, haz feliz al cliente y sigue tu camino! Los problemas de energía no suelen ser difíciles de detectar o diagnosticar.</p>
+<h3 id="consejo-tecnico-no-desmontar-una-fuente-de-alimentacion">Consejo técnico: no desmontar una fuente de alimentación<a class="headerlink" href="#consejo-tecnico-no-desmontar-una-fuente-de-alimentacion" title="Permanent link">&para;</a></h3>
+<p>Las fuentes de alimentación normalmente no se desmontan. Los fabricantes a menudo las remachan para cerrarlas. Incluso cuando una fuente de alimentación se puede desmontar, no deberías abrirla a menos que tengas formación en electrónica.</p>
+<p>No pases por alto los síntomas más obvios de la fuente de alimentación. Comienza revisando la luz de encendido de la computadora. Si está apagada, comprueba el ventilador de la fuente de alimentación colocando la palma de la mano en la parte trasera de la computadora. Si el ventilador está girando, significa que el tomacorriente de pared le está proporcionando energía a la computadora, y puedes asumir que el tomacorriente de pared está funcionando. Revisa la placa madre en busca de LED y consulta el manual para conocer su significado. Prueba el tomacorriente con otro dispositivo. Asegúrate de que el cable de alimentación esté insertado por completo en el tomacorriente de pared y en la computadora. Si sospechas que el tomacorriente de pared está defectuoso, usa un <strong>probador de circuito de CA</strong> para verificar que el tomacorriente de pared esté cableado correctamente.</p>
+<p>Las siguientes preguntas de diagnóstico pueden ayudarte a determinar la ubicación de un problema de energía:</p>
+<ul>
+<li>¿La fuente de alimentación funcionaba antes? Si no, revisa el interruptor selector de voltaje de entrada en la fuente de alimentación y verifica que esté en la configuración correcta.</li>
+<li>¿El ventilador de la fuente de alimentación está girando? Si es así, revisa los voltajes que van a la placa madre. Si son buenos, quizás solo el ventilador de la fuente de alimentación esté defectuoso. Si el ventilador de la fuente de alimentación no está girando, revisa el tomacorriente de pared en busca de voltajes de CA correctos.</li>
+<li>¿Se usa una regleta contra sobretensiones? Si es así, verifica si la regleta contra sobretensiones está encendida y luego prueba un tomacorriente diferente en la regleta o reemplaza la regleta.</li>
+<li>¿El cable de alimentación de la computadora está bien? Verifica que el cable de alimentación se enchufe firmemente en el tomacorriente y en la parte trasera de la computadora. Cambia el cable de alimentación para verificar que funcione.</li>
+<li>¿El botón de encendido del panel frontal está atascado?</li>
+<li>¿Los voltajes que van a la placa madre están en los niveles adecuados? Si son bajos, algo podría estar sobrecargando la fuente de alimentación. Desconecta el cable de alimentación de un dispositivo y vuelve a comprobar los voltajes. Vuelve a conectar el cable de alimentación al dispositivo. Retira el cable de alimentación de otro dispositivo y vuelve a comprobar los voltajes de la placa madre. Continúa haciendo esto hasta que se haya desconectado el cable de alimentación de cada dispositivo y se hayan comprobado los voltajes de la placa madre. Un solo dispositivo puede cortocircuitar la fuente de alimentación y hacer que el sistema funcione mal. Reemplaza cualquier dispositivo que reduzca el voltaje de salida de la fuente de alimentación y consuma demasiada corriente. Si ninguno de los dispositivos es la causa del problema, reemplaza la fuente de alimentación. Si reemplazar la fuente de alimentación no resuelve el problema, reemplaza la placa madre.</li>
+</ul>
+<p>Si una computadora no arranca correctamente pero sí arranca cuando presionas + + , es probable que la señal de "power good" sea el problema. Algunas placas madre son más sensibles a la señal de "power good" que otras. Por ejemplo, digamos que se reemplazó una placa madre y el sistema no arranca. A primera vista, esto podría parecer una placa de reemplazo defectuosa, pero el problema podría ser causado por una fuente de alimentación que no emite una señal de "power good" consistente, así que intenta reemplazar la fuente de alimentación.</p>
+<h3 id="consejo-tecnico-comprobar-la-senal-de-power-good">Consejo técnico: comprobar la señal de "power good"<a class="headerlink" href="#consejo-tecnico-comprobar-la-senal-de-power-good" title="Permanent link">&para;</a></h3>
+<p>Consulta la documentación de la fuente de alimentación para ver si la fuente de alimentación emite una señal de "power good", a veces llamada señal de "power OK", en lugar del +5V normal. Enciende la computadora. Comprueba la señal de "power good" en el conector de alimentación principal de la placa madre (sujeto a la fuente de alimentación). Haz esto antes de reemplazar la placa madre. Una fuente de alimentación cuya señal de "power good" esté por debajo de +3V debe reemplazarse.</p>
+<p>A veces, cuando una computadora sale del modo de suspensión, no todos los dispositivos responden, y hay que presionar el botón de encendido o de reinicio de la computadora para reiniciarla. Las siguientes situaciones pueden causar que esto ocurra:</p>
+<ul>
+<li>Un protector de pantalla entra en conflicto con la ACPI. Configura el protector de pantalla en Ninguno para ver si está causando el problema.</li>
+<li>Uno o más adaptadores/dispositivos no son compatibles con la ACPI.</li>
+<li>Un adaptador/dispositivo tiene un controlador desactualizado.</li>
+<li>El BIOS/UEFI del sistema o el BIOS de un adaptador instalado necesita actualizarse.</li>
+</ul>
+<p>Para ver si el protector de pantalla causa un problema, usa Configuración de Personalización &gt; vínculo Configuración del protector de pantalla y configura la opción de protector de pantalla en Ninguno. Identificar un adaptador, dispositivo o controlador problemático requiere investigar en internet. Revisa cada adaptador, dispositivo y controlador individualmente. Usa el Panel de control de Opciones de energía para cambiar el plan de energía. Para cada dispositivo, busca una pestaña Administración de energía en el cuadro de diálogo Propiedades y haz cambios si es necesario.</p>
+<h2 id="habilidades-blandas-habilidades-de-comunicacion-escrita">Habilidades blandas: habilidades de comunicación escrita<a class="headerlink" href="#habilidades-blandas-habilidades-de-comunicacion-escrita" title="Permanent link">&para;</a></h2>
+<p>Cuando los técnicos están en la escuela, rara vez piensan que las habilidades que deberían aprender impliquen la escritura. Sin embargo, en el lugar de trabajo, los técnicos usan habilidades de comunicación escrita cuando documentan problemas y usan el correo electrónico (ver la Figura 5.35). Los comités asesores de todo el país dicen que, además de tener conocimientos técnicos, es importante que los técnicos puedan comunicarse eficazmente tanto por escrito como oralmente, y que se sientan cómodos trabajando en un entorno de equipo. Además, los técnicos deben poseer habilidades de pensamiento crítico, es decir, ser capaces de resolver un problema sin que se les haya enseñado sobre ese problema específico.</p>
+<blockquote>
+<p>Figura 5.35 Los técnicos deben proporcionar con frecuencia comunicación escrita</p>
+</blockquote>
+<p>Independientemente del tamaño de una empresa, normalmente se requiere documentación. La documentación podría ser solo la cantidad de horas dedicadas a un trabajo y una descripción básica de lo que se hizo, pero la mayoría de las empresas requieren un poco más. La documentación debe escribirse de manera que otros puedan leerla y comprenderla. Ten en cuenta que si otro técnico debe resolver otro problema del mismo cliente, una buena documentación ahorra tiempo y dinero. La siguiente es una lista de quejas de los gerentes que contratan técnicos:</p>
+<ul>
+<li>Evita hacer la documentación de manera oportuna.</li>
+<li>No proporciona información adecuada o precisa sobre lo que se realizó o se intentó.</li>
+<li>Tiene habilidades deficientes de ortografía, gramática, uso de mayúsculas y puntuación.</li>
+<li>Escribe en oraciones cortas y entrecortadas, usando jerga técnica.</li>
+<li>No proporciona actualizaciones sobre el estado de un problema.</li>
+</ul>
+<p>Puedes usar esta lista para saber dónde mejorar tus habilidades y evitar cometer los mismos errores.</p>
+<p>El correo electrónico es un medio de comunicación común para los técnicos. Sin embargo, la mayoría de los técnicos no se toman el tiempo de comunicarse eficazmente por correo electrónico. La siguiente es una lista de pautas para una comunicación eficaz por correo electrónico:</p>
+<ul>
+<li>No uses el correo electrónico cuando una reunión o una llamada telefónica sea más apropiada.</li>
+<li>Incluye una breve descripción del tema del correo electrónico en la línea de asunto.</li>
+<li>No escribas ni respondas un correo electrónico cuando estés enojado.</li>
+<li>Envía el correo electrónico solo a las personas apropiadas; no copies a otras innecesariamente.</li>
+<li>Cíñete al punto; no te desvíes.</li>
+<li>Usa un corrector de ortografía y gramática; si no se incluye uno en el cliente de correo electrónico, escribe el correo electrónico en una aplicación de procesamiento de textos, revísalo y luego pega el documento en el cuerpo del correo electrónico.</li>
+<li>Usa gramática, puntuación y uso de mayúsculas adecuados; no escribas todo en mayúsculas ni todo en minúsculas.</li>
+<li>Sonríe cuando escribes. Tu buena actitud se reflejará en tu escritura.</li>
+<li>Concéntrate en la tarea que tienes entre manos. Lee tu nota en voz alta si es crítica.</li>
+<li>Escribe cada correo electrónico como si estuvieras poniendo el mensaje en una valla publicitaria (ver la Figura 5.36); nunca sabes cómo podría usarse el contenido o quién podría verlo.</li>
+</ul>
+<p>La queja número uno sobre el personal de soporte técnico no es su falta de habilidades técnicas, sino su falta de habilidades de comunicación. Dedica tanto tiempo de tu educación a practicar tus habilidades de comunicación como lo haces a tus habilidades técnicas.</p>
+<blockquote>
+<p>Figura 5.36 Piensa en lo que escribes en las comunicaciones escritas; podría hacerse público</p>
+</blockquote>
+<h2 id="resumen-del-capitulo">Resumen del capítulo<a class="headerlink" href="#resumen-del-capitulo" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Usar una pulsera de muñeca o mantener contacto con metal sin pintar mantiene a ti y a un dispositivo informático al mismo potencial eléctrico, de manera que no induzcas corriente en ninguna pieza ni la debilites/dañes.</li>
+<li>La EMI y la RFI causan problemas. Mueve una computadora o un dispositivo problemático y reemplaza todas las cubiertas de ranura/aperturas.</li>
+<li>Al retirar piezas, ten las herramientas correctas, iluminación y artículos antiestáticos, así como un espacio de trabajo amplio. Toma notas. No uses herramientas magnetizadas. Evita sacudir los discos duros.</li>
+<li>Ten cuidado al instalar un escudo de E/S y sé consciente de los separadores al tratar con la placa madre.</li>
+<li>Los procedimientos de mantenimiento preventivo prolongan la vida de una computadora. Aspira antes de rociar aire comprimido.</li>
+<li>Una MSDS/SDS describe los procedimientos de eliminación y almacenamiento y contiene información sobre toxicidad y preocupaciones de salud. Las ciudades/estados tienen reglas específicas de eliminación para sustancias químicas, baterías, electrónica, etc. Conoce siempre las reglas de eliminación del área donde trabajas.</li>
+<li>La energía de CA entra a una fuente de alimentación o al ladrillo de alimentación de un dispositivo móvil. Se proporciona energía de CC a todas las piezas internas de un dispositivo informático. Se pueden hacer comprobaciones de voltaje de CA y CC, y solo con la energía de CC importa la polaridad. Usa la configuración más alta posible del medidor con niveles de voltaje desconocidos. La potencia se mide en vatios.</li>
+<li>Las comprobaciones de continuidad se hacen en el cableado, y un cable en buen estado muestra cerca de 0 ohmios.</li>
+<li>Una fuente de alimentación convierte CA a CC, distribuye CC por toda la unidad y proporciona enfriamiento. La fuente de alimentación debe tener el factor de forma correcto y ser capaz de suministrar la cantidad correcta de vataje para un nivel de voltaje particular, como +5V o +12V. Comúnmente hay disponibles múltiples "rieles" para +12V porque la CPU comúnmente necesita su propia conexión. Los números y tipos de conectores varían, pero se pueden comprar convertidores.</li>
+<li>Usa la ACPI para controlar las opciones de energía a través del BIOS/UEFI y el sistema operativo. Wake on LAN y Wake on Ring son funciones de energía que permiten que un dispositivo se encienda desde una condición de energía reducida para un propósito específico.</li>
+<li>Los probadores de circuito de CA, los multímetros y los probadores de fuente de alimentación son herramientas usadas con problemas de energía.</li>
+<li>En todas las comunicaciones y la documentación escrita, sé profesional y eficaz. Usa uso de mayúsculas, gramática, puntuación y ortografía adecuados.</li>
+</ul>
+<h2 id="consejos-para-el-examen-de-certificacion-a">Consejos para el examen de certificación A+<a class="headerlink" href="#consejos-para-el-examen-de-certificacion-a" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Revisa el resumen del capítulo. No olvides que otros capítulos también tienen consejos de mantenimiento preventivo, incluidos los capítulos sobre dispositivos de almacenamiento, dispositivos multimedia, impresoras y otros periféricos.</li>
+<li>Recuerda siempre apagar una computadora, retirar el cable de alimentación/ladrillo de alimentación/batería y permitir que una impresora láser se enfríe antes de realizar mantenimiento.</li>
+<li>Familiarízate con el manejo y almacenamiento adecuados de los componentes, incluido el uso de técnicas de autoconexión a tierra, bolsas antiestáticas, correas ESD y tapetes ESD.</li>
+<li>Conoce el propósito de una MSDS.</li>
+<li>Ten en cuenta que, tanto con los problemas de seguridad como al tratar con sustancias químicas y componentes que podrían tener un impacto ambiental potencial, el personal de TI debe cumplir con las regulaciones del gobierno local.</li>
+<li>Conoce el propósito de una correa ESD antiestática, tapetes ESD, bolsas antiestáticas y técnicas de autoconexión a tierra. No uses una correa ESD antiestática cuando trabajes dentro de un monitor CRT antiguo o una fuente de alimentación.</li>
+<li>Usa gafas de seguridad y una mascarilla de filtración de aire para protegerte de las partículas suspendidas en el aire.</li>
+<li>Sé consciente de los riesgos de temperatura, los efectos de la humedad en el equipo electrónico y cuándo se necesita ventilación.</li>
+<li>Sé capaz de identificar y explicar los cables básicos de disco duro SCSI, SATA, eSATA e IDE (incluida la alimentación, como se analiza en el Capítulo 7, «Dispositivos de almacenamiento»).</li>
+<li>Ten en cuenta que las fuentes de alimentación más antiguas tienen un cable de placa madre de 20 pines que se puede usar en un conector de placa madre de 24 pines, o se puede comprar un adaptador de placa madre de 20 a 24 pines.</li>
+<li>Identifica los tipos de conector comunes, como un conector Molex.</li>
+<li>Ten en cuenta que la fuente de alimentación emite 3.3V, 5V y 12V y que la electrónica comúnmente usa 5V y los motores usan 12V. Si una computadora se va a usar internacionalmente, asegúrate de que admita una fuente de alimentación de conmutación automática que acepte 110V o 220 VCA como voltaje de entrada.</li>
+<li>Comprende los requisitos de energía de los componentes de la computadora y que la fuente de alimentación debe ser lo suficientemente potente para alimentar la cantidad de dispositivos y los tipos de dispositivos instalados en la computadora.</li>
+<li>Familiarízate con los síntomas comunes de problemas de energía, incluido el ventilador que gira pero no se proporciona energía a otros dispositivos, la falta de energía, el ventilador ruidoso o inoperante, y la computadora que se reinicia o se apaga sin previo aviso.</li>
+<li>Familiarízate con las conexiones de la placa madre a los paneles superior y frontal (USB, audio, botón de encendido, luz de encendido, luces de actividad de la unidad y botón de reinicio).</li>
+<li>Las siguientes habilidades de comunicación y profesionalismo son parte del examen 220-1102: usar lenguaje adecuado y evitar jerga, acrónimos y argot cuando corresponda; y proporcionar documentación adecuada sobre los servicios prestados.</li>
+</ul>
+<h2 id="terminos-clave">Términos clave<a class="headerlink" href="#terminos-clave" title="Permanent link">&para;</a></h2>
+<ul>
+<li>12V</li>
+<li>3.3V</li>
+<li>5V</li>
+<li>Voltaje de entrada de 110V vs. 220V — <em>110V vs. 220V input voltage</em></li>
+<li>Adaptador de placa madre de 20 a 24 pines — <em>20-pin to 24-pin motherboard adapter</em></li>
+<li>Conector de placa madre de 24 pines — <em>24-pin motherboard connector</em></li>
+<li>12V de 4 pines — <em>4-pin 12V</em></li>
+<li>PCIe de 6 pines — <em>6-pin PCIe</em></li>
+<li>PCIe de 8 pines — <em>8-pin PCIe</em></li>
+<li>CA — <em>AC</em></li>
+<li>Probador de circuito de CA — <em>AC circuit tester</em></li>
+<li>ACPI</li>
+<li>Mascarilla de filtración de aire — <em>air filtration mask</em></li>
+<li>Amperio — <em>amp</em></li>
+<li>Bolsa antiestática — <em>antistatic bag</em></li>
+<li>Pulsera antiestática — <em>antistatic wrist strap</em></li>
+<li>Pantalla negra — <em>black screen</em></li>
+<li>Olor a quemado — <em>burning smell</em></li>
+<li>Aire comprimido — <em>compressed air</em></li>
+<li>Reinicio de la computadora — <em>computer reboot</em></li>
+<li>Continuidad — <em>continuity</em></li>
+<li>CC — <em>DC</em></li>
+<li>Fuente de alimentación de doble riel — <em>dual-rail power supply</em></li>
+<li>EMI</li>
+<li>Conexión a tierra del equipo — <em>equipment grounding</em></li>
+<li>ESD</li>
+<li>Tapete ESD — <em>ESD mat</em></li>
+<li>Correa ESD — <em>ESD strap</em></li>
+<li>Conector del panel frontal — <em>front panel connector</em></li>
+<li>Ruido chirriante — <em>grinding noise</em></li>
+<li>Escudo de E/S — <em>I/O shield</em></li>
+<li>Cable IDE — <em>IDE cable</em></li>
+<li>Apagado intermitente — <em>intermittent shutdown</em></li>
+<li>Kit de mantenimiento — <em>maintenance kit</em></li>
+<li>Fuente de alimentación modular — <em>modular power supply</em></li>
+<li>Molex</li>
+<li>MSDS</li>
+<li>Sin energía — <em>no power</em></li>
+<li>Ohmio — <em>ohm</em></li>
+<li>Sobrecalentamiento — <em>overheating</em></li>
+<li>Potencia — <em>power</em></li>
+<li>Probador de fuente de alimentación — <em>power supply tester</em></li>
+<li>Mantenimiento preventivo — <em>preventive maintenance</em></li>
+<li>Fuente de alimentación redundante — <em>redundant power supply</em></li>
+<li>Resistencia — <em>resistance</em></li>
+<li>RFI</li>
+<li>Gafas de seguridad — <em>safety goggles</em></li>
+<li>Conector SATA — <em>SATA connector</em></li>
+<li>Autoconexión a tierra — <em>self-grounding</em></li>
+<li>SDS</li>
+<li>Humo — <em>smoke</em></li>
+<li>Separador — <em>standoff</em></li>
+<li>Aspiradora para tóner — <em>toner vacuum</em></li>
+<li>Voltio — <em>volt</em></li>
+<li>Voltaje — <em>voltage</em></li>
+<li>Wake on LAN</li>
+<li>Wake on Ring</li>
+<li>Vatio — <em>watt</em></li>
+<li>Clasificación de vataje — <em>wattage rating</em></li>
+<li>Comunicación escrita — <em>written communication</em></li>
+</ul>
+<h2 id="preguntas-de-repaso">Preguntas de repaso<a class="headerlink" href="#preguntas-de-repaso" title="Permanent link">&para;</a></h2>
+<ol>
+<li>¿Qué ocurriría si retiras accidentalmente la batería de una placa madre?</li>
+<li>Enumera tres tareas que se realizan comúnmente durante el mantenimiento preventivo.</li>
+<li>
+<p>Las computadoras usadas en un almacén de supermercado para el control de inventario tienen una tasa de falla de piezas más alta que las demás computadoras de la empresa. ¿Cuál de las siguientes opciones es más probable que ayude en esta situación?
+   a. una pulsera antiestática
+   b. un plan de mantenimiento preventivo
+   c. almohadillas antiestáticas
+   d. fuentes de alimentación de alto vataje</p>
+</li>
+<li>
+<p>¿Cuál de las siguientes opciones puede prolongar la vida de una computadora y ahorrar energía? (Elige todas las que correspondan.)
+   a. un plan de mantenimiento preventivo
+   b. tapetes y almohadillas antiestáticas
+   c. fuente de alimentación actualizada
+   d. un plan de energía
+   e. baterías de reemplazo de Li-ion
+   f. ventiladores de chasis adicionales</p>
+</li>
+<li>
+<p>¿Qué componente de energía tiene un conector de 24 pines?
+   a. conector principal de la placa madre
+   b. ventilador de la fuente de alimentación
+   c. ventilador del chasis
+   d. alimentación AUX para la CPU</p>
+</li>
+<li>
+<p>Una unidad óptica queda disponible aleatoriamente y, después de reemplazar la unidad, el técnico ahora sospecha que la unidad podría no estar recibiendo 5 volts de manera constante. ¿Qué podría ayudar en esta situación?
+   a. una UPS
+   b. un protector contra sobretensiones
+   c. toallitas antiestáticas
+   d. un plan de mantenimiento preventivo
+   e. un probador de fuente de alimentación</p>
+</li>
+<li>
+<p>Al desmontar una computadora, ¿qué herramienta te ayudará a retirar el módulo de memoria?
+   a. destornillador magnético
+   b. alicates de punta larga
+   c. destornillador Phillips n.º 1 o n.º 2
+   d. pulsera antiestática</p>
+</li>
+<li>
+<p>Un usuario tuvo un problema de placa madre la semana pasada y un técnico lo solucionó. Ahora la misma computadora tiene un problema diferente. El usuario informa que los puertos USB del frente ya no funcionan. ¿Qué es lo primero que deberías revisar?
+   a. fuente de alimentación
+   b. conexión de alimentación al panel frontal
+   c. conexiones de la placa madre al panel frontal
+   d. salida de voltaje de la fuente de alimentación a los conectores USB</p>
+</li>
+<li>
+<p>¿Cuál de los siguientes artículos estaría especializado para usar con una impresora láser?
+   [ regleta contra sobretensiones | aspiradora | probador de fuente de alimentación | pulsera antiestática ]</p>
+</li>
+<li>
+<p>¿Cuáles dos de los siguientes elementos probablemente causarían un ruido fuerte en una computadora de escritorio? (Elige dos.)
+    [ placa madre | unidad USB | fuente de alimentación | ventilador del chasis | memoria | adaptador PCIe ]</p>
+</li>
+<li>
+<p>Una computadora no enciende. ¿Cuál de los siguientes se usaría para revisar el tomacorriente de pared?
+    [ probador de fuente de alimentación | UPS | multímetro | POST ]</p>
+</li>
+<li>
+<p>Una computadora no enciende. Después de revisar el tomacorriente de pared y cambiar el cable de alimentación, ¿qué usaría el técnico a continuación?
+    a. resistencia
+    b. probador de fuente de alimentación
+    c. pulsera antiestática
+    d. destornillador magnético
+    e. destornillador no magnético</p>
+</li>
+<li>
+<p>¿Cuál de los siguientes se ve afectado por la clasificación de vataje de la fuente de alimentación?
+    a. cantidad de adaptadores y dispositivos de almacenamiento internos
+    b. cantidad de conectores de la fuente de alimentación
+    c. velocidad del procesador
+    d. tipo de procesador
+    e. tipo de conectores de la fuente de alimentación</p>
+</li>
+<li>
+<p>¿Cuál de los siguientes ayudaría con el calor de la computadora?
+    a. aumentar el vataje de la fuente de alimentación
+    b. actualizar a un factor de forma de fuente de alimentación más grande
+    c. desconectar los conectores de alimentación no usados
+    d. instalar ventiladores de chasis</p>
+</li>
+<li>
+<p>[ V | F ] El desmontaje de la fuente de alimentación es un requisito común de un técnico de PC.</p>
+</li>
+<li>
+<p>Considera el siguiente correo electrónico.
+    De: Cheryl a. Schmidt
+    Para: Personal docente de Tecnología de Ingeniería de Redes
+    Asunto: [Ninguno]
+    Tenemos poco tiempo para hacer el PMS en las PC y el equipo de N/W. ¿Qué software quieres?</p>
+<p>Reformula este correo electrónico para ilustrar buenas habilidades de comunicación escrita.
+Las respuestas variarán, pero la siguiente es una respuesta de ejemplo:
+De: Cheryl A. Schmidt
+Para: Personal docente de Tecnología de Ingeniería de Redes
+Asunto: Software para el período de primavera
+Durante las vacaciones, realizaremos actualizaciones y mantenimiento en el equipo del departamento. También podríamos instalar cualquier actualización de software o nuevo software que necesitarás para el período de primavera. Por favor, reúnete conmigo o envíame un correo electrónico con tus requisitos. Recuerda que cualquier software debe comprarse y debe tener la licencia correspondiente antes de que pueda instalarlo. Por favor, contáctame si tienes alguna pregunta.
+Atentamente,
+Cheryl Schmidt, Técnica de Computadoras</p>
+</li>
+<li>
+<p>Enumera tres recomendaciones para una buena comunicación técnica escrita.</p>
+</li>
+<li>
+<p>Una computadora está haciendo cosas extrañas, como apagarse inesperadamente y colgarse. Sospechas de un problema de energía. Compruebas la señal de "power good" (power OK) en el conector principal de la placa madre de la fuente de alimentación. La lectura de voltaje muestra que tienes energía (+2.5 volts). ¿Qué vas a hacer a continuación?
+    a. Revisar el voltaje que sale de un conector Molex o SATA.
+    b. Revisar el voltaje del tomacorriente de pared.
+    c. Reemplazar la fuente de alimentación.
+    d. Revisar la resistencia del cable de la fuente de alimentación.</p>
+</li>
+<li>
+<p>¿Cuál es el propósito del escudo de E/S?
+    a. Evita que el polvo y la suciedad entren a través de los puertos frontales de la computadora.
+    b. Proporciona conexión a tierra para los puertos de la placa madre.
+    c. Evita que el polvo y la suciedad entren en la fuente de alimentación.
+    d. Protege a un técnico de las descargas.</p>
+</li>
+<li>
+<p>¿Qué dos artículos ayudarían a un técnico a mantener la seguridad personal mientras trabaja en PC e impresoras en un almacén extremadamente polvoriento? (Elige dos.)
+    [ aspiradora | aspiradora para tóner | gafas de seguridad | pulsera antiestática | mascarilla de filtración de aire ]</p>
+</li>
+</ol>
+<h2 id="ejercicios">Ejercicios<a class="headerlink" href="#ejercicios" title="Permanent link">&para;</a></h2>
+<p><strong>Ejercicio 5.1 Identificar los conectores de la fuente de alimentación</strong></p>
+<p>Objetivo:
+ Poder identificar los propósitos de los conectores comunes de la fuente de alimentación</p>
+<p>Procedimiento:
+ Identifica los conectores de la fuente de alimentación en la Figura 5.37.</p>
+<blockquote>
+<p>Figura 5.37 Identificación de conectores de alimentación</p>
+</blockquote>
+<p>____ 1. Molex para unidad óptica antigua
+____ 2. SATA para disco duro
+____ 3. Video PCIe
+____ 4. Placa madre principal
+____ 5. CPU</p>
+<p><strong>Ejercicio 5.2 Reconocer piezas de repuesto de una computadora</strong></p>
+<p>Objetivo:
+ Poder reconocer piezas de una computadora</p>
+<p>Procedimiento:
+ Usa la siguiente información para responder las preguntas.</p>
+<p>Las siguientes piezas fueron pedidas por alguien que está construyendo su propia computadora:</p>
+<p>a. Intel Core i7 4.4 GHz
+b. ASUS Rampage V Extreme X99 (no incluye cabeceras USB 3.1)
+c. Triage 8 GB
+d. Micro-ATX con dos bahías internas de 3.5" y dos bahías externas de 5.25"
+e. EVA 450W</p>
+<ol>
+<li>¿Qué pieza designa la letra a?
+   [ memoria | disco duro | unidad óptica | CPU ]</li>
+<li>¿Qué pieza designa la letra b?
+   [ placa madre | procesador | memoria | disco duro ]</li>
+<li>¿Qué pieza designa la letra c?
+   [ placa madre | unidad óptica | RAM | disco duro SATA | SSD ]</li>
+<li>¿Qué pieza designa la letra d?
+   [ RAM | chasis | todos los dispositivos de almacenamiento | fuente de alimentación ]</li>
+<li>¿Qué pieza designa la letra e?
+   [ chasis | SSD | unidad óptica | fuente de alimentación ]</li>
+</ol>
+<p><strong>Ejercicio 5.3 Describir las piezas de la computadora</strong></p>
+<p>Objetivo:
+ Poder reconocer las piezas de la computadora según una descripción</p>
+<p>Procedimiento:
+ Relaciona la descripción con la pieza de la computadora afectada durante el desmontaje.</p>
+<p>____ 1. Conector de 24 pines
+   a. Cable de la fuente de alimentación a la placa madre
+____ 2. Cable plano de 40 pines
+   b. Cable del panel frontal a la placa madre
+____ 3. Bolsa antiestática
+   c. Cable del disco duro a la placa madre
+____ 4. Correa ESD
+   d. Placa madre a dispositivo IDE PATA
+____ 5. Conexión a tierra
+   e. Se sujeta a la muñeca y a la computadora
+____ 6. Disco duro
+   f. Guarda un adaptador cuando no está en uso
+____ 7. LED del HDD
+   g. Ayuda con la EMI
+____ 8. SATA 3
+   h. Mantener contacto con la computadora
+____ 9. Cubierta de ranura
+   i. Sujeta la placa madre al chasis
+____ 10. Separadores
+   j. Podría necesitar rieles guía</p>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<p><strong>Descubrimiento en internet</strong></p>
+<p>Objetivo:
+ Obtener información específica en internet sobre una computadora o sus partes asociadas</p>
+<p>Partes:
+ Computadora con acceso a internet</p>
+<p>Procedimiento:
+ Completa el siguiente procedimiento y responde las siguientes preguntas.</p>
+<ol>
+<li>Ubica un sitio de internet que proporcione consejos para hacer mantenimiento preventivo de computadoras.
+   Escribe dos de los mejores consejos y la URL donde encontraste la información.</li>
+<li>Ubica un sitio de internet donde puedas comprar un kit de herramientas de computadora que incluya una pulsera antiestática.
+   Enlista la URL donde encontraste el kit y al menos tres tamaños de destornilladores o puntas provistos.</li>
+<li>Ubica un probador de fuente de alimentación que incluya un conector SATA.
+   Enlista el fabricante y el modelo.</li>
+<li>Encuentra un sitio web sobre buenas normas de etiqueta en la red (netiquette).
+   Da tres recomendaciones y el nombre del sitio web (no la URL).</li>
+<li>Acabas de empezar a trabajar en un lugar que usa la computadora todo-en-uno HP Elite 800 G2 de 23 pulgadas sin pantalla táctil.
+   Te han enviado a hacer comprobaciones de energía en la fuente de alimentación de una de estas unidades. ¿Cómo quitas la cubierta? Explícalo en detalle, usando oraciones completas.
+   ¿Qué recomendación da HP para limpiar las manchas difíciles que se pueden encontrar en los chasis de las computadoras en el taller de mantenimiento?
+   Según la documentación, ¿qué es diferente al retirar un procesador AMD que al retirar un procesador Intel?</li>
+</ol>
+<p><strong>Habilidades blandas</strong></p>
+<p>Objetivo:
+ Mejorar y afinar la capacidad de un futuro técnico para escuchar, comunicarse tanto de forma escrita como oral, y apoyar de manera profesional a las personas que usan computadoras</p>
+<p>Actividades:</p>
+<ol>
+<li>Prepara una propuesta comercial para una fuente de alimentación de reemplazo para una computadora específica. Indica la computadora y presenta tu propuesta a la clase.</li>
+<li>Escribe un informe informal sobre las habilidades aprendidas al desarmar y volver a armar una computadora. Comparte tus mejores prácticas con un grupo pequeño.</li>
+<li>Trabajen en equipos para decidir la mejor manera de informar a un cliente sobre las diferencias entre una fuente de alimentación ATX y una SFX. Presenten su descripción a la clase como si estuvieran hablando con el cliente. Podrían considerar mostrar placas madre y chasis para ayudar a ilustrar su punto. Cada miembro del equipo debe contribuir. Cada compañero de clase vota por la mejor explicación del equipo.</li>
+</ol>
+<p><strong>Habilidades de pensamiento crítico</strong></p>
+<p>Objetivo:
+ Analizar y evaluar información, así como aplicar la información aprendida a situaciones nuevas o diferentes</p>
+<p>Actividades:</p>
+<ol>
+<li>Usa internet para encontrar la descripción de una computadora en particular que enumere cada dispositivo que está instalado y el tipo de placa madre, los puertos integrados, etc. Luego ubica una calculadora de fuente de alimentación. Encuentra una fuente de alimentación de reemplazo, según los cálculos realizados. Escribe los detalles de lo que buscaste en la fuente de alimentación de reemplazo: la fuente de alimentación, el proveedor, la cantidad y el tipo de conectores y el costo.</li>
+<li>Para una de las computadoras del aula, ubica la documentación sobre cómo desmontarla. Revisa la documentación y encuentra al menos tres buenos consejos que quizás no se te hayan ocurrido de inmediato si estuvieras desmontando la computadora. Luego encuentra al menos tres consejos de seguridad. Coloca toda esta información en un esquema. Una alternativa es ser creativo y presentar los consejos gráficamente en una página o diapositiva de presentación.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../capitulo-4/configuracion/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Capítulo 4 - Introducción a la configuración">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 4 - Introducción a la configuración
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 The authors
+
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dbc0afdc.min.js"></script>
+      
+    
+  </body>
+</html>

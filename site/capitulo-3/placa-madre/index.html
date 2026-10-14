@@ -1,0 +1,2981 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A new project generated from the default template project.">
+      
+      
+        <meta name="author" content="<your name here>">
+      
+      
+      
+        <link rel="prev" href="../../capitulo-2/conectividad/">
+      
+      
+        <link rel="next" href="../../capitulo-4/configuracion/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.36">
+    
+    
+      
+        <title>Capítulo 3. En la placa madre - Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.1e981d71.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-3-en-la-placa-madre" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 3. En la placa madre
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-1/introduccion-completa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1 - Introducción al mundo de IT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-2/conectividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2 - Conectividad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3 - Placa madre
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3 - Placa madre
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Introducción a la placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general del procesador
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamentos-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fundamentos del procesador
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fundamentos del procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buses" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Buses
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ALU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procesamiento-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Procesamiento de datos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pipelines
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-como-acelerar-las-operaciones-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de cómo acelerar las operaciones del procesador
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general de cómo acelerar las operaciones del procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-ubicar-la-velocidad-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ubicar la velocidad del procesador
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reloj-clocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reloj (clocking)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Caché
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecnologia-de-hilos-threading" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Tecnología de hilos (threading)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conexion-con-el-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Conexión con el procesador
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procesadores-multinucleo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Procesadores multinúcleo
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuantos-nucleos-e-hilos-tienes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿cuántos núcleos e hilos tienes?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-de-procesamiento-grafico-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Unidad de procesamiento gráfico (GPU)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-la-virtualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Introducción a la virtualización
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procesadores-intel" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Procesadores Intel
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procesadores-amd" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Procesadores AMD
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zocalos-de-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Zócalos de CPU
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zócalos de CPU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-comprar-la-cpu-correcta" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: comprar la CPU correcta
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enfriamiento-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Enfriamiento del procesador
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enfriamiento del procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-enfriar-la-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: enfriar la CPU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuando-la-pasta-termica-actua-como-pegamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cuando la pasta térmica actúa como pegamento
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-un-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalar un procesador
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalar un procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-manipular-la-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: manipular la CPU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-procesadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actualizar procesadores
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actualizar procesadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-actualizar-una-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: actualizar una CPU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overclocking-sobrefrecuencia-de-procesadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Overclocking (sobrefrecuencia) de procesadores
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overclocking (sobrefrecuencia) de procesadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-estar-listo-para-enfriar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: estar listo para enfriar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-soluciones-termicas-para-la-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalar soluciones térmicas para la CPU
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalar soluciones térmicas para la CPU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-tomar-una-foto-de-la-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: tomar una foto de la CPU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucion-de-problemas-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Solución de problemas del procesador
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ranuras-de-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ranuras de expansión
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ranuras de expansión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pci-peripheral-component-interconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PCI (Peripheral Component Interconnect)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agp-accelerated-graphics-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        AGP (Accelerated Graphics Port)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcie-peripheral-component-interconnect-express" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PCIe (Peripheral Component Interconnect Express)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-tarjetas-pci-en-ranuras-pcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: tarjetas PCI en ranuras PCIe
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuidado-con-la-letra-pequena-de-pcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cuidado con la letra pequeña de PCIe
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-extraer-adaptadores-pcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: extraer adaptadores PCIe
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opciones-de-seguridad-de-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Opciones de seguridad de la placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-placas-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Tipos de placas madre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de placas madre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-hacer-coincidir-el-factor-de-forma-de-la-placa-madre-y-el-gabinete" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: hacer coincidir el factor de forma de la placa madre y el gabinete
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-y-reemplazar-placas-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actualizar y reemplazar placas madre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actualizar y reemplazar placas madre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-placas-madre-en-otros-tipos-de-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: placas madre en otros tipos de dispositivos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-usar-buenas-medidas-antiestaticas-al-instalar-una-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: usar buenas medidas antiestáticas al instalar una placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucion-de-problemas-de-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Solución de problemas de la placa madre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solución de problemas de la placa madre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-estos-conceptos-tambien-se-relacionan-con-las-computadoras-apple" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: estos conceptos también se relacionan con las computadoras Apple
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilidades-blandas-la-escucha-activa" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades blandas: la escucha activa
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-del-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Resumen del capítulo
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resumen del capítulo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejos-para-el-examen-de-certificacion-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejos para el examen de certificación A+
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Términos clave
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Preguntas de repaso
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicios
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-31-identificar-las-partes-de-una-placa-madre-atx" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicio 3.1 Identificar las partes de una placa madre ATX
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-32-analisis-de-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicio 3.2 Análisis de la placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actividades
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descubrimiento-en-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descubrimiento en internet
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilidades-blandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades blandas
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilidades-de-pensamiento-critico" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades de pensamiento crítico
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-4/configuracion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4 - Introducción a la configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-5/desmontaje-energia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5 - Desmontaje y energía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Introducción a la placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general del procesador
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamentos-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fundamentos del procesador
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fundamentos del procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#buses" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Buses
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        ALU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procesamiento-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Procesamiento de datos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pipelines
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-como-acelerar-las-operaciones-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de cómo acelerar las operaciones del procesador
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general de cómo acelerar las operaciones del procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-ubicar-la-velocidad-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ubicar la velocidad del procesador
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reloj-clocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reloj (clocking)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Caché
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tecnologia-de-hilos-threading" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Tecnología de hilos (threading)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conexion-con-el-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Conexión con el procesador
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procesadores-multinucleo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Procesadores multinúcleo
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuantos-nucleos-e-hilos-tienes" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿cuántos núcleos e hilos tienes?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unidad-de-procesamiento-grafico-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Unidad de procesamiento gráfico (GPU)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion-a-la-virtualizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Introducción a la virtualización
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procesadores-intel" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Procesadores Intel
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procesadores-amd" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Procesadores AMD
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zocalos-de-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Zócalos de CPU
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Zócalos de CPU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-comprar-la-cpu-correcta" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: comprar la CPU correcta
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enfriamiento-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Enfriamiento del procesador
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enfriamiento del procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-enfriar-la-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: enfriar la CPU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuando-la-pasta-termica-actua-como-pegamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cuando la pasta térmica actúa como pegamento
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-un-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalar un procesador
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalar un procesador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-manipular-la-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: manipular la CPU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-procesadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actualizar procesadores
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actualizar procesadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-actualizar-una-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: actualizar una CPU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overclocking-sobrefrecuencia-de-procesadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Overclocking (sobrefrecuencia) de procesadores
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overclocking (sobrefrecuencia) de procesadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-estar-listo-para-enfriar" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: estar listo para enfriar
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-soluciones-termicas-para-la-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalar soluciones térmicas para la CPU
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalar soluciones térmicas para la CPU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-tomar-una-foto-de-la-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: tomar una foto de la CPU
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucion-de-problemas-del-procesador" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Solución de problemas del procesador
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ranuras-de-expansion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ranuras de expansión
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ranuras de expansión">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pci-peripheral-component-interconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PCI (Peripheral Component Interconnect)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agp-accelerated-graphics-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        AGP (Accelerated Graphics Port)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcie-peripheral-component-interconnect-express" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PCIe (Peripheral Component Interconnect Express)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-tarjetas-pci-en-ranuras-pcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: tarjetas PCI en ranuras PCIe
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuidado-con-la-letra-pequena-de-pcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cuidado con la letra pequeña de PCIe
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-extraer-adaptadores-pcie" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: extraer adaptadores PCIe
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opciones-de-seguridad-de-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Opciones de seguridad de la placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-placas-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Tipos de placas madre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de placas madre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-hacer-coincidir-el-factor-de-forma-de-la-placa-madre-y-el-gabinete" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: hacer coincidir el factor de forma de la placa madre y el gabinete
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizar-y-reemplazar-placas-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actualizar y reemplazar placas madre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actualizar y reemplazar placas madre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-placas-madre-en-otros-tipos-de-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: placas madre en otros tipos de dispositivos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-usar-buenas-medidas-antiestaticas-al-instalar-una-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: usar buenas medidas antiestáticas al instalar una placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucion-de-problemas-de-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Solución de problemas de la placa madre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solución de problemas de la placa madre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-estos-conceptos-tambien-se-relacionan-con-las-computadoras-apple" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: estos conceptos también se relacionan con las computadoras Apple
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilidades-blandas-la-escucha-activa" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades blandas: la escucha activa
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-del-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Resumen del capítulo
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resumen del capítulo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejos-para-el-examen-de-certificacion-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejos para el examen de certificación A+
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Términos clave
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Preguntas de repaso
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicios
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejercicios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-31-identificar-las-partes-de-una-placa-madre-atx" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicio 3.1 Identificar las partes de una placa madre ATX
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-32-analisis-de-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicio 3.2 Análisis de la placa madre
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actividades
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actividades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descubrimiento-en-internet" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descubrimiento en internet
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilidades-blandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades blandas
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilidades-de-pensamiento-critico" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades de pensamiento crítico
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="capitulo-3-en-la-placa-madre">Capítulo 3. En la placa madre<a class="headerlink" href="#capitulo-3-en-la-placa-madre" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Traducción al español del Capítulo 3 («On the Motherboard») de <em>Complete A+ Guide to IT Hardware and Software: CompTIA A+ Exams 220-1101 &amp; 220-1102</em> (Cheryl A. Schmidt, Christopher Lee) — material de estudio de uso personal.</p>
+<p>Nota: las figuras y las tablas del libro son imágenes y no se incluyen aquí; se conserva su leyenda traducida como referencia.</p>
+</blockquote>
+<p>En este capítulo aprenderás:</p>
+<ul>
+<li>Cómo reconocer e identificar las partes importantes de la placa madre</li>
+<li>Lo básico de cómo funciona un procesador</li>
+<li>Cuestiones a considerar al actualizar o reemplazar una placa madre o un procesador</li>
+<li>Información sobre las GPU</li>
+<li>Cómo agregar tarjetas a las computadoras</li>
+<li>Las diferencias entre los adaptadores y ranuras PCI, AGP y PCIe</li>
+<li>Tecnologías de la placa madre como HyperTransport, Hyperthreading y multinúcleo</li>
+<li>Los factores de forma y las opciones de seguridad de la placa madre</li>
+<li>Los síntomas de problemas de placa madre y CPU</li>
+<li>Los beneficios de la escucha activa</li>
+</ul>
+<p><strong>Objetivos del examen CompTIA:</strong></p>
+<ul>
+<li>1101-3.4 Dado un escenario, instalar y configurar placas madre, unidades centrales de procesamiento (CPU) y tarjetas adicionales.</li>
+<li>1101-5.2 Dado un escenario, diagnosticar problemas relacionados con placas madre, RAM, CPU y energía.</li>
+<li>1102-4.7 Dado un escenario, usar técnicas de comunicación y profesionalismo adecuados.</li>
+</ul>
+<h2 id="introduccion-a-la-placa-madre">Introducción a la placa madre<a class="headerlink" href="#introduccion-a-la-placa-madre" title="Permanent link">&para;</a></h2>
+<p>La placa madre contiene la mayor parte de la electrónica, está presente en la mayoría de los dispositivos electrónicos, incluidas las computadoras, y es importante para cualquier tipo de dispositivo. La Figura 3.1 muestra algunos de los componentes clave de la placa madre que cubriremos.</p>
+<blockquote>
+<p>Figura 3.1 Componentes clave de la placa madre</p>
+</blockquote>
+<h2 id="descripcion-general-del-procesador">Descripción general del procesador<a class="headerlink" href="#descripcion-general-del-procesador" title="Permanent link">&para;</a></h2>
+<p>En el corazón de toda computadora está el <strong>procesador</strong>, que determina, en gran medida, la potencia de la computadora. El procesador también se llama <strong>unidad central de procesamiento (CPU)</strong> o <strong>microprocesador</strong>. El procesador ejecuta instrucciones, realiza cálculos y coordina operaciones de entrada/salida. Cada placa madre tiene chips que trabajan con la CPU y que están diseñados según especificaciones exactas. Los principales fabricantes de procesadores hoy son Intel, Motorola, VIA, Samsung, NVIDIA, Apple Inc., Qualcomm y AMD (Advanced Micro Devices, Inc.). Intel y AMD son los fabricantes predominantes de procesadores para computadoras de escritorio y portátiles. Un término que podrías escuchar relacionado con las CPU de Intel y AMD es <strong>x86-64</strong>. El x86 se relaciona con el procesador Intel 8086, y el 64, o x64, refleja la actualización a una versión de 64 bits. Intel tiene su propia arquitectura de CPU patentada llamada Intel 64, y AMD tiene la arquitectura patentada AMD64.</p>
+<p>Los <strong>procesadores ARM</strong> se usan en dispositivos móviles como teléfonos inteligentes, tabletas y portátiles. ARM solía ser un acrónimo de Acorn RISC (<em>reduced instruction set computing</em>) Machine y luego Advanced RISC Machines, pero hoy es solo una arquitectura usada en procesadores y microcontroladores. Los procesadores ARM pueden ser de 32 o 64 bits y se usan con frecuencia en dispositivos móviles como teléfonos inteligentes, tabletas, cámaras digitales y portátiles, pero también se pueden usar en computadoras de escritorio y servidores. Los procesadores ARM consumen menos energía, producen menos calor y cuestan menos que los procesadores de AMD o Intel. La empresa Arm Ltd. también licencia sus propios diseños a otras empresas que crean sus propios productos.</p>
+<p>Una placa madre acepta los procesadores de uno o más fabricantes específicos; por ejemplo, una placa madre que acepta un procesador Intel no admitirá un procesador AMD. La Figura 3.2 muestra un procesador.</p>
+<blockquote>
+<p>Figura 3.2 Procesador Intel</p>
+</blockquote>
+<h2 id="fundamentos-del-procesador">Fundamentos del procesador<a class="headerlink" href="#fundamentos-del-procesador" title="Permanent link">&para;</a></h2>
+<p>Los procesadores vienen en una variedad de velocidades, medidas en gigahercios (GHz). El hertz es una medida de ciclos por segundo. Un hertz, escrito 1 Hz, equivale a 1 ciclo por segundo. Un gigahercio, o 1 GHz, es 1000 millones de ciclos por segundo. Los procesadores actuales pueden funcionar a velocidades cercanas a 5 GHz.</p>
+<h3 id="buses">Buses<a class="headerlink" href="#buses" title="Permanent link">&para;</a></h3>
+<p>Los procesadores operan con 1s y 0s. Los 1s y 0s deben viajar de un lugar a otro dentro del procesador, así como hacia afuera, a otros chips. Para mover los 1s y 0s, se usan líneas electrónicas llamadas <strong>bus</strong>. Las líneas electrónicas dentro de la CPU se conocen como <strong>bus de datos interno</strong>, o <strong>bus del sistema</strong>. En el Intel 8086 (del cual se originó el término arquitectura x86), el bus de datos interno comprende 16 líneas separadas, y cada línea transporta un solo 1 o un solo 0. En los procesadores actuales, 64 o 128 líneas de bus de datos interno operan de forma concurrente.</p>
+<p>Para que una CPU se comunique con dispositivos del mundo exterior, como una impresora, los 1s y 0s viajan por el <strong>bus de datos externo</strong>. El bus de datos externo conecta el procesador con los adaptadores, el teclado, el ratón, el almacenamiento y otros dispositivos. Puedes ver las líneas de datos externas mirando entre las ranuras de expansión de la placa madre. Los procesadores actuales tienen rutas de datos externas de 64 y 128 bits. La Figura 3.3 muestra los buses de datos internos y externos.</p>
+<blockquote>
+<p>Figura 3.3 Buses de datos internos y externos</p>
+</blockquote>
+<h3 id="alu">ALU<a class="headerlink" href="#alu" title="Permanent link">&para;</a></h3>
+<p>Un procesador tiene un componente especial llamado <strong>unidad aritmética lógica (ALU)</strong>, que realiza todos los cálculos y la lógica de comparación que necesita la computadora. La Figura 3.3 muestra la idea básica de cómo la ALU se conecta con los registros, la unidad de control y el bus interno. La <strong>unidad de control</strong> coordina las actividades dentro del procesador. La <strong>unidad de E/S</strong> gestiona los datos que entran y salen del procesador. Los <strong>registros</strong> en la CPU constituyen un área de almacenamiento de alta velocidad para los 1s y 0s antes de que los bits sean procesados.</p>
+<h3 id="procesamiento-de-datos">Procesamiento de datos<a class="headerlink" href="#procesamiento-de-datos" title="Permanent link">&para;</a></h3>
+<p>Para entender cómo procesa datos una computadora, considera una carta escrita en una computadora que empieza con «QUERIDA MAMÁ». Para la computadora, cada letra del alfabeto es una combinación diferente de ocho 1s y 0s. Por ejemplo, la letra D es 01000100 y la letra E es 01000101. La Figura 3.4 demuestra que el tamaño del bus aumenta enormemente el rendimiento de una computadora, de forma muy parecida a como aumentar el número de carriles de una autopista disminuye la congestión.</p>
+<blockquote>
+<p>Figura 3.4 Rendimiento del bus</p>
+</blockquote>
+<h3 id="pipelines">Pipelines<a class="headerlink" href="#pipelines" title="Permanent link">&para;</a></h3>
+<p>Los procesadores tienen múltiples <strong>pipelines</strong> (buses internos separados) que operan simultáneamente. Para entender el <em>pipelining</em>, toma el ejemplo de un restaurante de comida rápida. En el restaurante, supongamos que hay cinco pasos involucrados en preparar una hamburguesa y entregarla al cliente. Para que este proceso de hamburguesas vaya más rápido, podrías (quizá) hacer una de las cosas que se muestran en la Figura 3.5.</p>
+<blockquote>
+<p>Figura 3.5 Maneras de obtener procesos más rápidos</p>
+</blockquote>
+<p>Para relacionarlo con los procesadores, podrías aumentar la velocidad de reloj de la CPU, cambiar la estructura del pipeline de la CPU en cuanto a cuántos pasos hay en cada pipeline, y/o hacer que la CPU tenga múltiples pipelines. Por ejemplo, si un procesador tiene dos pipelines, la carta «Querida mamá» puede estar en un pipeline, mientras que la carga de una foto usando otra aplicación puede estar en el otro pipeline.</p>
+<h2 id="descripcion-general-de-como-acelerar-las-operaciones-del-procesador">Descripción general de cómo acelerar las operaciones del procesador<a class="headerlink" href="#descripcion-general-de-como-acelerar-las-operaciones-del-procesador" title="Permanent link">&para;</a></h2>
+<p>Puedes determinar la velocidad de un procesador mirando el número de modelo en el chip, pero los procesadores con frecuencia tienen dispositivos conectados para enfriarlos, lo que dificulta ver lo escrito en el chip. Un procesador comúnmente no usa su velocidad máxima todo el tiempo, para ahorrar energía o mantenerse frío. Además, un procesador no siempre funciona a su máximo potencial por muchas razones, incluidos el código usado dentro de una aplicación, el cambio del usuario de una aplicación a otra, un ancho de bus inadecuado o la cantidad de RAM instalada. Un procesador también puede operar por encima de sus especificaciones nominales para manejar periodos de mayor carga de trabajo.</p>
+<h3 id="consejo-tecnico-ubicar-la-velocidad-del-procesador">Consejo técnico: ubicar la velocidad del procesador<a class="headerlink" href="#consejo-tecnico-ubicar-la-velocidad-del-procesador" title="Permanent link">&para;</a></h3>
+<p>Una forma fácil de saber la velocidad del procesador en Windows es ir al Explorador de archivos, hacer clic con el botón derecho en «Este equipo» y seleccionar «Propiedades».</p>
+<p>Ya hemos visto cómo aumentar el pipeline de la CPU puede, en cierta medida, mejorar las operaciones del procesador, pero también existen otras tecnologías. Empezamos definiendo algunos de los términos que se relacionan con esta área y asociando esos términos con conceptos y las diversas tecnologías usadas. La Tabla 3.1 enumera algunos términos relacionados con la velocidad.</p>
+<blockquote>
+<p>Tabla 3.1 Términos de velocidad de la placa madre</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Explicación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reloj o velocidad de reloj (<em>clock</em>)</td>
+<td>La velocidad del reloj interno del procesador, medida en gigahercios.</td>
+</tr>
+<tr>
+<td>Front side bus (FSB)</td>
+<td>La velocidad (comúnmente llamada velocidad de la placa madre) entre la CPU y algunos de los componentes de la placa madre. A veces se indica en megatransferencias por segundo, o MT/s. Con MT/s no solo se considera la velocidad del FSB, sino también cuántas transferencias del procesador ocurren en cada ciclo de reloj. Un FSB de 266 MHz que puede hacer cuatro transferencias por segundo podría indicarse como 1064 MT/s.</td>
+</tr>
+<tr>
+<td>Back side bus</td>
+<td>La velocidad entre la CPU y la caché L2 ubicada fuera de la CPU principal pero en el mismo chip.</td>
+</tr>
+<tr>
+<td>Velocidad del bus PCI</td>
+<td>La velocidad usada para entregar datos en el bus PCI. Las velocidades comunes del bus PCI son 33 y 66 MHz, lo que permite anchos de banda de hasta 533 MB/s.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reloj-clocking">Reloj (clocking)<a class="headerlink" href="#reloj-clocking" title="Permanent link">&para;</a></h3>
+<p>Una placa madre genera una señal de reloj que se usa para controlar la transferencia de 1s y 0s hacia y desde el procesador. Un ciclo de reloj va de un punto de la onda senoidal al siguiente punto que se encuentra en el mismo punto de la onda senoidal más adelante en el tiempo. En las computadoras antiguas, los datos se enviaban a la CPU solo una vez durante un ciclo de reloj. Hoy, los datos se envían cuatro veces durante un solo ciclo de reloj, como se muestra en la Figura 3.6.</p>
+<blockquote>
+<p>Figura 3.6 Ciclo de reloj que sincroniza datos cuatro veces por ciclo</p>
+</blockquote>
+<h3 id="cache">Caché<a class="headerlink" href="#cache" title="Permanent link">&para;</a></h3>
+<p>Un concepto importante relacionado con la velocidad del procesador es mantener los datos fluyendo hacia el procesador. Los datos o la instrucción que la CPU necesita procesar generalmente se encuentran en uno de cuatro lugares: la memoria caché, la memoria de la placa madre (memoria principal), una unidad de estado sólido (SSD, que también es memoria) o el disco duro. La <strong>memoria caché</strong> es un tipo de memoria muy rápida diseñada para aumentar la velocidad y la eficiencia de las operaciones del procesador. La caché proporciona el acceso más rápido. Si la información no está en la memoria caché, el procesador busca los datos en la RAM de la placa madre. Si la información no está allí, se recupera del disco duro y se coloca en la memoria de la placa madre o en la caché. El acceso al disco duro es el más lento de los tres. La Tabla 3.2 enumera los tipos de caché. La Figura 3.7 muestra la jerarquía de dónde busca los datos la CPU.</p>
+<blockquote>
+<p>Tabla 3.2 Tipos de caché</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Explicación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Caché L1</td>
+<td>Memoria caché integrada en el procesador y el tipo más rápido.</td>
+</tr>
+<tr>
+<td>Caché L2</td>
+<td>Caché en el encapsulado del procesador pero que no forma parte de la CPU; también llamada caché <em>on-die</em>.</td>
+</tr>
+<tr>
+<td>Caché L3</td>
+<td>Normalmente se encuentra en procesadores más potentes y puede ubicarse en la carcasa de la CPU (<em>on-die</em>) o en la placa madre.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Figura 3.7 Fuentes de datos de la CPU y jerarquía de acceso a datos</p>
+</blockquote>
+<h3 id="tecnologia-de-hilos-threading">Tecnología de hilos (threading)<a class="headerlink" href="#tecnologia-de-hilos-threading" title="Permanent link">&para;</a></h3>
+<p>Se usan dos técnicas comunes de hilos para acelerar la eficiencia del procesador: el <strong>multithreading</strong> y la <strong>HT (Hyperthreading Technology)</strong>. Un <strong>hilo</strong> (<em>thread</em>) es una pequeña pieza de un proceso de aplicación. Un sistema operativo como Windows programa y asigna recursos a un hilo. Cada hilo puede compartir recursos (como el procesador o la memoria caché) con otros hilos. Un hilo en el pipeline podría tener un retraso debido a que espera que se recuperen datos o que se obtenga acceso a un puerto u otro componente de hardware. El multithreading mantiene la línea en movimiento al permitir que otro hilo ejecute algo de código. Esto es como un cajero de supermercado atendiendo a otro cliente mientras alguien va a buscar una barra de pan olvidada. La Figura 3.8 muestra este concepto.</p>
+<blockquote>
+<p>Figura 3.8 Multithreading</p>
+</blockquote>
+<p>La <strong>HT de Intel</strong> (Hyperthreading, Hyper-Threading o HT Technology) permite que un solo procesador maneje dos conjuntos separados de instrucciones simultáneamente. Para el sistema operativo, la HT hace que el sistema parezca tener múltiples procesadores. Intel afirma que el sistema puede tener hasta un 30 % de aumento en el rendimiento, pero los estudios han demostrado que el aumento depende de la aplicación.</p>
+<h3 id="conexion-con-el-procesador">Conexión con el procesador<a class="headerlink" href="#conexion-con-el-procesador" title="Permanent link">&para;</a></h3>
+<p>Acceder a la caché L2 y a los componentes de la placa madre era un cuello de botella en los sistemas antiguos. La solución a este problema es usar dos buses: un bus del lado posterior (<em>back side bus</em>) y un bus del lado frontal (<em>front side bus</em>). El <strong>bus del lado posterior</strong> conecta la CPU con la caché L2. El <strong>bus del lado frontal (FSB)</strong> (ver la Figura 3.9) conecta la CPU con los componentes de la placa madre. El bus del lado frontal se considera la velocidad de la placa madre.</p>
+<blockquote>
+<p>Figura 3.9 Bus del lado frontal y bus del lado posterior</p>
+</blockquote>
+<p>Mucha gente piensa que cuanto mayor es la velocidad de la CPU, más rápida es la computadora. Esto rara vez es cierto. Varios factores contribuyen a la velocidad de una computadora. Un factor es la velocidad del bus. La <strong>velocidad del bus</strong> describe qué tan rápido puede comunicarse la CPU con los componentes de la placa madre, como la memoria, el chipset o el bus PCI/PCIe.</p>
+<p>Intel y AMD tienen tecnologías para reemplazar el bus del lado frontal en algunas partes. La solución de AMD es <strong>Direct Connect</strong>. Direct Connect permite que cada uno de los núcleos del procesador se conecte directamente con la memoria, con los demás componentes de la placa madre (como las ranuras de expansión) y con otros núcleos del procesador mediante un bus de alta velocidad llamado <strong>HyperTransport</strong> (ver la Figura 3.11, más adelante en el capítulo). AMD está actualizando HyperTransport a <strong>Infinity Fabric</strong>. Intel tiene <strong>Ultra Path Interconnect (UPI)</strong>, <strong>Serial Peripheral Interface (SPI)</strong> y <strong>Direct Media Interface (DMI)</strong>, que son conexiones punto a punto entre el procesador y uno o más componentes de la placa madre.</p>
+<h3 id="procesadores-multinucleo">Procesadores multinúcleo<a class="headerlink" href="#procesadores-multinucleo" title="Permanent link">&para;</a></h3>
+<p>Un <strong>procesador de un solo núcleo</strong> es solo un procesador. Tanto Intel como AMD ofrecen <strong>procesadores multinúcleo</strong>, lo que significa más de una CPU en el mismo encapsulado (ver la Figura 3.11). Cada núcleo puede ejecutar programas o hilos. Un solo Intel Core i9 CPU tiene 18 núcleos, y el AMD Ryzen Threadripper tiene 64 núcleos y 128 hilos. La Figura 3.10 muestra cómo se conectan múltiples procesadores Intel. La Figura 3.11 muestra cómo cada CPU AMD accede a la RAM y dónde se usa el bus HyperTransport para la conectividad.</p>
+<blockquote>
+<p>Figura 3.10 Arquitectura multinúcleo de Intel</p>
+<p>Figura 3.11 Acceso a memoria cuádruple núcleo de AMD</p>
+</blockquote>
+<h3 id="consejo-tecnico-cuantos-nucleos-e-hilos-tienes">Consejo técnico: ¿cuántos núcleos e hilos tienes?<a class="headerlink" href="#consejo-tecnico-cuantos-nucleos-e-hilos-tienes" title="Permanent link">&para;</a></h3>
+<p>Haz clic con el botón derecho en la barra de tareas de Windows &gt; Administrador de tareas &gt; pestaña Rendimiento &gt; CPU &gt; busca «Núcleos» y «Procesadores lógicos» (hilos).</p>
+<p>Un <strong>procesador lógico</strong> puede ejecutar su propio conjunto de instrucciones. Todas las aplicaciones pueden aprovechar la tecnología multinúcleo y los procesos en segundo plano asociados con el sistema operativo y las aplicaciones. Esto mejora las operaciones cuando se hace multitarea o cuando se ejecutan aplicaciones potentes que requieren que se ejecuten muchas instrucciones, como aplicaciones de dibujo y juegos.</p>
+<h2 id="unidad-de-procesamiento-grafico-gpu">Unidad de procesamiento gráfico (GPU)<a class="headerlink" href="#unidad-de-procesamiento-grafico-gpu" title="Permanent link">&para;</a></h2>
+<p>Otro cuello de botella para el rendimiento de la computadora es el video. Los usuarios de computadoras que quieren mejor rendimiento de video compran un adaptador de video separado que contiene una <strong>GPU</strong>. Tanto Intel como AMD tienen una <strong>unidad de procesamiento gráfico (GPU)</strong> dentro de la CPU en algunos de sus modelos de procesador. Con una <strong>GPU integrada (iGPU)</strong>, a veces llamada <strong>procesador gráfico integrado (IGP)</strong>, no se requiere una tarjeta de video externa con GPU, y los datos gráficos se procesan rápidamente, con un consumo de energía reducido.</p>
+<p>Las CPU actuales contienen procesadores multinúcleo, y las GPU contienen cientos de procesadores de núcleos más pequeños. Las GPU también se pueden usar para otros propósitos que no están directamente relacionados con los gráficos pero que aumentan el rendimiento del sistema. Estas GPU a veces se denominan <strong>GPU de propósito general (GPGPU)</strong>. La Figura 3.12 muestra cómo un IGP está dentro del mismo encapsulado que los núcleos de la CPU.</p>
+<blockquote>
+<p>Figura 3.12 CPU vs. GPU</p>
+</blockquote>
+<p>AMD llama a sus procesadores que tienen una GPU integrada con la CPU <strong>unidades de procesamiento acelerado (APU)</strong>. Intel llama a su GPU integrada Intel HD Graphics e Intel Iris Graphics.</p>
+<h2 id="introduccion-a-la-virtualizacion">Introducción a la virtualización<a class="headerlink" href="#introduccion-a-la-virtualizacion" title="Permanent link">&para;</a></h2>
+<p>Una ventaja de tener múltiples núcleos de procesador es que permiten que tanto las computadoras domésticas como las de empresa aprovechen la tecnología virtual. La <strong>virtualización</strong> te permite tener una o más <strong>máquinas virtuales (VM)</strong> en la misma computadora. El software de virtualización, como VMware Workstation, Oracle VM VirtualBox o Microsoft Hyper-V, permite que una computadora actúe como si fuera dos o más computadoras. La computadora puede tener dos o más sistemas operativos instalados mediante el uso del software de virtualización. Cada sistema operativo no tiene conocimiento del o de los otros sistemas operativos en la computadora (ver la Figura 3.13).</p>
+<blockquote>
+<p>Figura 3.13 El concepto de virtualización</p>
+</blockquote>
+<p>Windows 8, 10 y 11 tienen Hyper-V, que permite que una aplicación se ejecute en un entorno virtual como si se hubiera instalado un sistema operativo más antiguo. Las empresas suelen usar la virtualización para poder usar software heredado en máquinas más nuevas, pero manteniéndolo separado del sistema operativo principal o de otra máquina virtualizada en la misma computadora. La reducción de costos y de espacio físico son beneficios de la virtualización. Los usuarios domésticos pueden instalar múltiples sistemas operativos en VM separadas dentro de la misma caja física, y cada VM se ve como una computadora separada. Para prepararte mejor para los exámenes de certificación CompTIA A+, podrías instalar Windows 10 u 11 y Linux.</p>
+<p>Seleccionar una placa madre y un procesador es importante en un entorno virtual. Consulta la documentación del software de virtualización para determinar si la CPU usada es compatible. Asegúrate de habilitar el soporte de virtualización en el firmware (se cubre en el Capítulo 4, «Introducción a la configuración»). Otra cuestión relacionada con los procesadores y la virtualización es la licencia. Para el software de virtualización que debe comprarse (es decir, que no es gratuito), el fabricante del software puede cobrar por procesador o por zócalo (<em>socket</em>), o por núcleo.</p>
+<h2 id="procesadores-intel">Procesadores Intel<a class="headerlink" href="#procesadores-intel" title="Permanent link">&para;</a></h2>
+<p>Tradicionalmente, Intel clasificaba sus procesadores por GHz, y la gente comparaba los procesadores según la velocidad únicamente. Ahora Intel organiza sus productos por números de familia. Dentro de una familia de procesadores, puedes comparar atributos como la velocidad, la cantidad de memoria caché y otras tecnologías. La Tabla 3.3 muestra las familias de procesadores de Intel. La Figura 3.14 muestra un primer plano de un procesador instalado en una placa madre. La Figura 3.15 muestra cómo descifrar los modelos de procesador Intel.</p>
+<blockquote>
+<p>Tabla 3.3 Familias de procesadores Intel</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Familia de procesadores*</th>
+<th>Comentarios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xeon</td>
+<td>CPU para servidores y PC profesionales que necesitan memoria ECC, grandes cantidades de memoria, mayor caché, más núcleos y múltiples sockets.</td>
+</tr>
+<tr>
+<td>Core X</td>
+<td>Procesador de 18 núcleos (al cierre de esta edición) para alto rendimiento, juegos extremos, creación de contenido intensiva y multitarea masiva.</td>
+</tr>
+<tr>
+<td>Core i9</td>
+<td>Potente procesador multinúcleo para juegos y creación de contenido intensiva, así como multitarea masiva.</td>
+</tr>
+<tr>
+<td>Core i7</td>
+<td>Multinúcleo con memoria caché compartida entre núcleos y controlador de memoria integrado. Bueno para virtualización, diseño y creación gráfica/multimedia, y juegos.</td>
+</tr>
+<tr>
+<td>Core i5</td>
+<td>Procesador de gama media de doble y cuádruple núcleo. Se usa para video, fotos, correo electrónico y acceso a internet.</td>
+</tr>
+<tr>
+<td>Core i3</td>
+<td>Procesador de escritorio y móvil de gama baja usado para tareas comunes como procesamiento de textos y acceso a internet.</td>
+</tr>
+</tbody>
+</table>
+<p>*Intel mejora constantemente sus procesadores. Para obtener más información, visita <a href="http://www.intel.com">www.intel.com</a>.</p>
+<blockquote>
+<p>Figura 3.14 Procesador instalado</p>
+<p>Figura 3.15 Cómo descifrar los números de modelo de los procesadores Intel</p>
+</blockquote>
+<h2 id="procesadores-amd">Procesadores AMD<a class="headerlink" href="#procesadores-amd" title="Permanent link">&para;</a></h2>
+<p>AMD es el mayor rival de Intel en procesadores de computadora. Cualquiera que compre un procesador debe investigar todos los modelos y vendedores. La Tabla 3.4 enumera las familias de procesadores AMD, y la Figura 3.16 muestra cómo interpretar los números de modelo de las CPU AMD.</p>
+<blockquote>
+<p>Tabla 3.4 Familias de procesadores AMD</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Familia de procesadores</th>
+<th>Comentarios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ryzen Threadripper</td>
+<td>De 8 a 64 núcleos, 128 hilos de procesamiento y de 20 a 292 MB de caché para procesadores de escritorio de gama extremadamente alta.</td>
+</tr>
+<tr>
+<td>Ryzen 9</td>
+<td>De 8 a 16 núcleos, 32 hilos de procesamiento y hasta 72 MB de caché.</td>
+</tr>
+<tr>
+<td>Ryzen 7</td>
+<td>8 núcleos, 16 hilos de procesamiento, 20 MB de caché para juegos, creación de contenido de alta gama y multitarea masiva.</td>
+</tr>
+<tr>
+<td>Ryzen 5</td>
+<td>De 4 a 6 núcleos, hasta 12 hilos de procesamiento y hasta 20 MB de caché para uso laboral o doméstico.</td>
+</tr>
+<tr>
+<td>Ryzen 3</td>
+<td>4 núcleos y hasta 18 MB de caché para uso informático estándar.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Figura 3.16 Cómo descifrar los números de modelo de los procesadores AMD</p>
+</blockquote>
+<h2 id="zocalos-de-cpu">Zócalos de CPU<a class="headerlink" href="#zocalos-de-cpu" title="Permanent link">&para;</a></h2>
+<p>Un procesador se inserta en un <strong>zócalo de CPU</strong> (<em>CPU socket</em>). Hay diferentes tipos de zócalos, pero cada zócalo tiene un número específico de pines y solo acepta CPU específicas. Una placa madre que puede llevar más de una CPU aparecerá en la documentación/especificaciones como una placa madre <strong>multizócalo</strong> (<em>multisocket</em>). Normalmente, son las placas madre de un servidor, una computadora más potente usada en redes, las que tienen una placa madre multizócalo. La Figura 3.17 muestra el zócalo de CPU de una placa madre de escritorio.</p>
+<blockquote>
+<p>Figura 3.17 Zócalo de CPU</p>
+</blockquote>
+<p>Los zócalos del procesador también se llaman <strong>zócalos de inserción sin fuerza (ZIF)</strong> (<em>zero insertion force</em>) y vienen en diferentes tamaños. Un zócalo ZIF tiene una pequeña palanca al costado que, cuando se levanta, saca un poco el procesador hacia arriba y fuera de los orificios del zócalo. Al instalar un procesador, alineas la CPU sobre el zócalo y presionas la palanca hacia abajo para introducir el procesador en el zócalo con fuerza uniforme. En la Figura 3.17, observa la palanca junto al zócalo que se usa para levantar la cubierta metálica.</p>
+<h3 id="consejo-tecnico-comprar-la-cpu-correcta">Consejo técnico: comprar la CPU correcta<a class="headerlink" href="#consejo-tecnico-comprar-la-cpu-correcta" title="Permanent link">&para;</a></h3>
+<p>Si compras una placa madre y un procesador por separado, es importante asegurarte de que el zócalo de CPU de la placa madre sea del tipo correcto para el procesador.</p>
+<ul>
+<li>Zócalos Intel: LGA 1151, 1155, 1156, 1200, 2066, 3647</li>
+<li>Zócalos AMD: AM5, AM4, TR4, TRX4</li>
+</ul>
+<h2 id="enfriamiento-del-procesador">Enfriamiento del procesador<a class="headerlink" href="#enfriamiento-del-procesador" title="Permanent link">&para;</a></h2>
+<p>Mantener una CPU fría es fundamental. Tanto Intel como AMD tienen tecnologías que reducen el consumo de energía (y el calor) del procesador apagando partes no usadas del procesador o ralentizándolo cuando empieza a sobrecalentarse. Pero estas medidas por sí solas no son suficientes. Los sistemas actuales usan uno o más de los métodos enumerados en la Tabla 3.5. La Figura 3.18 muestra un disipador de calor (<em>heat sink</em>) y un ventilador.</p>
+<blockquote>
+<p>Tabla 3.5 Métodos de enfriamiento del procesador</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Disipador de calor (<em>heat sink</em>)</td>
+<td>Un disipador de calor es un bloque de metal (normalmente aluminio o cobre), barras de metal o aletas metálicas que se fijan a la parte superior del procesador u otros componentes de la placa madre. El calor del procesador se transfiere al disipador y luego el flujo de aire del gabinete de la computadora lo disipa.</td>
+</tr>
+<tr>
+<td>Ventilador (<em>fan</em>)</td>
+<td>Los ventiladores se pueden fijar al procesador, junto al procesador y en el gabinete.</td>
+</tr>
+<tr>
+<td>Pasta térmica o almohadilla térmica</td>
+<td>La pasta, el compuesto o la grasa térmica se puede aplicar sobre la parte superior de un procesador antes de fijar un disipador. Algunos disipadores y ventiladores tienen pasta térmica preaplicada. Una almohadilla térmica proporciona una dispersión uniforme del calor y se coloca entre el procesador y el disipador.</td>
+</tr>
+<tr>
+<td>Enfriamiento líquido</td>
+<td>El líquido circula por el sistema, incluido un disipador montado en la CPU. El calor del procesador se transfiere al líquido refrigerante. El líquido ya caliente se transporta a la parte trasera del sistema, se convierte en calor y se libera fuera del gabinete. La temperatura de la CPU permanece constante, independientemente del uso. Algunos sistemas requieren que el líquido se rellene periódicamente.</td>
+</tr>
+<tr>
+<td>Enfriamiento por cambio de fase (enfriamiento por vapor)</td>
+<td>Esta costosa opción usa una técnica similar a la de un refrigerador: un gas se convierte en líquido que se vuelve a convertir en gas.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Figura 3.18 Disipador de calor y ventilador</p>
+</blockquote>
+<p>El chip más grande de la placa madre con un ventilador o un disipador de calor conectado se reconoce fácilmente como el procesador. La Figura 3.19 muestra un Intel Core i7 que tiene un ventilador y un disipador de calor instalados. Observa los tubos de calor (<em>heat pipes</em>) que se usan como parte del disipador.</p>
+<blockquote>
+<p>Figura 3.19 CPU con disipador de calor y ventilador conectados</p>
+</blockquote>
+<h3 id="consejo-tecnico-enfriar-la-cpu">Consejo técnico: enfriar la CPU<a class="headerlink" href="#consejo-tecnico-enfriar-la-cpu" title="Permanent link">&para;</a></h3>
+<p>No apliques energía a una computadora hasta que la CPU y el disipador de calor, el ventilador y/o la unidad de enfriamiento estén instalados. Hacer funcionar la CPU sin instalar mecanismos de enfriamiento adecuados sobrecalentará la CPU y la destruirá o debilitará.</p>
+<p>Otros componentes de la placa madre también pueden tener disipadores de calor conectados. Normalmente son el chipset y/o los chips controladores de E/S (entrada/salida). La Figura 3.20 muestra una placa madre con estos elementos de enfriamiento.</p>
+<blockquote>
+<p>Figura 3.20 Disipadores de calor de la placa madre</p>
+</blockquote>
+<h3 id="consejo-tecnico-cuando-la-pasta-termica-actua-como-pegamento">Consejo técnico: cuando la pasta térmica actúa como pegamento<a class="headerlink" href="#consejo-tecnico-cuando-la-pasta-termica-actua-como-pegamento" title="Permanent link">&para;</a></h3>
+<p>Con el tiempo, la pasta térmica puede actuar como pegamento, dificultando separar un procesador de un disipador de calor. Puedes usar un limpiador de pasta térmica, acetona o alcohol desnaturalizado para separar las dos partes. ¡No las fuerces para separarlas!</p>
+<h2 id="instalar-un-procesador">Instalar un procesador<a class="headerlink" href="#instalar-un-procesador" title="Permanent link">&para;</a></h2>
+<p>Los procesadores se venden con instrucciones de instalación. Además, los manuales de la placa madre (u otra documentación) incluyen los pasos para actualizar o instalar la CPU. Los siguientes son las partes y los pasos generales para instalar un procesador:</p>
+<p><strong>Partes:</strong> Procesador adecuado para la placa madre (consulta la documentación de la placa madre) y materiales antiestáticos.</p>
+<ol>
+<li>Asegúrate de que la energía de la computadora esté apagada y la computadora esté desenchufada.</li>
+<li>Coloca una pulsera antiestática alrededor de tu muñeca y conecta el otro extremo a una conexión a tierra o a una parte metálica sin pintura de la computadora. Como alternativa, usa un guante antiestático.</li>
+<li>Empuja la palanca de retención hacia abajo y hacia afuera para liberar la placa de retención de la CPU. Mueve la palanca hacia atrás hasta que la placa de retención esté completamente abierta. No toques el zócalo de la CPU. Si hay una cubierta de plástico instalada en el zócalo de la CPU, retírala.</li>
+<li>Retira el procesador del empaque, cuidando de sostenerlo por los bordes y sin tocar nunca la parte metálica inferior del procesador. Recuerda que una CPU solo encaja de una manera en el zócalo. Mira el procesador y el zócalo antes de insertar el chip para garantizar una alineación correcta. Un zócalo y una CPU normalmente tienen una marca triangular o un punto para indicar el <strong>pin 1</strong>, como se muestra en la Figura 3.21. El procesador también tiene muescas en cada lado que se alinean con el zócalo. Inserta la CPU en el zócalo alineándola con el zócalo y bajándola hasta que quede a ras con él, como se muestra en la Figura 3.22. (¡No la fuerces!)</li>
+</ol>
+<blockquote>
+<p>Figura 3.21 Pin 1 y muesca en un procesador</p>
+<p>Figura 3.22 Instalar una CPU</p>
+</blockquote>
+<h3 id="consejo-tecnico-manipular-la-cpu">Consejo técnico: manipular la CPU<a class="headerlink" href="#consejo-tecnico-manipular-la-cpu" title="Permanent link">&para;</a></h3>
+<p>Sostén siempre una CPU por los bordes para evitar doblar o tocar los pines de abajo. No toques una CPU hasta que estés listo para instalarla en el zócalo.</p>
+<h2 id="actualizar-procesadores">Actualizar procesadores<a class="headerlink" href="#actualizar-procesadores" title="Permanent link">&para;</a></h2>
+<p>Dos preguntas comunes que se hacen a los técnicos son: «¿Se puede actualizar una computadora a un procesador más potente o rápido?» y «¿Se debería actualizar una computadora a un procesador más potente o rápido?». Que una computadora se pueda o no actualizar a un procesador más potente o rápido depende de la capacidad de la placa madre. Cuando un cliente pregunta si se debería actualizar un procesador, el técnico debe preguntar: «¿Qué sistema operativo y aplicaciones usa?». Cuanto más nuevo sea el sistema operativo, más avanzado debe ser el procesador. Algunos juegos y aplicaciones que deben realizar cálculos, así como las aplicaciones orientadas a gráficos, requieren un procesador más rápido y avanzado. La documentación de la placa madre es muy importante al considerar una actualización de CPU. Lee esta documentación para determinar si la placa madre puede aceptar un procesador más rápido.</p>
+<h3 id="consejo-tecnico-actualizar-una-cpu">Consejo técnico: actualizar una CPU<a class="headerlink" href="#consejo-tecnico-actualizar-una-cpu" title="Permanent link">&para;</a></h3>
+<p>No actualices un procesador a menos que la documentación o el fabricante indiquen que la placa madre admite un procesador más nuevo o rápido.</p>
+<p>La <strong>gestión de limitación</strong> (<em>throttle management</em>) es el proceso de controlar la velocidad de una CPU ralentizándola cuando no se está usando intensamente o cuando está caliente. Por lo general, esta función la controlan un ajuste del BIOS/UEFI del sistema y el Panel de control de Opciones de energía de Windows. Algunos usuarios pueden querer que el rendimiento sea máximo y por eso no usar la limitación de la CPU. Los usuarios de portátiles, en cambio, pueden querer conservar energía siempre que sea posible para prolongar el tiempo que la computadora se puede usar con batería. Usa el enlace Configuración de batería de Windows para controlar cómo afectan las aplicaciones al rendimiento de la batería.</p>
+<p>Actualizar componentes distintos del procesador también puede aumentar la velocidad de una computadora. Instalar más memoria y/o almacenamiento de mayor capacidad y más rápido comúnmente mejora el rendimiento de una computadora más que instalar un procesador nuevo. Todos los dispositivos y componentes electrónicos deben trabajar juntos para transferir los 1s y 0s de manera eficiente.</p>
+<h2 id="overclocking-sobrefrecuencia-de-procesadores">Overclocking (sobrefrecuencia) de procesadores<a class="headerlink" href="#overclocking-sobrefrecuencia-de-procesadores" title="Permanent link">&para;</a></h2>
+<p>El <strong>overclocking</strong> implica cambiar la velocidad del bus del lado frontal y/o el multiplicador para aumentar la velocidad de la CPU y del sistema. El overclocking tiene algunos problemas:</p>
+<ul>
+<li>El procesador, la placa madre, la memoria y otros componentes pueden dañarse por el overclocking.</li>
+<li>Las aplicaciones pueden fallar, el sistema operativo puede no arrancar y/o el sistema puede colgarse (bloquearse) al hacer overclocking.</li>
+<li>Puedes anular la garantía de algunas CPU si haces overclocking.</li>
+<li>Cuando aumentas la velocidad de la CPU, el calor del procesador aumenta. El enfriamiento extra, usando ventiladores y disipadores de calor más grandes, es esencial.</li>
+<li>Los dispositivos de entrada/salida pueden no reaccionar bien al overclocking.</li>
+<li>Es posible que los chips de memoria deban actualizarse para poder seguir el ritmo del procesamiento más rápido.</li>
+<li>Necesitas saber cómo restablecer el BIOS/UEFI del sistema en caso de que la computadora no arranque correctamente después de hacer los cambios. Este proceso se cubre en el Capítulo 4.</li>
+</ul>
+<h3 id="consejo-tecnico-estar-listo-para-enfriar">Consejo técnico: estar listo para enfriar<a class="headerlink" href="#consejo-tecnico-estar-listo-para-enfriar" title="Permanent link">&para;</a></h3>
+<p>El principal problema del overclocking es un enfriamiento insuficiente. Asegúrate de comprar un disipador de calor más grande y/o ventiladores adicionales antes de comenzar el proceso de overclocking.</p>
+<p>Muchos fabricantes de placas madre no permiten cambios en la configuración de la CPU, el multiplicador y el reloj. Los cambios en la placa madre suelen hacerse a través de la configuración del BIOS/UEFI. Sin embargo, los fabricantes de CPU pueden proporcionar herramientas de ajuste en forma de aplicaciones instaladas en la computadora para la configuración del overclocking. Ten en cuenta que el overclocking es una situación de ensayo y error. Hay sitios web dedicados a documentar placas madre específicas y CPU con overclocking.</p>
+<h2 id="instalar-soluciones-termicas-para-la-cpu">Instalar soluciones térmicas para la CPU<a class="headerlink" href="#instalar-soluciones-termicas-para-la-cpu" title="Permanent link">&para;</a></h2>
+<p>Una CPU puede venir con una solución térmica, como un disipador de calor y/o un ventilador. La solución térmica comúnmente viene con una pasta térmica preaplicada o una almohadilla térmica (<em>thermal pad</em>) adherida. Los disipadores de calor y los ventiladores se conectan al procesador usando diferentes métodos, como tornillos, compuesto térmico y clips. Los clips pueden implicar tornillos de retención, liberación de presión o una ranura de retención. El tipo de disipador de calor y/o ventilador instalado debe encajar con el procesador y el gabinete. Es posible que se deba instalar herraje adicional en la placa madre para poder conectar una solución térmica de CPU. La Figura 3.23 muestra un enfriador de CPU siendo instalado.</p>
+<blockquote>
+<p>Figura 3.23 Instalación del disipador de calor/ventilador de la CPU</p>
+</blockquote>
+<h3 id="consejo-tecnico-tomar-una-foto-de-la-cpu">Consejo técnico: tomar una foto de la CPU<a class="headerlink" href="#consejo-tecnico-tomar-una-foto-de-la-cpu" title="Permanent link">&para;</a></h3>
+<p>Antes de conectar un disipador de calor y/o un ventilador a una CPU, toma una foto de las marcas de la parte superior. Es posible que necesites usar estas marcas si alguna vez necesitas soporte técnico y requieres las especificaciones exactas. Los técnicos suelen tomar fotos para documentar el reemplazo de placas madre y el cableado.</p>
+<p>Si se va a instalar una solución térmica, entonces se debe retirar la almohadilla térmica o la pasta térmica vieja y aplicar pasta térmica nueva. No rayes la superficie de un disipador de calor. Usa un raspador o herramienta de plástico para retirar una almohadilla térmica o pasta vieja. Se puede usar un limpiador de pasta térmica, acetona o alcohol desnaturalizado con un paño sin pelusa para eliminar la pasta residual.</p>
+<p>Al instalar pasta térmica, aplica la cantidad prescrita en el centro del procesador. Extiende el compuesto de manera uniforme en una capa fina sobre la porción central de la CPU que entra en contacto con el disipador de calor. Cuando el disipador de calor se conecta al procesador, el compuesto térmico se extenderá (ojalá que no sobre los bordes). Sigue siempre las instrucciones de instalación del disipador de calor.</p>
+<p>Es probable que un ventilador de CPU tenga un cable de 3 o 4 pines que se conecta a la placa madre. La placa madre podría tener un conector de 3 o 4 pines. Un ventilador de 3 pines se puede conectar a un conector de placa madre de 4 pines, y un cable de ventilador de 4 pines se puede conectar a un conector de placa madre de 3 pines, como se muestra en la Figura 3.24. Ten en cuenta que, cuando un cable de 3 pines se conecta a un conector de 4 pines, el ventilador siempre está encendido y no se puede controlar, como sí puede hacerlo un cable de 4 pines en un conector de 4 pines.</p>
+<blockquote>
+<p>Figura 3.24 Conectividad del ventilador de la CPU</p>
+</blockquote>
+<h2 id="solucion-de-problemas-del-procesador">Solución de problemas del procesador<a class="headerlink" href="#solucion-de-problemas-del-procesador" title="Permanent link">&para;</a></h2>
+<p>Los problemas del procesador pueden aparecer de diferentes maneras, como se ilustra en la Figura 3.25.</p>
+<blockquote>
+<p>Figura 3.25 Detectar problemas del procesador</p>
+</blockquote>
+<p>Los siguientes consejos pueden ayudarte a resolver problemas de CPU:</p>
+<ul>
+<li>El problema número uno relacionado con problemas del procesador es el calor. Asegúrate de que todos los ventiladores funcionen. Escucha si hay un ruido de rechinado (<em>grinding noise</em>) que indique que algo está atascado en el ventilador, falta de aceite o un ventilador que está fallando. Agregar ventiladores cuesta muy poco en comparación con reemplazar un procesador y/o una placa madre. Asegúrate de que la computadora tenga circulación/enfriamiento adecuados. Aspira el polvo de la placa madre/CPU. Enfría más la habitación.</li>
+<li>Muchas pantallas del BIOS/UEFI muestran la temperatura de la CPU. (Esto se cubre con más detalle en el Capítulo 4.)</li>
+<li>Investiga cualquier código visual que se muestre en los LED de la placa madre o escucha los pitidos de audio cuando arranca la computadora. Consulta el sitio web del fabricante de la computadora o de la placa madre.</li>
+</ul>
+<p>Los problemas del procesador son difíciles de diagnosticar, y a menudo es muy complicado determinar si un problema es de la CPU o de la placa madre. Si tienes energía en el sistema (es decir, la fuente de poder tiene salida de energía), el disco duro funciona (pruébalo en otra computadora) y el monitor funciona (pruébalo en otra computadora), entonces la placa madre y/o la CPU son los principales sospechosos.</p>
+<h2 id="ranuras-de-expansion">Ranuras de expansión<a class="headerlink" href="#ranuras-de-expansion" title="Permanent link">&para;</a></h2>
+<p>Si una computadora ha de ser útil, la CPU debe comunicarse con el mundo exterior, incluidos otros componentes de la placa madre y los adaptadores conectados a la placa madre. Una <strong>ranura de expansión</strong> se usa para agregar un adaptador a la placa madre. La Figura 3.26 muestra ranuras de expansión en una placa madre.</p>
+<blockquote>
+<p>Figura 3.26 Ranuras de expansión de la placa madre</p>
+</blockquote>
+<p>Un técnico debe poder distinguir entre adaptadores y ranuras de expansión, y debe poder identificar los adaptadores/dispositivos que usan ranuras de expansión. Un técnico también debe reconocer las capacidades y limitaciones de cada tipo de ranura de expansión al instalar actualizaciones, reemplazar piezas y hacer recomendaciones. Empecemos con el tipo más antiguo y avancemos.</p>
+<h3 id="pci-peripheral-component-interconnect">PCI (Peripheral Component Interconnect)<a class="headerlink" href="#pci-peripheral-component-interconnect" title="Permanent link">&para;</a></h3>
+<p>Una ranura de expansión anteriormente popular es <strong>Peripheral Component Interconnect (PCI)</strong>. También hubo una actualización del bus PCI llamada PCI-X que se encontraba comúnmente en servidores y no se cubre aquí, salvo con fines de comparación. La Figura 3.27 muestra el tipo más común de ranura de expansión PCI.</p>
+<blockquote>
+<p>Figura 3.27 Ranura de expansión PCI</p>
+</blockquote>
+<h3 id="agp-accelerated-graphics-port">AGP (Accelerated Graphics Port)<a class="headerlink" href="#agp-accelerated-graphics-port" title="Permanent link">&para;</a></h3>
+<p><strong>AGP (Accelerated Graphics Port)</strong> es una interfaz de bus para adaptadores gráficos desarrollada a partir del bus PCI. Intel aportó la mayor parte del desarrollo de AGP. Con AGP, el subsistema de video queda aislado del resto de la computadora. La Figura 3.28 muestra una ilustración de una ranura AGP comparada con ranuras de expansión PCI. Ambos tipos de ranura de expansión han sido reemplazados por PCIe (que se cubre a continuación), pero como técnico todavía verás ambos.</p>
+<blockquote>
+<p>Figura 3.28 Ranuras de expansión AGP y PCI</p>
+</blockquote>
+<h3 id="pcie-peripheral-component-interconnect-express">PCIe (Peripheral Component Interconnect Express)<a class="headerlink" href="#pcie-peripheral-component-interconnect-express" title="Permanent link">&para;</a></h3>
+<p>PCI y AGP han sido reemplazados por <strong>PCIe (PCI Express)</strong>, que a veces también se escribe PCI-E. PCIe supera a todos los demás tipos de ranuras de expansión PCI. La Figura 3.29 muestra ranuras de expansión PCI, y la Tabla 3.6 enumera las distintas versiones de PCIe.</p>
+<blockquote>
+<p>Figura 3.29 Ranuras de expansión PCIe</p>
+<p>Tabla 3.6 Versiones de PCIe</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Versión de PCIe</th>
+<th>Velocidad (por carril y por dirección)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>2.5 GT/s (gigatransferencias por segundo) o 250 MB/s</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>5 GT/s o 500 MB/s</td>
+</tr>
+<tr>
+<td>3.0</td>
+<td>8 GT/s o 1 GB/s</td>
+</tr>
+<tr>
+<td>4.0</td>
+<td>16 GT/s o 2 GB/s</td>
+</tr>
+<tr>
+<td>5.0</td>
+<td>32 GT/s o 4 GB/s</td>
+</tr>
+<tr>
+<td>6.0</td>
+<td>64 GT/s o 8 GB/s</td>
+</tr>
+</tbody>
+</table>
+<p>El estándar PCI más antiguo es <strong>bidireccional semidúplex</strong> (<em>half-duplex</em>), lo que significa que los datos se envían hacia y desde la tarjeta PCI usando solo una dirección a la vez. PCIe envía datos de forma <strong>bidireccional dúplex completo</strong> (<em>full-duplex</em>); en otras palabras, puede enviar y recibir al mismo tiempo. La Figura 3.30 muestra este concepto.</p>
+<h3 id="consejo-tecnico-tarjetas-pci-en-ranuras-pcie">Consejo técnico: tarjetas PCI en ranuras PCIe<a class="headerlink" href="#consejo-tecnico-tarjetas-pci-en-ranuras-pcie" title="Permanent link">&para;</a></h3>
+<p>Los adaptadores PCI y AGP más antiguos no funcionarán en ningún tipo de ranura PCIe.</p>
+<blockquote>
+<p>Figura 3.30 Una comparación de las transferencias PCI y PCIe</p>
+</blockquote>
+<p>Otra diferencia entre PCI y PCIe es que las ranuras PCIe vienen en distintas versiones, según el número máximo de carriles (<em>lanes</em>) que se pueden asignar a la tarjeta insertada en la ranura. Por ejemplo, una ranura x1 puede tener solo un carril de transferencia usado por la tarjeta x1 insertada en la ranura; también hay ranuras x2, x4, x8 y x16. El estándar admite una ranura x32, pero estas ranuras son raras debido a su longitud. Una ranura x16 acepta hasta 16 carriles, pero se pueden asignar menos carriles. La Figura 3.31 muestra el concepto de carriles PCIe. Observa que un carril tiene dos canales de comunicación unidireccionales. También observa que solo se usan siete carriles. PCIe tiene la capacidad de usar un número reducido de carriles si un carril experimenta una falla o un problema de rendimiento.</p>
+<blockquote>
+<p>Figura 3.31 Carriles PCIe</p>
+</blockquote>
+<h3 id="consejo-tecnico-cuidado-con-la-letra-pequena-de-pcie">Consejo técnico: cuidado con la letra pequeña de PCIe<a class="headerlink" href="#consejo-tecnico-cuidado-con-la-letra-pequena-de-pcie" title="Permanent link">&para;</a></h3>
+<p>Algunos fabricantes de placas madre ofrecen un tamaño de ranura más grande (como x8), pero la ranura funciona a una velocidad más lenta (x4, por ejemplo). Esto mantiene bajo el costo. El manual mostraría tal ranura como x8 (modo x4) en la descripción de la ranura PCIe.</p>
+<p>Un adaptador PCIe x1 puede caber en una ranura x1 o superior. Una tarjeta más grande, como una PCIe x16, no puede caber en una ranura de número menor (x8, x4, x2 o x1). La Figura 3.32 muestra este concepto.</p>
+<blockquote>
+<p>Figura 3.32 Ranuras correctas para tarjetas PCIe</p>
+</blockquote>
+<p>Quitar un adaptador normalmente es solo cuestión de quitar un tornillo de retención o levantar una placa de retención y levantar el adaptador fuera de la ranura. Algunas ranuras de expansión tienen palancas de retención. Mueves la palanca de retención hacia un lado para levantar el adaptador de la ranura de expansión. La Figura 3.33 muestra un ejemplo del proceso de extracción de un adaptador PCIe. La Figura 3.34 muestra una placa madre con dos PCIe x1, dos PCIe x16 y tres ranuras de expansión PCI. Observa que las ranuras PCIe x16 tienen una palanca de retención.</p>
+<h3 id="consejo-tecnico-extraer-adaptadores-pcie">Consejo técnico: extraer adaptadores PCIe<a class="headerlink" href="#consejo-tecnico-extraer-adaptadores-pcie" title="Permanent link">&para;</a></h3>
+<p>Los adaptadores PCIe x16 comúnmente tienen palancas de liberación. Debes presionar la palanca mientras extraes el adaptador de la ranura de expansión, o podrías dañar la placa (y posiblemente la placa madre).</p>
+<blockquote>
+<p>Figura 3.33 Extracción de un adaptador PCIe</p>
+<p>Figura 3.34 Placa madre con ranuras PCIe y PCI</p>
+</blockquote>
+<h2 id="opciones-de-seguridad-de-la-placa-madre">Opciones de seguridad de la placa madre<a class="headerlink" href="#opciones-de-seguridad-de-la-placa-madre" title="Permanent link">&para;</a></h2>
+<p>Las placas madre pueden contener opciones de seguridad que ayudan a proporcionar más seguridad para las aplicaciones y los datos. Una placa madre puede contener un <strong>módulo de plataforma segura (TPM)</strong> o una ranura para instalar uno. Un TPM se puede usar para proteger datos, almacenar certificados de seguridad digitales, almacenar contraseñas o verificar la integridad de los archivos del sistema operativo. Microsoft Windows 11 requiere que se instale un TPM antes de que el sistema operativo funcione. El TPM se habilita y configura a través del BIOS/UEFI, que se cubre en el Capítulo 4. La Figura 3.35 muestra un TPM.</p>
+<blockquote>
+<p>Figura 3.35 TPM</p>
+</blockquote>
+<p>Otra opción de seguridad similar es un <strong>módulo de seguridad de hardware (HSM)</strong>, que se puede instalar como adaptador para realizar algunas de las mismas funciones que un TPM. Un HSM tiene un criptoprocesador u otros chips que se usan para crear, gestionar y almacenar claves de seguridad y se usan en el cifrado de datos y dispositivos de almacenamiento.</p>
+<h2 id="tipos-de-placas-madre">Tipos de placas madre<a class="headerlink" href="#tipos-de-placas-madre" title="Permanent link">&para;</a></h2>
+<p>Las placas madre vienen en diferentes tamaños, conocidos como <strong>factores de forma</strong> (<em>form factors</em>). El factor de forma de placa madre de escritorio más común es <strong>Advanced Technology Extended (ATX)</strong>. Otros factores de forma ATX incluyen micro-ATX (a veces escrito μATX o mATX), mini-ATX, FlexATX, EATX, WATX, nano-ATX, pico-ATX y mobileATX.</p>
+<p>Un factor de forma de placa madre más grande y con mejor flujo de aire (pero que no es tan popular como ATX y micro-ATX) es <strong>Balanced Technology eXtended (BTX)</strong>. Un factor de forma más pequeño es <strong>Information Technology eXtended (ITX)</strong>, que viene en tamaños mini-ITX, nano-ITX y pico-ITX. La Figura 3.36 muestra algunos de los factores de forma de placa madre, y la Tabla 3.7 proporciona información consolidada sobre los principales factores de forma. La Figura 3.37 muestra una placa madre más antigua con muchos de los componentes de la placa madre etiquetados.</p>
+<blockquote>
+<p>Figura 3.36 Factores de forma de placas madre</p>
+<p>Tabla 3.7 Comparación de factores de forma de placas madre</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Factor de forma</th>
+<th>Descripción</th>
+<th>Tamaño</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BTX</td>
+<td>Se usa en computadoras de escritorio</td>
+<td>12.8 × 10.5 pulgadas (32.5 × 26.7 cm)</td>
+</tr>
+<tr>
+<td>ATX</td>
+<td>Se usa en computadoras de escritorio</td>
+<td>12 × 9.6 pulgadas (30.5 × 24.4 cm)</td>
+</tr>
+<tr>
+<td>mATX</td>
+<td>MicroATX: una placa madre de escritorio más pequeña</td>
+<td>9.6 × 9.6 pulgadas (24.4 × 24.4 cm)</td>
+</tr>
+<tr>
+<td>ITX o mITX</td>
+<td>Se usa en computadoras muy pequeñas y decodificadores (<em>set-top boxes</em>)</td>
+<td>6.7 × 6.7 pulgadas (17 × 17 cm)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="consejo-tecnico-hacer-coincidir-el-factor-de-forma-de-la-placa-madre-y-el-gabinete">Consejo técnico: hacer coincidir el factor de forma de la placa madre y el gabinete<a class="headerlink" href="#consejo-tecnico-hacer-coincidir-el-factor-de-forma-de-la-placa-madre-y-el-gabinete" title="Permanent link">&para;</a></h3>
+<p>El gabinete usado para una computadora debe coincidir con el factor de forma de la placa madre. Algunos gabinetes pueden alojar diferentes factores de forma, pero siempre debes verificarlo. Cuando armas una computadora o reemplazas una placa madre, es importante obtener el factor de forma correcto.</p>
+<blockquote>
+<p>Figura 3.37 Componentes de una placa madre de estación de trabajo ASUS</p>
+</blockquote>
+<p>Los fabricantes a veces diseñan un gabinete de modo que requiera una placa madre propietaria. Con tal diseño, se debe comprar una placa madre de reemplazo al fabricante original y, por lo general, es más cara que una opción genérica.</p>
+<h2 id="actualizar-y-reemplazar-placas-madre">Actualizar y reemplazar placas madre<a class="headerlink" href="#actualizar-y-reemplazar-placas-madre" title="Permanent link">&para;</a></h2>
+<p>La siguiente lista te guía para tomar la decisión (o ayudar a un cliente a tomarla) sobre si actualizar una placa madre:</p>
+<ul>
+<li>¿Por qué se está actualizando la computadora? A veces actualizar la placa madre no ayuda a menos que se actualicen los demás componentes de la computadora. Si el acceso al software es lento, la solución podría no ser una placa madre nueva, sino un disco duro más rápido y de mayor capacidad, una SSD nueva/de alta capacidad o más RAM.</li>
+<li>¿Qué tipo de ranura de expansión (PCI, AGP o PCIe) y cuántos adaptadores de cada tipo se necesitan de la placa madre antigua? ¿La placa madre nueva tiene las ranuras de expansión requeridas?</li>
+<li>¿Es compatible la placa madre? Verifica qué fabricante y modelos de CPU son compatibles. ¿La placa madre nueva cabrá en el gabinete actual, o se requiere uno nuevo?</li>
+<li>Si se actualiza la CPU, ¿la placa madre admitirá la nueva CPU?</li>
+<li>¿Funcionarán los chips de memoria antiguos en la placa madre nueva o con la CPU nueva?</li>
+</ul>
+<h3 id="consejo-tecnico-placas-madre-en-otros-tipos-de-dispositivos">Consejo técnico: placas madre en otros tipos de dispositivos<a class="headerlink" href="#consejo-tecnico-placas-madre-en-otros-tipos-de-dispositivos" title="Permanent link">&para;</a></h3>
+<p>Ten en cuenta que las placas madre de servidor, las placas madre de portátil y las placas madre de otros dispositivos móviles tienden a ser propietarias, y tienes que comprar un reemplazo al fabricante.</p>
+<p>Antes de reemplazar una placa madre, es importante hacer todo lo siguiente:</p>
+<ul>
+<li>Quitar la CPU y el ventilador de la CPU.</li>
+<li>Quitar los adaptadores de las ranuras de expansión.</li>
+<li>Quitar los chips de memoria de las ranuras de expansión.</li>
+<li>Desconectar los conectores de energía.</li>
+<li>Desconectar los cables planos (<em>ribbon cables</em>).</li>
+<li>Desconectar los dispositivos externos como ratón, teclado y monitor.</li>
+</ul>
+<p>Las placas madre de reemplazo normalmente no vienen con RAM, así que los módulos antiguos se retiran de la placa madre averiada/más antigua. Una placa madre por lo general no viene con CPU. Al actualizar cualquier componente o una computadora entera, recuerda que la pieza más antigua se puede donar a una organización benéfica o a una institución educativa.</p>
+<h3 id="consejo-tecnico-usar-buenas-medidas-antiestaticas-al-instalar-una-placa-madre">Consejo técnico: usar buenas medidas antiestáticas al instalar una placa madre<a class="headerlink" href="#consejo-tecnico-usar-buenas-medidas-antiestaticas-al-instalar-una-placa-madre" title="Permanent link">&para;</a></h3>
+<p>Al reemplazar una placa madre, coloca la placa madre sobre una superficie no conductora, como una alfombrilla antiestática o la bolsa antiestática que vino con la placa madre.</p>
+<h2 id="solucion-de-problemas-de-la-placa-madre">Solución de problemas de la placa madre<a class="headerlink" href="#solucion-de-problemas-de-la-placa-madre" title="Permanent link">&para;</a></h2>
+<p>Los síntomas comunes de problemas de la placa madre son similares a los síntomas de problemas de la CPU: el sistema tiene una <strong>pantalla en blanco o pantalla negra</strong> al arrancar (lo que podría significar que el cable de video no está bien conectado o que el sistema no tiene energía/no está encendido); aparece un código de error; ocurren uno o más pitidos; el sistema experimenta un <strong>apagado inesperado</strong>, un <strong>apagado intermitente</strong> o un <strong>bloqueo del sistema</strong>; el sistema puede reiniciarse continuamente; aparece una <strong>BSOD de Windows (pantalla azul de la muerte)</strong>; o falla uno o más de los puertos, ranuras de expansión o módulos de memoria. Ten en cuenta que los apagados inesperados/intermitentes, los bloqueos del sistema y los reinicios continuos también pueden ser síntomas de un problema de CPU o de fuente de poder.</p>
+<p>Los problemas de placa madre y los problemas de energía son probablemente los más difíciles de diagnosticar. Debido a que varios componentes se encuentran en la placa madre, muchas cosas pueden causar errores. El <strong>POST</strong> (<em>power-on self-test</em>) es una de las ayudas más beneficiosas para diagnosticar una placa madre y puede incluir una serie de <strong>pitidos del POST</strong> (<em>POST beeps</em>). Se debe investigar el significado de cualquier código que aparezca en la pantalla. Si aparecen múltiples códigos de error de POST, debes diagnosticarlos en el orden en que se presentan. El Capítulo 11, «Revisión de diseño y solución de problemas de computadoras», describe los pitidos y errores comunes, pero ten en cuenta que los fabricantes pueden tener sus propias <strong>pantallas propietarias de fallos</strong> y errores.</p>
+<p>La siguiente lista ayuda con la solución de problemas de la placa madre:</p>
+<ul>
+<li>¿La placa madre recibe energía? Verifica la fuente de poder para ver si el ventilador gira. Si la CPU o la placa madre tiene un ventilador, mira si gira. Verifica los voltajes que van de la fuente de poder a la placa madre. Consulta el Capítulo 5, «Desarmado y energía», para obtener indicaciones.</li>
+<li>Verifica la exactitud de la configuración del BIOS/UEFI (se cubre en el Capítulo 4).</li>
+<li>Verifica si hay sobrecalentamiento, lo que podría indicar un problema con la CPU o la placa madre. ¿La placa madre está caliente al tacto o emite olor a quemado? Apaga la computadora y deja que se enfríe. Enciende la computadora con la cubierta retirada. Mira si el ventilador de la CPU gira.</li>
+<li>Verifica si hay <strong>hinchazón de capacitores</strong> en la placa madre: pequeños componentes que pueden parecer abultados. Si miras de nuevo la Figura 3.34, puedes ver los cilindros metálicos (que son capacitores) en la esquina inferior derecha y junto a las ranuras de expansión. Si ves que tal capacitor está hinchado, reemplaza la placa madre lo antes posible.</li>
+<li>Vuelve a asentar (<em>reseat</em>) la CPU, los adaptadores y los chips de memoria.</li>
+<li>Quita los adaptadores y dispositivos innecesarios y arranca la computadora.</li>
+<li>Enchufa la computadora a un tomacorriente y circuito diferentes, si es posible.</li>
+<li>Verifica si la placa madre está haciendo cortocircuito con el chasis.</li>
+<li>Verifica la batería del CMOS. (Consulta el Capítulo 5 para saber cómo tomar lecturas de voltaje.)</li>
+<li>Con una placa madre que tiene LED de diagnóstico, verifica la salida para cualquier código de error. Consulta la documentación de la placa madre o la documentación en línea para conocer el problema y la posible solución.</li>
+</ul>
+<h3 id="consejo-tecnico-estos-conceptos-tambien-se-relacionan-con-las-computadoras-apple">Consejo técnico: estos conceptos también se relacionan con las computadoras Apple<a class="headerlink" href="#consejo-tecnico-estos-conceptos-tambien-se-relacionan-con-las-computadoras-apple" title="Permanent link">&para;</a></h3>
+<p>Aunque este libro se centra en las PC, los conceptos relacionados con las CPU, las placas madre, las ranuras de expansión, la caché y los chipsets también se aplican a las computadoras Apple. Las computadoras Apple y las PC tienen requisitos de CPU y memoria similares.</p>
+<h2 id="habilidades-blandas-la-escucha-activa">Habilidades blandas: la escucha activa<a class="headerlink" href="#habilidades-blandas-la-escucha-activa" title="Permanent link">&para;</a></h2>
+<p>La escucha activa es participar en una conversación en la que te concentras en lo que dice el cliente; es decir, escuchar más que hablar. Para un técnico, la escucha activa tiene los siguientes beneficios:</p>
+<ul>
+<li>Te permite reunir datos y síntomas rápidamente</li>
+<li>Te permite establecer una buena relación (<em>rapport</em>) con el cliente</li>
+<li>Mejora tu comprensión del problema</li>
+<li>Te permite resolver el problema más rápido porque comprendes mejor el problema</li>
+<li>Proporciona entendimiento mutuo entre tú y el cliente</li>
+<li>Proporciona un medio para tener una conversación positiva y comprometida en lugar de un encuentro negativo y confrontacional</li>
+<li>Se centra en el cliente en lugar del técnico</li>
+<li>Proporciona un entorno en el que el cliente podría ser más comunicativo con información relacionada con el problema</li>
+</ul>
+<p>Con frecuencia, cuando un técnico llega al sitio o contacta a un cliente que tiene un problema técnico, el técnico va con prisa; pensando en otras cosas, incluidos los problemas que hay que resolver; asumiendo que sabe exactamente cuál es el problema, aunque el usuario no haya terminado de explicarlo; o más interesado en el problema técnico que en el cliente y sus dificultades. La escucha activa cambia el foco de los problemas del técnico a los problemas del cliente.</p>
+<p>Una llamada de servicio común pero ineficaz implica que el técnico hable y pregunte la mayor parte del tiempo, usando jerga y acrónimos técnicos y un tono plano o condescendiente. Un cliente que se siente vulnerable experimenta un mayor nivel de ansiedad. La escucha activa cambia este escenario ayudándote a construir una relación profesional con tus clientes. La Figura 3.38 muestra a un técnico escuchando activamente. La siguiente lista describe algunas medidas que te ayudan a implementar la escucha activa.</p>
+<blockquote>
+<p>Figura 3.38 Escucha activa</p>
+</blockquote>
+<p>Mantén una actitud profesional positiva y comprometida al hablar y escuchar a los clientes:</p>
+<ul>
+<li>Deja atrás tus prejuicios; sé educado y consciente de otras culturas y costumbres; sé de mente abierta y sin prejuicios.</li>
+<li>Ten una actitud cálida y atenta.</li>
+<li>No cruces los brazos frente al pecho, porque hacerlo te distancia del problema y del cliente.</li>
+<li>No culpes a otros ni hables mal de otros técnicos.</li>
+<li>No actúes como si el problema no fuera tu responsabilidad.</li>
+</ul>
+<p>Concéntrate en lo que dice el cliente:</p>
+<ul>
+<li>Apaga o ignora tus dispositivos electrónicos.</li>
+<li>Mantén el contacto visual; no dejes que tu mente divague.</li>
+<li>Permite que el cliente termine de explicar el problema; no interrumpas; evita discutir con el cliente o ponerte a la defensiva.</li>
+<li>Detén todos los comportamientos y actividades irrelevantes.</li>
+<li>Revisa mentalmente lo que dice el cliente.</li>
+<li>Abstente de hablar innecesariamente con compañeros de trabajo mientras interactúas con los clientes.</li>
+<li>Evita interrupciones o distracciones personales.</li>
+</ul>
+<p>Participa en la conversación de manera limitada pero activa:</p>
+<ul>
+<li>Mantén una conducta profesional (suspende las emociones negativas); no minimices ni menosprecies el problema del cliente.</li>
+<li>Reconoce que estás escuchando asintiendo de vez en cuando y haciendo comentarios como «Ya veo».</li>
+<li>Usa lenguaje corporal positivo, como inclinarte ligeramente hacia adelante o tomar notas.</li>
+<li>Observa el comportamiento del cliente para determinar cuándo es apropiado hacer preguntas.</li>
+</ul>
+<p>Habla brevemente con el cliente:</p>
+<ul>
+<li>Habla con un tono positivo; usa un tono empático y genuino, no condescendiente.</li>
+<li>Reformula o resume los puntos expresados por el cliente.</li>
+<li>Haz preguntas no amenazantes y de sondeo relacionadas con las declaraciones o preguntas del cliente.</li>
+<li>No saltes entre temas.</li>
+<li>No uses jerga técnica.</li>
+<li>Aclara el significado de la situación del cliente.</li>
+<li>Identifica pistas para ayudar a resolver el problema y reducir tu tiempo de diagnóstico escuchando con atención lo que dice el cliente.</li>
+<li>Haz seguimiento con la persona más adelante para asegurarte de que el problema esté resuelto y verificar la satisfacción.</li>
+<li>Ofrece diferentes opciones de reparación o reemplazo, si es posible.</li>
+</ul>
+<h2 id="resumen-del-capitulo">Resumen del capítulo<a class="headerlink" href="#resumen-del-capitulo" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Las partes importantes de la placa madre incluyen: CPU, ranuras de RAM, RAM, ranuras de expansión (PCI, PCIe y AGP) y dispositivos de enfriamiento.</li>
+<li>Los procesadores ARM son populares en dispositivos móviles (pero se pueden usar en computadoras de escritorio y servidores), consumen menos energía, producen menos calor y cuestan menos que los procesadores Intel o AMD. Los procesadores de escritorio pueden ser multinúcleo y pueden contener memoria caché muy rápida: L1, L2 y L3.</li>
+<li>Los procesadores Intel usan Hyperthreading para hacer un uso eficiente del tiempo del procesador mientras la CPU ejecuta conjuntos separados de instrucciones simultáneamente.</li>
+<li>Los procesadores deben mantenerse fríos con ventiladores y/o disipadores de calor. Se aplica una pasta o almohadilla térmica entre un disipador de calor y un procesador. Nunca enciendas una computadora sin algún tipo de enfriamiento instalado.</li>
+<li>La velocidad de reloj se refiere al reloj interno del procesador. No es lo mismo que el FSB o la velocidad del bus.</li>
+<li>La limitación de CPU (<em>throttling</em>) ralentiza el procesador para evitar el sobrecalentamiento.</li>
+<li>PCI es un bus paralelo de 32 y 64 bits. PCI y AGP han sido reemplazados por el bus serie PCIe.</li>
+<li>Las ranuras PCIe tienen un número específico de carriles bidireccionales que es el máximo que una tarjeta puede usar. Un adaptador PCIe puede caber en una ranura del mismo número de carriles o en una ranura que tenga la capacidad de procesar un número mayor de carriles.</li>
+<li>Una GPU integrada está en el mismo dado que la CPU y procesa funciones relacionadas con los gráficos.</li>
+<li>Al reemplazar una placa madre, asegúrate de que el factor de forma, el zócalo de CPU y el número/tipos de ranuras de expansión sean apropiados.</li>
+<li>Un TPM o HSM aumenta la seguridad almacenando certificados de seguridad digitales y contraseñas y protegiendo los datos.</li>
+<li>Usa el POST para diagnosticar problemas de placa madre o CPU. Los síntomas de problemas de CPU o placa madre incluyen capacitores hinchados, apagados inesperados/intermitentes, bloqueos del sistema, pantalla en blanco al arrancar, reinicios continuos y sobrecalentamiento.</li>
+<li>La escucha activa es una habilidad importante para un técnico. Evita distraerte con personas o tecnología y toma notas, mantén buen contacto visual y haz preguntas dirigidas cuando sea apropiado.</li>
+</ul>
+<h3 id="consejos-para-el-examen-de-certificacion-a">Consejos para el examen de certificación A+<a class="headerlink" href="#consejos-para-el-examen-de-certificacion-a" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Conoce los siguientes tipos de conectores de placa madre: PCI, PCIe, eSATA, tipos de zócalo (incluido el término multizócalo) y <em>headers</em>. Ten en cuenta que las placas madre de servidor y móviles con frecuencia son elementos propietarios.</li>
+<li>Conoce las siguientes características de la arquitectura de CPU: x64/x86, ARM, un solo núcleo, multinúcleo, multithreading y soporte de virtualización.</li>
+<li>Repasa los diagramas de las ranuras de expansión PCI y PCIe. Usa internet para ver placas madre y comprobar si puedes determinar el tipo de ranura de expansión. Haz lo mismo con otros componentes de la placa madre, incluido el procesador. Prepárate para etiquetar gráficos en el examen.</li>
+<li>Conoce que Intel y AMD son dos fabricantes de CPU prominentes que requieren una placa madre y un zócalo adecuados para instalar el procesador.</li>
+<li>Repasa los tipos de métodos de enfriamiento de CPU: ventilador, disipador de calor, líquido y pasta/almohadillas térmicas.</li>
+<li>Sé capaz de instalar una CPU y un sistema de enfriamiento. Conoce cómo y dónde conectar un ventilador de CPU.</li>
+<li>Conoce las diferencias entre los factores de forma de placa madre ATX, ITX y BTX, y sé capaz de identificarlos.</li>
+<li>Conoce las diferencias entre un TPM y un HSM.</li>
+<li>Conoce los síntomas de problemas del procesador y de la placa madre: capacitor hinchado, apagados inesperados/intermitentes, bloqueos del sistema, pantalla en blanco o negra al arrancar, reinicios continuos, sobrecalentamiento y olor a quemado. Usa los códigos POST para ayudar con la solución de problemas.</li>
+</ul>
+<h2 id="terminos-clave">Términos clave<a class="headerlink" href="#terminos-clave" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Escucha activa — <em>active listening</em></li>
+<li>AGP</li>
+<li>AMD</li>
+<li>APU</li>
+<li>Procesador ARM — <em>ARM processor</em></li>
+<li>ATX</li>
+<li>Pantalla negra — <em>black screen</em></li>
+<li>Pantalla en blanco — <em>blank screen</em></li>
+<li>Pantalla azul de la muerte — <em>blue screen of death</em></li>
+<li>Olor a quemado — <em>burning smell</em></li>
+<li>Memoria caché — <em>cache memory</em></li>
+<li>Hinchazón de capacitores — <em>capacitor swelling</em></li>
+<li>Reloj — <em>clock</em></li>
+<li>Velocidad de reloj — <em>clock speed</em></li>
+<li>Reinicio continuo — <em>continuous reboot</em></li>
+<li>CPU</li>
+<li>Zócalo de CPU — <em>CPU socket</em></li>
+<li>Velocidad de CPU — <em>CPU speed</em></li>
+<li>Limitación de CPU — <em>CPU throttling</em></li>
+<li>Bus de datos externo — <em>external data bus</em></li>
+<li>Ventilador — <em>fan</em></li>
+<li>Factor de forma — <em>form factor</em></li>
+<li>FSB</li>
+<li>GPU</li>
+<li>Ruido de rechinado — <em>grinding noise</em></li>
+<li>Disipador de calor — <em>heat sink</em></li>
+<li>HSM</li>
+<li>Hyperthreading</li>
+<li>HyperTransport</li>
+<li>GPU integrada — <em>integrated GPU</em></li>
+<li>Intel</li>
+<li>Apagado intermitente — <em>intermittent shutdown</em></li>
+<li>Bus de datos interno — <em>internal data bus</em></li>
+<li>ITX</li>
+<li>Caché L1 — <em>L1 cache</em></li>
+<li>Caché L2 — <em>L2 cache</em></li>
+<li>Caché L3 — <em>L3 cache</em></li>
+<li>Enfriamiento líquido — <em>liquid cooling</em></li>
+<li>micro-ATX</li>
+<li>Placa madre de dispositivo móvil — <em>mobile device motherboard</em></li>
+<li>Multinúcleo — <em>multicore</em></li>
+<li>Multizócalo — <em>multisocket</em></li>
+<li>Multithreading</li>
+<li>Overclocking</li>
+<li>Sobrecalentamiento — <em>overheating</em></li>
+<li>PCI</li>
+<li>PCIe</li>
+<li>POST</li>
+<li>Pitidos del POST — <em>POST beeps</em></li>
+<li>Procesador — <em>processor</em></li>
+<li>Pantalla propietaria de fallos — <em>proprietary crash screen</em></li>
+<li>Placa madre de servidor — <em>server motherboard</em></li>
+<li>Procesador de un solo núcleo — <em>single-core processor</em></li>
+<li>Bloqueo del sistema — <em>system lockup</em></li>
+<li>Almohadilla térmica — <em>thermal pad</em></li>
+<li>Pasta térmica — <em>thermal paste</em></li>
+<li>Hilo — <em>thread</em></li>
+<li>Gestión de limitación — <em>throttle management</em></li>
+<li>TPM</li>
+<li>Apagado inesperado — <em>unexpected shutdown</em></li>
+<li>Virtualización — <em>virtualization</em></li>
+<li>Soporte de virtualización — <em>virtualization support</em></li>
+<li>VM</li>
+<li>x64</li>
+<li>x86</li>
+<li>Zócalo ZIF — <em>ZIF socket</em></li>
+</ul>
+<h2 id="preguntas-de-repaso">Preguntas de repaso<a class="headerlink" href="#preguntas-de-repaso" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>¿Qué componente puede estar tanto en una tarjeta de video como en una placa madre?
+   [ TPM | ranura de expansión PCIe | ranura de expansión PCI | GPU ]</p>
+</li>
+<li>
+<p>¿Qué ranura de expansión es mejor para una tarjeta de video en una computadora de escritorio nueva?
+   [ PCIe | PCI | USB | AGP ]</p>
+</li>
+<li>
+<p>Una placa madre tiene una ranura de expansión PCIe x16. ¿Qué adaptador(es) PCIe cabrán en esta ranura? (Elige todos los que correspondan.)
+   [ x1 | x2 | x4 | x8 | x16 | x32 ]</p>
+</li>
+<li>
+<p>Empareja la parte de la placa madre con la descripción correspondiente.</p>
+</li>
+<li>____ caché L1 — a. Montada encima de la CPU</li>
+<li>____ CPU — b. Memoria que se encuentra en la CPU</li>
+<li>____ FSB — c. Ejecuta instrucciones de software</li>
+<li>____ disipador de calor — d. Bus entre la CPU y los componentes de la placa madre</li>
+<li>____ HT — e. Ralentiza la CPU para enfriarla</li>
+<li>
+<p>____ limitación (<em>throttling</em>) — f. Permite que un procesador maneje múltiples instrucciones simultáneamente</p>
+</li>
+<li>
+<p>¿Qué es el bus del lado frontal?
+   a. El bus de datos interno que conecta el núcleo del procesador con la caché L1
+   b. El bus de datos interno que conecta el núcleo del procesador con la caché L2
+   c. El bus de datos externo que conecta el procesador con los componentes de la placa madre
+   d. El bus de datos externo que conecta el procesador con la caché L2</p>
+</li>
+<li>
+<p>Un cliente quiere actualizar la caché L2. ¿Cuál de los siguientes requiere esto definitivamente?
+   a. Comprar una placa madre
+   b. Comprar una CPU
+   c. Comprar una tarjeta de video
+   d. Comprar un módulo de RAM</p>
+</li>
+<li>
+<p>Empareja la ranura de expansión con su definición.</p>
+</li>
+<li>____ AGP — a. Bus paralelo de 32 o 64 bits</li>
+<li>____ PCI — b. Solo para tarjetas de video</li>
+<li>
+<p>____ PCIe — c. Tiene un número variable de carriles</p>
+</li>
+<li>
+<p>¿Cuál es la diferencia entre Hyperthreading y HyperTransport?</p>
+</li>
+<li>
+<p>¿Qué debe hacer un técnico si encuentra un capacitor hinchado en una placa madre?
+   a. Reemplazar el capacitor.
+   b. Reemplazar la placa madre.
+   c. Verificar los voltajes que provienen de la fuente de poder.
+   d. Reemplazar la fuente de poder.</p>
+</li>
+<li>
+<p>¿Cuál de las siguientes afirmaciones es verdadera respecto a PCIe?
+    a. Una ranura PCIe no aceptará una tarjeta PCI.
+    b. PCIe es una tecnología de bus paralelo.
+    c. PCIe es una tecnología de bus de 32 o 64 bits.
+    d. PCIe está siendo reemplazado por PCI-X.</p>
+</li>
+<li>
+<p>[ V | F ] Un adaptador PCIe x8 siempre transmite usando ocho carriles.</p>
+</li>
+<li>
+<p>¿Cuál es el significado de una especificación de placa madre que indica lo siguiente: ranura 1 PCIe x16 (modo x8)?
+    a. La ranura acepta tarjetas x8 o x16.
+    b. La ranura puede transmitir tráfico usando 8 o 16 carriles.
+    c. La ranura puede transmitir en ráfagas de 8 o 16 bytes a la vez.
+    d. La ranura acepta tarjetas x16 pero usa solo 8 carriles.</p>
+</li>
+<li>
+<p>¿Cuáles son dos opciones de seguridad que ayudarían con la gestión de contraseñas y el cifrado? (Elige dos.)
+    [ CPU | TPM | estándar PCIe | GPU | HSM ]</p>
+</li>
+<li>
+<p>Un técnico de una universidad va a reparar un problema en otro edificio. Una profesora detiene al técnico para hablar sobre su computadora lenta. El técnico pone un poco los ojos en blanco pero luego se detiene y escucha a la profesora. La profesora comenta: «No puedo acceder a mi correo ni siquiera escribir mis exámenes. La computadora tarda al menos 20 minutos solo en arrancar». El técnico mira a su alrededor, un poco exasperado, y dice: «Ajá». «Registré este problema hace más de una semana», continúa la profesora, «y nadie ha pasado». «Ajá», responde el técnico de nuevo. «¿Sabes cuándo podrían encargarse de ese problema o tienes alguna idea de cuál podría ser el problema?», pregunta la profesora. El técnico mira a la profesora y dice: «Probablemente sea un virus que ha estado circulando. Se supone que Jim se encargaría de esos. Te atenderemos lo antes posible». Suena el teléfono del técnico y se aleja para atender la llamada.
+    Enumera tres técnicas de escucha activa y buenos procedimientos de atención al cliente que podrían mejorar esta situación.</p>
+</li>
+<li>
+<p>Explica cómo un técnico podría ser culturalmente insensible.</p>
+</li>
+<li>
+<p>¿Qué componente se puede ajustar para hacer overclocking?
+    [ disipador de calor | CPU | ranura de expansión | chipset ]</p>
+</li>
+<li>
+<p>[ V | F ] Al instalar una CPU, orienta el pin 1 con el pin 1 del zócalo y alinea los demás pines. Baja la palanca del zócalo ZIF y bloquea. Enciende la computadora para asegurarte de que la CPU funcione. Apaga la computadora e instala el disipador de calor y/o el ventilador.</p>
+</li>
+<li>
+<p>¿Qué se aplica entre un procesador y un disipador de calor para aumentar la disipación de calor?
+    [ un capacitor | pasta térmica | un ventilador | memoria caché ]</p>
+</li>
+<li>
+<p>Al revisar las especificaciones de la placa madre, ves LGA 2066. ¿Qué componente se está mencionando?
+    [ RAM | HSM | procesador | ranura de expansión ]</p>
+</li>
+<li>
+<p>¿Qué método NO se usa para enfriar un procesador?
+    [ ventilador de CPU | ventilador del gabinete | disipador de calor | tanque térmico ]</p>
+</li>
+</ol>
+<h2 id="ejercicios">Ejercicios<a class="headerlink" href="#ejercicios" title="Permanent link">&para;</a></h2>
+<h3 id="ejercicio-31-identificar-las-partes-de-una-placa-madre-atx">Ejercicio 3.1 Identificar las partes de una placa madre ATX<a class="headerlink" href="#ejercicio-31-identificar-las-partes-de-una-placa-madre-atx" title="Permanent link">&para;</a></h3>
+<p><strong>Objetivo:</strong> Identificar varias partes de la placa madre.</p>
+<p><strong>Materiales:</strong> Ninguno.</p>
+<p><strong>Procedimiento:</strong> Identifica cada una de las partes de la placa madre ATX en la Figura 3.39.</p>
+<blockquote>
+<p>Figura 3.39 Puertos, ranuras y partes de la placa madre</p>
+</blockquote>
+<ol>
+<li>PS/2 o mini-DIN</li>
+<li>DVI o DVI-I</li>
+<li>USB</li>
+<li>NIC, puerto de red, RJ45 o puerto Ethernet</li>
+<li>PCIe x1</li>
+<li>PCIe x16</li>
+<li>PCI</li>
+<li>Ranura de expansión de memoria</li>
+<li>Zócalo de CPU o de procesador</li>
+</ol>
+<h3 id="ejercicio-32-analisis-de-la-placa-madre">Ejercicio 3.2 Análisis de la placa madre<a class="headerlink" href="#ejercicio-32-analisis-de-la-placa-madre" title="Permanent link">&para;</a></h3>
+<p><strong>Objetivo:</strong> Identificar varias partes de la placa madre.</p>
+<p><strong>Materiales:</strong> Ninguno.</p>
+<p><strong>Procedimiento:</strong> Usando la información que aprendiste en este capítulo y relacionada con las especificaciones que se encuentran en la Figura 3.40, responde las preguntas que siguen.</p>
+<blockquote>
+<p>Figura 3.40 Anuncio de una placa madre de escritorio</p>
+</blockquote>
+<ol>
+<li>Si compraras esta placa madre, ¿qué tipo de gabinete necesitarías comprar?</li>
+<li>¿Qué te dice LGA1155 sobre esta placa madre?</li>
+<li>¿Esta placa madre viene con una CPU instalada?
+   [ Sí | No | No se puede saber con la información presentada ]</li>
+<li>¿Qué componente de la placa madre controla el número máximo de puertos USB 3.0 que podría tener esta placa madre?
+   [ CPU | RAM | chipset | FSB ]</li>
+<li>¿Qué procesador(es) acepta esta placa madre?</li>
+<li>¿Qué crees que significan las letras O.C. después de algunos de los chips de memoria en relación con esta placa madre?</li>
+<li>¿Cuál es la diferencia más significativa entre una ranura PCIe versión 2.0 y una ranura de expansión PCIe versión 3.0?</li>
+<li>¿Qué significa la línea PCIe 3.0/2.0 x16 que dice «2 (x16 único o x8 doble)»?
+   a. El adaptador que va en esta ranura puede usar un solo carril que va a velocidades x16 o dos carriles que van a velocidades x8.
+   b. Un solo adaptador x16 y/o un solo adaptador x8 pueden ir en las ranuras de expansión.
+   c. Un adaptador x16 puede ir en una de las ranuras versión 3.0 y alcanzar velocidades 3.0, o se pueden instalar dos adaptadores x16, pero solo pueden transferir ocho carriles a la vez a velocidades 3.0.
+   d. Un solo adaptador x16 se puede instalar en una de las ranuras versión 3.0, o se pueden instalar dos adaptadores x8 en las dos ranuras versión 3.0.</li>
+<li>¿Qué cable de dispositivo se puede insertar en el puerto PS/2? (Elige la mejor respuesta.)
+   [ parlante | ratón o teclado | pantalla | almacenamiento externo ]</li>
+<li>¿Qué tipo de puerto de video se describe como D-sub en esta documentación?
+    [ DisplayPort | DVI | HDMI | VGA ]</li>
+<li>¿Cuál es una ventaja de tener una GPU integrada en la CPU?</li>
+<li>¿Cuál es la razón más probable por la que este fabricante de placa madre eligió incluir dos ranuras de expansión PCI?</li>
+<li>¿Cuántos tipos diferentes de puertos de video tiene esta placa madre? Enuméralos.</li>
+<li>¿Cuál es el propósito del puerto S/PDIF out?
+    [ video | audio | red inalámbrica | conectividad de dispositivos de entrada ]</li>
+<li>¿Es esta placa madre una placa madre multizócalo? ¿Cómo puedes saberlo?
+    [ Sí | No ] Solo se enumera un zócalo, y esta es una placa madre de escritorio. Las placas madre de servidor tienen múltiples zócalos para las CPU.</li>
+</ol>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<h3 id="descubrimiento-en-internet">Descubrimiento en internet<a class="headerlink" href="#descubrimiento-en-internet" title="Permanent link">&para;</a></h3>
+<p><strong>Objetivo:</strong> Obtener información específica de internet sobre una computadora o sus partes asociadas.</p>
+<p><strong>Materiales:</strong> Una computadora con acceso a internet.</p>
+<p><strong>Procedimiento:</strong> Localiza en internet la documentación de una placa madre ASUS Prime Z590-A para responder las Preguntas 1 a 12. Continúa tu búsqueda en internet para responder las Preguntas 13 y 14.</p>
+<p><strong>Preguntas:</strong></p>
+<ol>
+<li>¿La placa madre admite un procesador Intel o AMD?</li>
+<li>¿Qué chipset se usa?</li>
+<li>¿Cuántas ranuras de expansión hay en la placa madre?</li>
+<li>¿Qué factor de forma usa esta placa madre?</li>
+<li>¿Qué procesadores se pueden usar en esta placa madre?</li>
+<li>¿La placa madre admite tener una GPU integrada en la CPU? ¿Cómo puedes saber si lo admite o no?</li>
+<li>¿Qué tipo de zócalo de CPU tiene la placa madre?</li>
+<li>¿Cuántas ranuras PCIe tiene y de qué tipo?</li>
+<li>¿Hay algún otro tipo de ranura en esta placa madre? Si es así, ¿cuál?</li>
+<li>¿Esta placa madre tiene un puerto USB 3.2 integrado?</li>
+<li>¿Cuál es el número máximo y el tipo de puertos USB disponibles en la parte trasera de la placa madre?</li>
+<li>Escribe la URL donde encontraste la información de la placa madre.</li>
+<li>Encuentra un vendedor de una placa madre AMD que use el zócalo AM4 y admita los procesadores de escritorio Ryzen 2000, 3000 y 5000. Documenta el modelo de placa madre y el vendedor.</li>
+<li>Encuentra un sitio de internet que describa las dimensiones del factor de forma de placa madre ATX extendido. Enumera las dimensiones y el sitio web.</li>
+</ol>
+<h3 id="habilidades-blandas">Habilidades blandas<a class="headerlink" href="#habilidades-blandas" title="Permanent link">&para;</a></h3>
+<p><strong>Objetivo:</strong> Mejorar y afinar la capacidad de un futuro técnico para escuchar, comunicarse de forma escrita y oral, y apoyar de manera profesional a las personas que usan computadoras.</p>
+<p><strong>Actividades:</strong></p>
+<ol>
+<li>En una hoja de papel o una tarjeta, enumera tres formas en que puedes practicar la escucha activa en la escuela. Comparte esta información con tu grupo. Consolida las ideas y presenta cinco de las mejores ideas a la clase.</li>
+<li>En un entorno de equipo, propongan dos ejemplos de situaciones que hayan vivido en las que una persona de soporte (una persona de soporte de PC, un vendedor, un cajero, una persona a la que se le piden direcciones, etc.) podría haber brindado mejor servicio si hubiera estado escuchando activamente. Compartan sus hallazgos con la clase.</li>
+<li>En equipos de dos, hagan que una persona cuente una historia y la otra practique habilidades de escucha activa. La persona que cuenta la historia debe criticar al oyente. Luego la pareja debe cambiar los roles.</li>
+</ol>
+<h3 id="habilidades-de-pensamiento-critico">Habilidades de pensamiento crítico<a class="headerlink" href="#habilidades-de-pensamiento-critico" title="Permanent link">&para;</a></h3>
+<p><strong>Objetivo:</strong> Analizar y evaluar información y aplicar la información aprendida a situaciones nuevas o diferentes.</p>
+<p><strong>Actividades:</strong></p>
+<ol>
+<li>Encuentra un anuncio de una computadora en un folleto de computadoras local, un periódico, una revista o un libro, o en internet. Determina toda la información sobre la placa madre y los puertos que puedas a partir del anuncio. Anota cualquier información que no entiendas. Investiga esta información y comparte tus hallazgos con un compañero de clase.</li>
+<li>Tus padres quieren regalarte una computadora nueva. La que están considerando tiene una GPU integrada en la CPU. Enumera al menos un argumento que podrías usar para conseguir un modelo de computadora diferente.</li>
+<li>¿Por qué crees que una placa madre tiene diferentes buses que operan a distintas velocidades?</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../capitulo-2/conectividad/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Capítulo 2 - Conectividad">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 2 - Conectividad
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../capitulo-4/configuracion/" class="md-footer__link md-footer__link--next" aria-label="Next: Capítulo 4 - Introducción a la configuración">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 4 - Introducción a la configuración
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 The authors
+
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dbc0afdc.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2612 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A new project generated from the default template project.">
+      
+      
+        <meta name="author" content="<your name here>">
+      
+      
+      
+        <link rel="prev" href="../../capitulo-3/placa-madre/">
+      
+      
+        <link rel="next" href="../../capitulo-5/desmontaje-energia/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.36">
+    
+    
+      
+        <title>Capítulo 4. Introducción a la configuración - Documentation</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.1e981d71.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#capitulo-4-introduccion-a-la-configuracion" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Capítulo 4. Introducción a la configuración
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 7v14M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-rocket" viewBox="0 0 24 24"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-1/introduccion-completa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 1 - Introducción al mundo de IT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-2/conectividad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 2 - Conectividad
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-3/placa-madre/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 3 - Placa madre
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4 - Introducción a la configuración
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 4 - Introducción a la configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-la-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de la configuración
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-del-bios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general del BIOS
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general del BIOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-acelerar-el-tiempo-de-arranque" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: acelerar el tiempo de arranque
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-que-hacer-si-no-puedes-entrar-a-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿qué hacer si no puedes entrar a Setup?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-programa-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        El programa Setup
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El programa Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-acceder-al-bios-setup-desde-windows-1011" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: acceder al BIOS Setup desde Windows 10/11
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flash-bios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Flash BIOS
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flash BIOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        UEFI
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-biosuefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Configuración de BIOS/UEFI
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuración de BIOS&#x2f;UEFI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-usar-setup-para-deshabilitar-puertos-y-conectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: usar Setup para deshabilitar puertos y conectores
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-el-sistema-arranca-desde-el-dispositivo-incorrecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: el sistema arranca desde el dispositivo incorrecto
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consideraciones-sobre-tpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consideraciones sobre TPM
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-borrar-el-tpm-invalida-las-claves-de-seguridad-y-causa-perdida-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: borrar el TPM invalida las claves de seguridad y causa pérdida de datos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoria-cmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Memoria CMOS
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memoria CMOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-informacion-incorrecta-en-setup-causa-errores-de-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: información incorrecta en Setup causa errores de POST
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bateria-de-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Batería de la placa madre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Batería de la placa madre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-fecha-hora-o-ajustes-restablecidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: fecha, hora o ajustes restablecidos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-usar-un-programa-de-reciclaje-de-baterias" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: usar un programa de reciclaje de baterías
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizaciones-de-firmware-flashearlimpiar-el-biosuefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actualizaciones de firmware: flashear/limpiar el BIOS/UEFI
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actualizaciones de firmware: flashear&#x2f;limpiar el BIOS&#x2f;UEFI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-no-limpiar-el-cmos-despues-de-una-actualizacion-del-biosuefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: no limpiar el CMOS después de una actualización del BIOS/UEFI
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otros-parametros-de-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Otros parámetros de configuración
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Otros parámetros de configuración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#irq" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        IRQ
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-como-se-asignan-las-irq-a-los-puertos-de-multiples-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cómo se asignan las IRQ a los puertos de múltiples dispositivos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-que-hacer-cuando-ocurre-un-conflicto" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: qué hacer cuando ocurre un conflicto
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direcciones-de-es-entradasalida" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Direcciones de E/S (entrada/salida)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuando-se-necesita-una-direccion-de-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿cuándo se necesita una dirección de E/S?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direcciones-de-memoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Direcciones de memoria
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-la-configuracion-de-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de la configuración de hardware
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general de la configuración de hardware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-controladores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación de controladores
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-un-dispositivo-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación de un dispositivo USB
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación de un dispositivo USB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-ignorar-las-recomendaciones-del-fabricante-te-trae-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ignorar las recomendaciones del fabricante te trae problemas
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacionconfiguracion-de-tarjetas-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación/configuración de tarjetas USB
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion-de-problemas-de-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Solución de problemas de USB
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-una-tarjeta-esata" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación de una tarjeta eSATA
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-una-tarjeta-de-interfaz-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación de una tarjeta de interfaz de red
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucion-de-problemas-de-configuraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Solución de problemas de configuraciones
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solución de problemas de configuraciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-verificar-el-hardware-con-el-administrador-de-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: verificar el hardware con el Administrador de dispositivos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-usar-la-pestana-general-para-la-solucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: usar la pestaña General para la solución de problemas
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilidades-blandas-buena-practica-de-un-tecnico-cambia-solo-una-cosa-a-la-vez-y-documenta" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades blandas: buena práctica de un técnico: cambia solo una cosa a la vez y documenta
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-del-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Resumen del capítulo
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resumen del capítulo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejos-para-el-examen-de-certificacion-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejos para el examen de certificación A+
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Términos clave
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Preguntas de repaso
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicios
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actividades
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capitulo-5/desmontaje-energia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capítulo 5 - Desmontaje y energía
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-la-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de la configuración
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-del-bios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general del BIOS
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general del BIOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-acelerar-el-tiempo-de-arranque" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: acelerar el tiempo de arranque
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-que-hacer-si-no-puedes-entrar-a-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿qué hacer si no puedes entrar a Setup?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-programa-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        El programa Setup
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="El programa Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-acceder-al-bios-setup-desde-windows-1011" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: acceder al BIOS Setup desde Windows 10/11
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flash-bios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Flash BIOS
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flash BIOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        UEFI
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-biosuefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Configuración de BIOS/UEFI
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuración de BIOS&#x2f;UEFI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-usar-setup-para-deshabilitar-puertos-y-conectores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: usar Setup para deshabilitar puertos y conectores
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-el-sistema-arranca-desde-el-dispositivo-incorrecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: el sistema arranca desde el dispositivo incorrecto
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consideraciones-sobre-tpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consideraciones sobre TPM
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-borrar-el-tpm-invalida-las-claves-de-seguridad-y-causa-perdida-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: borrar el TPM invalida las claves de seguridad y causa pérdida de datos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memoria-cmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Memoria CMOS
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memoria CMOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-informacion-incorrecta-en-setup-causa-errores-de-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: información incorrecta en Setup causa errores de POST
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bateria-de-la-placa-madre" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Batería de la placa madre
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Batería de la placa madre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-fecha-hora-o-ajustes-restablecidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: fecha, hora o ajustes restablecidos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-usar-un-programa-de-reciclaje-de-baterias" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: usar un programa de reciclaje de baterías
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actualizaciones-de-firmware-flashearlimpiar-el-biosuefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actualizaciones de firmware: flashear/limpiar el BIOS/UEFI
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Actualizaciones de firmware: flashear&#x2f;limpiar el BIOS&#x2f;UEFI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-no-limpiar-el-cmos-despues-de-una-actualizacion-del-biosuefi" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: no limpiar el CMOS después de una actualización del BIOS/UEFI
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otros-parametros-de-configuracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Otros parámetros de configuración
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Otros parámetros de configuración">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#irq" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        IRQ
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-como-se-asignan-las-irq-a-los-puertos-de-multiples-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: cómo se asignan las IRQ a los puertos de múltiples dispositivos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-que-hacer-cuando-ocurre-un-conflicto" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: qué hacer cuando ocurre un conflicto
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direcciones-de-es-entradasalida" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Direcciones de E/S (entrada/salida)
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-cuando-se-necesita-una-direccion-de-es" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ¿cuándo se necesita una dirección de E/S?
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direcciones-de-memoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Direcciones de memoria
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#descripcion-general-de-la-configuracion-de-hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Descripción general de la configuración de hardware
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Descripción general de la configuración de hardware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-controladores" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación de controladores
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-un-dispositivo-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación de un dispositivo USB
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalación de un dispositivo USB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-ignorar-las-recomendaciones-del-fabricante-te-trae-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: ignorar las recomendaciones del fabricante te trae problemas
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacionconfiguracion-de-tarjetas-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación/configuración de tarjetas USB
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion-de-problemas-de-usb" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Solución de problemas de USB
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-una-tarjeta-esata" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación de una tarjeta eSATA
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-una-tarjeta-de-interfaz-de-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Instalación de una tarjeta de interfaz de red
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucion-de-problemas-de-configuraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Solución de problemas de configuraciones
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solución de problemas de configuraciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-verificar-el-hardware-con-el-administrador-de-dispositivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: verificar el hardware con el Administrador de dispositivos
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consejo-tecnico-usar-la-pestana-general-para-la-solucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejo técnico: usar la pestaña General para la solución de problemas
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilidades-blandas-buena-practica-de-un-tecnico-cambia-solo-una-cosa-a-la-vez-y-documenta" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Habilidades blandas: buena práctica de un técnico: cambia solo una cosa a la vez y documenta
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-del-capitulo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Resumen del capítulo
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Resumen del capítulo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#consejos-para-el-examen-de-certificacion-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Consejos para el examen de certificación A+
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Términos clave
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-de-repaso" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Preguntas de repaso
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ejercicios
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actividades" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Actividades
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="capitulo-4-introduccion-a-la-configuracion">Capítulo 4. Introducción a la configuración<a class="headerlink" href="#capitulo-4-introduccion-a-la-configuracion" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Traducción al español del Capítulo 4 («Introduction to Configuration») de <em>Complete A+ Guide to IT Hardware and Software: CompTIA A+ Exams 220-1101 &amp; 220-1102</em> (Cheryl A. Schmidt, Christopher Lee) — material de estudio de uso personal.</p>
+<p>Nota: las figuras del libro son imágenes y no se incluyen aquí; se conserva su leyenda traducida como referencia. Las tablas se transcriben como tablas de Markdown.</p>
+</blockquote>
+<p>En este capítulo aprenderás:</p>
+<ul>
+<li>La importancia de BIOS y UEFI</li>
+<li>Cómo reemplazar la batería de la placa madre</li>
+<li>Qué son los recursos del sistema y cómo verlos/cambiarlos</li>
+<li>Pasos básicos para instalar, configurar y verificar dispositivos periféricos comunes y tarjetas USB, eSATA y de red</li>
+<li>Cómo solucionar problemas de configuración y de dispositivos</li>
+</ul>
+<p><strong>Objetivos del examen CompTIA:</strong></p>
+<ul>
+<li>1101-3.1 Explicar los tipos básicos de cable y sus conectores, características y propósitos.</li>
+<li>1101-3.4 Dado un escenario, instalar y configurar placas madre, unidades centrales de procesamiento (CPU) y tarjetas adicionales.</li>
+<li>1101-5.2 Dado un escenario, diagnosticar problemas relacionados con placas madre, RAM, CPU y energía.</li>
+</ul>
+<h2 id="descripcion-general-de-la-configuracion">Descripción general de la configuración<a class="headerlink" href="#descripcion-general-de-la-configuracion" title="Permanent link">&para;</a></h2>
+<p>Instalar y configurar la placa madre, el procesador, la RAM u otros dispositivos puede implicar el uso del programa de Setup del BIOS/UEFI del sistema o del sistema operativo. También te permite establecer opciones de rendimiento.</p>
+<h2 id="descripcion-general-del-bios">Descripción general del BIOS<a class="headerlink" href="#descripcion-general-del-bios" title="Permanent link">&para;</a></h2>
+<p>El <strong>sistema básico de entrada/salida (BIOS)</strong> es un componente importante de la placa madre que comúnmente está soldado a ella, como se muestra en la Figura 4.1. El BIOS también se conoce como <strong>Unified Extensible Firmware Interface (UEFI)</strong> y, a veces, simplemente como EFI, BIOS/UEFI o UEFI/BIOS. El BIOS tiene las siguientes funciones:</p>
+<ul>
+<li>Contiene y ejecuta la <strong>autoprueba de encendido (POST)</strong>: un programa que identifica, prueba e inicializa los componentes básicos de hardware.</li>
+<li>Contiene una rutina básica llamada <strong>programa de arranque</strong> (<em>bootstrap</em>) que localiza un sistema operativo y lo inicia, permitiendo que el sistema operativo tome el control del sistema.</li>
+<li>Contiene <strong>Setup</strong>, que es un programa que permite ver y gestionar ajustes relacionados con la pantalla, la fecha/hora, el procesador, la memoria y las unidades. Otros nombres usados para Setup incluyen BIOS Setup, System Setup y CMOS Setup.</li>
+<li>Opcionalmente, cede el control al BIOS integrado de un adaptador (tarjeta) para que la tarjeta pueda inicializarse durante el proceso de arranque de la computadora.</li>
+</ul>
+<blockquote>
+<p>Figura 4.1 BIOS de la placa madre</p>
+</blockquote>
+<p>POST realiza pruebas básicas de componentes de hardware individuales, como la placa madre, los módulos de RAM, el teclado, la unidad óptica y el disco duro. POST se ejecuta cuando se realiza un <strong>arranque en frío</strong> (encender la computadora). Una indicación de que POST se está ejecutando es que las luces indicadoras del teclado parpadean momentáneamente y luego se apagan.</p>
+<h3 id="consejo-tecnico-acelerar-el-tiempo-de-arranque">Consejo técnico: acelerar el tiempo de arranque<a class="headerlink" href="#consejo-tecnico-acelerar-el-tiempo-de-arranque" title="Permanent link">&para;</a></h3>
+<p>El BIOS puede configurarse para limitar la cantidad de dispositivos que POST comprueba, reduciendo así el tiempo de arranque.</p>
+<p>En contraste, reiniciar la computadora se conoce como <strong>arranque en caliente</strong>. En Windows, haz clic con el botón derecho en el botón Inicio &gt; Apagar o cerrar sesión &gt; Reiniciar. El arranque en caliente hace que los cambios realizados surtan efecto sin someter a la computadora a la misma tensión que un arranque en frío. Un arranque en caliente no ejecuta POST.</p>
+<p>El programa Setup se guarda en el BIOS y, a través de él, puedes ver y posiblemente configurar o deshabilitar cosas como la RAM, el tipo y la cantidad de unidades instaladas, dónde busca la computadora sus archivos de arranque, la fecha y hora actuales, etc.</p>
+<p>Hay dos formas principales de configurar un sistema o un adaptador: mediante el programa Setup guardado en el BIOS del sistema y mediante el sistema operativo. Examinemos primero el uso del programa Setup.</p>
+<h3 id="consejo-tecnico-que-hacer-si-no-puedes-entrar-a-setup">Consejo técnico: ¿qué hacer si no puedes entrar a Setup?<a class="headerlink" href="#consejo-tecnico-que-hacer-si-no-puedes-entrar-a-setup" title="Permanent link">&para;</a></h3>
+<p>Si no aparece nada en el monitor y la pantalla tiene energía y tienes una buena conexión al puerto de video, revisa la placa madre por si hay LED (CPU, RAM, pantalla/VGA, arranque, etc.) e investiga qué significa si el LED permanece encendido. Comprueba la instalación de la CPU, el ventilador de la CPU y la RAM.</p>
+<h2 id="el-programa-setup">El programa Setup<a class="headerlink" href="#el-programa-setup" title="Permanent link">&para;</a></h2>
+<p>Las computadoras tienen software de Setup integrado en el chip del BIOS del sistema en la placa madre, al que puedes acceder con teclas específicas (como Esc, Insert, Del, F1, F2, F10, o la combinación de teclas Ctrl + Alt + alguna otra tecla), determinadas por el fabricante del BIOS. Durante el proceso de arranque, la mayoría de las computadoras muestran un mensaje que indica qué tecla(s) iniciarán el programa Setup. El mensaje mostrado suele estar en una de las cuatro esquinas de la pantalla (ver la Figura 4.2).</p>
+<blockquote>
+<p>Figura 4.2 Teclas para entrar a Setup</p>
+</blockquote>
+<h3 id="consejo-tecnico-acceder-al-bios-setup-desde-windows-1011">Consejo técnico: acceder al BIOS Setup desde Windows 10/11<a class="headerlink" href="#consejo-tecnico-acceder-al-bios-setup-desde-windows-1011" title="Permanent link">&para;</a></h3>
+<p>Para acceder al BIOS Setup en Windows, ve a Configuración &gt; Actualización y seguridad (10) o Sistema (11) &gt; Recuperación &gt; Reiniciar ahora.</p>
+<h2 id="flash-bios">Flash BIOS<a class="headerlink" href="#flash-bios" title="Permanent link">&para;</a></h2>
+<p><strong>Flash BIOS</strong> te permite actualizar (o degradar) el BIOS sin instalar un nuevo chip o chips. Entre los fabricantes comunes de BIOS/UEFI de computadoras se incluyen AMI (American Megatrends, Inc.), Phoenix Technologies, Byosoft (Nanjing Byosoft Co., Ltd.) e Insyde Software.</p>
+<p>Una actualización del BIOS normalmente implica eliminar todo el software del BIOS y la configuración almacenada en el CMOS. Algunos fabricantes proporcionan utilidades que te permiten guardar la configuración actual del CMOS antes de actualizar el BIOS. Siempre que sea posible, deben hacerse dos cosas antes de actualizar el flash BIOS: hacer una copia de seguridad de la configuración actual del CMOS y hacer una copia de seguridad del BIOS actual.</p>
+<h3 id="uefi">UEFI<a class="headerlink" href="#uefi" title="Permanent link">&para;</a></h3>
+<p><strong>Unified Extensible Firmware Interface (UEFI)</strong> es la interfaz entre el sistema operativo y el firmware, que puede ser el BIOS tradicional, o UEFI puede reemplazar al BIOS. El BIOS tradicional siempre comprueba ciertas cosas, como un teclado, antes de permitir que el sistema arranque. El BIOS tradicional dificultaba la configuración de kioscos y otras tecnologías de pantalla táctil. UEFI solucionó estos problemas.</p>
+<p>Con UEFI, puedes arrancar en un entorno especial. Muchos fabricantes se han pasado al tipo de BIOS UEFI por las siguientes razones:</p>
+<ul>
+<li>Es un entorno gráfico que brinda soporte para ratón.</li>
+<li>Te permite usar una utilidad de análisis de virus que no depende del sistema operativo.</li>
+<li>Ofrece software que no son solo pantallas de configuración.</li>
+<li>Ofrece acceso opcional a internet para solución de problemas o capacidades de descarga.</li>
+<li>Ofrece mejor soporte del sistema para enfriamiento, niveles de voltaje, rendimiento y seguridad.</li>
+<li>Proporciona soporte para mayores capacidades de disco duro y la capacidad de dividir el disco duro en secciones que no están sujetas a las limitaciones del BIOS tradicional.</li>
+<li>Comúnmente tiene datos relacionados con temperatura, voltaje, velocidad de la CPU, velocidad del bus y velocidad del ventilador.</li>
+<li>Puede tener un administrador de arranque en lugar de depender de un sector de arranque. Consulta el Capítulo 7, «Dispositivos de almacenamiento», para más información sobre la tabla de particiones GUID (GPT) y el sector de arranque. La Figura 4.3 muestra un ejemplo de un entorno UEFI.</li>
+</ul>
+<blockquote>
+<p>Figura 4.3 Menú principal de ejemplo de UEFI</p>
+</blockquote>
+<p>Desde el menú principal del BIOS/UEFI, puede haber íconos que puedes usar para acceder a utilidades o a configuraciones más avanzadas, como se muestra en la Figura 4.4.</p>
+<blockquote>
+<p>Figura 4.4 Menú avanzado de ejemplo de UEFI</p>
+</blockquote>
+<h2 id="configuracion-de-biosuefi">Configuración de BIOS/UEFI<a class="headerlink" href="#configuracion-de-biosuefi" title="Permanent link">&para;</a></h2>
+<p>Las opciones del BIOS/UEFI varían según el fabricante, pero muchas opciones son similares. La Tabla 4.1 muestra algunos ajustes comunes y explica brevemente cada uno. Ten en cuenta que los elementos que son términos clave están en el examen de certificación CompTIA A+. Un técnico debe estar familiarizado con estas opciones comunes de Setup del BIOS/UEFI, especialmente con las opciones de seguridad marcadas con asterisco.</p>
+<blockquote>
+<p>Tabla 4.1 Opciones comunes de Setup del BIOS/UEFI</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Opción de Setup</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>System Information</td>
+<td>Muestra información general, como el procesador, la velocidad del procesador, la cantidad de RAM, el tipo y la cantidad de discos duros y unidades ópticas instalados, el fabricante del BIOS/UEFI y la fecha del BIOS/UEFI.</td>
+</tr>
+<tr>
+<td>General Optimization</td>
+<td>Permite un arranque más rápido al deshabilitar funciones como la comprobación de memoria, el arranque desde la red y el arranque desde unidades extraíbles.</td>
+</tr>
+<tr>
+<td>Boot Options, Boot Sequence, Boot Drive Order o Boot Menu</td>
+<td>Prioriza los dispositivos en el orden en que la computadora busca un sistema operativo. Se cambia cuando un sistema intenta arrancar desde un dispositivo incorrecto.</td>
+</tr>
+<tr>
+<td>CPU Configuration o Advanced CPU Settings</td>
+<td>Contiene ajustes como la función CPU TM, que afecta la gestión del límite de la CPU (ralentizarla cuando se sobrecalienta); la velocidad de reloj, que puede no ser modificable; PECI (Platform Environment Control Interface), que afecta cómo los sensores térmicos informan la temperatura del núcleo de la CPU; Max CPUID, que se usa para compatibilidad con sistemas operativos más antiguos; el control de CPU Ratio, que establece los multiplicadores de la CPU; y Vanderpool Technology, que se usa con la virtualización de Intel.</td>
+</tr>
+<tr>
+<td>Fan Control</td>
+<td>Permite la configuración de los ventiladores del gabinete y/o de la CPU, incluida la capacidad de poner los ventiladores en modo silencioso o controlar la velocidad del ventilador.</td>
+</tr>
+<tr>
+<td>Video Options</td>
+<td>Permite configuraciones como DVMT (dynamic video memory technology) para controlar la memoria de video, el tamaño de apertura (la cantidad de RAM del sistema dedicada al uso del adaptador de video) y qué controlador de video es primario o secundario.</td>
+</tr>
+<tr>
+<td>Onboard Device Configuration</td>
+<td>Permite modificar los dispositivos integrados en la placa madre, como audio, Bluetooth inalámbrico, red, USB o puertos de video.</td>
+</tr>
+<tr>
+<td>* Passwords, Boot Password, Power on Password, Password Options, Supervisor Password, Administrator Password o User Password</td>
+<td>Permite proteger las opciones del menú del BIOS/UEFI; específicamente, configurar una contraseña para entrar al programa Setup, para permitir que la computadora arranque o para distinguir entre alguien que puede hacer cambios menores, como alteraciones en las opciones de arranque o la fecha y hora (contraseña de usuario), o alguien que puede ver y cambiar todas las opciones de Setup (contraseña de supervisor o administrador). Otros fabricantes pueden tener los siguientes niveles: acceso completo (todas las pantallas excepto la contraseña de supervisor), acceso limitado, acceso de solo lectura o sin acceso.</td>
+</tr>
+<tr>
+<td>* Virus Protection</td>
+<td>Ejecuta una pequeña aplicación de análisis de virus ubicada en el BIOS/UEFI. Algunos sistemas operativos y actualizaciones de software requieren que esta opción esté deshabilitada para que la actualización proceda.</td>
+</tr>
+<tr>
+<td>Numlock On/Off</td>
+<td>Permite el ajuste predeterminado (habilitado o deshabilitado) de la opción de la tecla Bloq Num después del arranque.</td>
+</tr>
+<tr>
+<td>USB Permissions</td>
+<td>Permite modificar las opciones de velocidad USB y la cantidad de puertos a habilitar.</td>
+</tr>
+<tr>
+<td>Hyper-Threading</td>
+<td>Permite habilitar/deshabilitar la tecnología Hyper-Threading.</td>
+</tr>
+<tr>
+<td>Integrated Peripherals (habilitar/deshabilitar dispositivos y puertos)</td>
+<td>Permite habilitar/deshabilitar y configurar los dispositivos controlados por la placa madre, como los puertos PATA/SATA y los puertos integrados, incluidos USB, audio y red. Establece la cantidad de RAM dedicada al uso de video. Si la computadora tiene una cantidad abundante de RAM, aumentar este ajuste puede mejorar el rendimiento, especialmente en aplicaciones (como juegos) que usan gráficos de alta definición.</td>
+</tr>
+<tr>
+<td>Advanced BIOS Options</td>
+<td>Permite configurar opciones como las frecuencias de CPU y memoria, la CPU, el front side bus, el north bridge, el south bridge, el chipset y los niveles de voltaje de la memoria.</td>
+</tr>
+<tr>
+<td>Interface Configurations</td>
+<td>Indica una categoría o enumera una interfaz individual (por ejemplo, IDE Configuration, SATA Configuration, PCI Configuration, PCIe Configuration).</td>
+</tr>
+<tr>
+<td>IDE Configuration</td>
+<td>Permite la configuración manual de dispositivos IDE, como PATA, discos duros y unidades ópticas.</td>
+</tr>
+<tr>
+<td>SATA Configuration</td>
+<td>Permite ver los valores de Serial ATA asignados por el BIOS/UEFI y cambiar algunas de las opciones relacionadas, así como la configuración de RAID.</td>
+</tr>
+<tr>
+<td>PCI/PnP Configuration</td>
+<td>Permite ver y cambiar la configuración de las ranuras PCI, incluidas las asignaciones de IRQ y DMA.</td>
+</tr>
+<tr>
+<td>PCIe Configuration</td>
+<td>Permite la configuración manual de la versión de PCIe.</td>
+</tr>
+<tr>
+<td>Devices</td>
+<td>Permite configurar USB, SATA, video, dispositivos integrados y PCI, donde puede que sea necesario habilitar la ranura M.2 para que se reconozca el SSD.</td>
+</tr>
+<tr>
+<td>Virtualization Support, Virtualization Technology o Secure Virtual Machine Mode</td>
+<td>Habilita/deshabilita la virtualización para que el software de virtualización pueda acceder a capacidades de hardware adicionales.</td>
+</tr>
+<tr>
+<td>ACPI (Advanced Configuration and Power Interface)</td>
+<td>Determina qué ocurre si se pierde la energía, las opciones de energía si entra una llamada a un módem y las opciones de energía cuando lo indica un dispositivo PCI o PCIe o una acción del ratón/teclado.</td>
+</tr>
+<tr>
+<td>Hardware Monitor</td>
+<td>Permite ver el monitoreo de temperatura de la CPU y la placa madre, así como el estado de la CPU, el chasis, los voltajes, las velocidades de reloj, las velocidades de ventilador, las velocidades de bus, la detección/notificación de intrusión en el chasis y los ventiladores de la fuente de alimentación.</td>
+</tr>
+<tr>
+<td>* Disable Execute Bit, Execute Disable o No Execute</td>
+<td>Evita que se ejecute código ejecutable (virus) desde un área de memoria marcada específica.</td>
+</tr>
+<tr>
+<td>* Drive Encryption</td>
+<td>Especifica que se usa una clave secreta para cifrar los datos del disco duro. La computadora no arrancará sin la contraseña correcta. La unidad no se puede mover a otra computadora a menos que se introduzca la contraseña correcta.</td>
+</tr>
+<tr>
+<td>* LoJack</td>
+<td>Permite que la configuración de seguridad realice tareas como localizar el dispositivo, bloquearlo de forma remota, mostrar un mensaje de "si se pierde" o borrar datos si es robado.</td>
+</tr>
+<tr>
+<td>* Intrusion Detection/Notification o Chassis Intrusion</td>
+<td>Permite notificar si se ha quitado la cubierta.</td>
+</tr>
+<tr>
+<td>* Secure Boot</td>
+<td>Comprueba cada controlador antes de lanzar los controladores y el sistema operativo. Evita que un sistema operativo o software no autorizado se cargue durante el proceso de arranque.</td>
+</tr>
+<tr>
+<td>iGPU</td>
+<td>Permite configurar cuánta memoria se asigna a la GPU integrada.</td>
+</tr>
+<tr>
+<td>Built-in Diagnostics</td>
+<td>Proporciona acceso a los componentes de hardware, el disco duro, la memoria, la batería y otras pruebas de diagnóstico.</td>
+</tr>
+<tr>
+<td>* Trusted Platform Module (TPM)</td>
+<td>También puede aparecer como una opción PTT. Permite habilitar el chip TPM de la placa madre que genera y almacena claves y contraseñas criptográficas. También puedes borrar los datos guardados con la opción TPM Clear. Ten en cuenta que también puedes ver una opción fTPM (firmware TPM) si la función TPM usa la CPU y no un chip separado para proporcionar esta función.</td>
+</tr>
+<tr>
+<td>* Opciones de seguridad</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="consejo-tecnico-usar-setup-para-deshabilitar-puertos-y-conectores">Consejo técnico: usar Setup para deshabilitar puertos y conectores<a class="headerlink" href="#consejo-tecnico-usar-setup-para-deshabilitar-puertos-y-conectores" title="Permanent link">&para;</a></h3>
+<p>Las placas madre incluyen conectores para discos duros, unidades ópticas, etc. Si uno de estos conectores falla, puedes deshabilitarlo a través de Setup y obtener un adaptador de reemplazo tal como lo harías si fallara un puerto integrado. Setup también se puede usar para deshabilitar los puertos integrados de la placa madre.</p>
+<h3 id="consejo-tecnico-el-sistema-arranca-desde-el-dispositivo-incorrecto">Consejo técnico: el sistema arranca desde el dispositivo incorrecto<a class="headerlink" href="#consejo-tecnico-el-sistema-arranca-desde-el-dispositivo-incorrecto" title="Permanent link">&para;</a></h3>
+<p>Si una computadora intenta arrancar desde el dispositivo incorrecto, cambia el ajuste Boot Sequence (secuencia de arranque) en el BIOS/UEFI. También es posible que haya un disco óptico en la unidad o una unidad USB no arrancable conectada, y que sea esa la primera opción de arranque seleccionada actualmente.</p>
+<p>La Figura 4.5 muestra una pantalla de ejemplo del BIOS/UEFI donde puedes establecer la contraseña de administrador o de usuario. Ten en cuenta que esta no es una contraseña de Windows ni de una red corporativa.</p>
+<blockquote>
+<p>Figura 4.5 Menú de seguridad de contraseñas</p>
+</blockquote>
+<p>Debes guardar los cambios cada vez que realices cambios de configuración. Algunos fabricantes permiten guardar capturas de pantalla en una unidad flash USB. Salir sin guardar los cambios es un error común. La Tabla 4.2 enumera opciones de ejemplo para salir del BIOS/UEFI.</p>
+<blockquote>
+<p>Tabla 4.2 Opciones de ejemplo para cambios de configuración</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Opción</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Save &amp; Exit Setup</td>
+<td>Guarda todos los cambios y abandona el programa Setup.</td>
+</tr>
+<tr>
+<td>Exit Without Saving</td>
+<td>Cierra sin guardar ningún cambio realizado. Se usa cuando se han hecho cambios por error o se necesita más investigación.</td>
+</tr>
+<tr>
+<td>Load Fail-Safe Defaults</td>
+<td>Establece la configuración predeterminada programada por el fabricante. Se usa cuando ocurren resultados impredecibles tras cambiar una opción.</td>
+</tr>
+<tr>
+<td>Load Optimized Defaults</td>
+<td>Tiene ajustes más agresivos que la opción Load Fail-Safe Defaults. Esta opción está programada por el fabricante.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="consideraciones-sobre-tpm">Consideraciones sobre TPM<a class="headerlink" href="#consideraciones-sobre-tpm" title="Permanent link">&para;</a></h3>
+<p>El TPM viene en dos versiones principales: 1.2 y 2.0. La versión 2.0 es un estándar mundial, pero las opciones de UEFI de cada fabricante de computadoras podrían aparecer de forma diferente. Cuando habilitas el TPM a través del UEFI, seleccionas y habilitas el módulo TPM, que puede ser un módulo físico o hacerse a través del firmware. También puedes borrar el TPM.</p>
+<h3 id="consejo-tecnico-borrar-el-tpm-invalida-las-claves-de-seguridad-y-causa-perdida-de-datos">Consejo técnico: borrar el TPM invalida las claves de seguridad y causa pérdida de datos<a class="headerlink" href="#consejo-tecnico-borrar-el-tpm-invalida-las-claves-de-seguridad-y-causa-perdida-de-datos" title="Permanent link">&para;</a></h3>
+<p>Si borras el TPM, el TPM se apaga y todas las claves de seguridad existentes se invalidan, y esto puede causar la pérdida de acceso a datos cifrados. Asegúrate de que todos los datos estén respaldados antes de borrar el TPM. Puedes conservar todas las claves de seguridad y los datos si simplemente deshabilitas (apagas) el TPM en lugar de borrarlo.</p>
+<p>En una computadora Windows, cada componente se comprueba en busca de controladores de arranque, rootkits y malware, y el TPM almacena esta información. La opción Secure Boot del UEFI, el cifrado de unidad BitLocker y Windows Defender hacen uso del TPM. Una vez que el TPM está habilitado, puedes iniciar el asistente de inicialización del TPM escribiendo tpm.msc en el cuadro de texto de búsqueda de Windows. Se te pedirá que crees una contraseña de propietario del TPM. Esta contraseña se puede guardar en medios extraíbles y/o imprimir. Ten en cuenta que esta es información muy importante y no se puede recuperar.</p>
+<h2 id="memoria-cmos">Memoria CMOS<a class="headerlink" href="#memoria-cmos" title="Permanent link">&para;</a></h2>
+<p>Los ajustes modificados en el BIOS/UEFI del sistema se registran y almacenan en un <strong>semiconductor de óxido metálico complementario (CMOS)</strong> que se encuentra en el chipset de la placa madre. El CMOS es memoria que requiere una pequeña cantidad de energía proporcionada por una batería de litio del tamaño de una moneda (batería CMOS) cuando el sistema está apagado. La memoria contiene los ajustes configurados a través del BIOS/UEFI. Cuando la batería se agota, toda la información de configuración del CMOS se pierde y debe volverse a introducir o reaprender después de reemplazar la batería.</p>
+<h3 id="consejo-tecnico-informacion-incorrecta-en-setup-causa-errores-de-post">Consejo técnico: información incorrecta en Setup causa errores de POST<a class="headerlink" href="#consejo-tecnico-informacion-incorrecta-en-setup-causa-errores-de-post" title="Permanent link">&para;</a></h3>
+<p>Si introduces información de configuración incorrecta, aparecen códigos de error de POST o mensajes de error que normalmente indicarían un problema de hardware.</p>
+<h2 id="bateria-de-la-placa-madre">Batería de la placa madre<a class="headerlink" href="#bateria-de-la-placa-madre" title="Permanent link">&para;</a></h2>
+<p>La batería CMOS más común que se usa hoy es una batería de litio CR2032, que es aproximadamente del tamaño de una moneda. La Figura 4.6 muestra una foto de una batería de litio instalada en una placa madre.</p>
+<blockquote>
+<p>Figura 4.6 Batería de la placa madre</p>
+</blockquote>
+<h3 id="consejo-tecnico-fecha-hora-o-ajustes-restablecidos">Consejo técnico: fecha, hora o ajustes restablecidos<a class="headerlink" href="#consejo-tecnico-fecha-hora-o-ajustes-restablecidos" title="Permanent link">&para;</a></h3>
+<p>Una primera indicación de que una batería está fallando es la fecha/hora del sistema inexacta en la computadora.</p>
+<p>Ninguna batería dura para siempre. Las temperaturas altas acortan la vida útil de una batería (que normalmente es de tres a ocho años).</p>
+<h3 id="consejo-tecnico-usar-un-programa-de-reciclaje-de-baterias">Consejo técnico: usar un programa de reciclaje de baterías<a class="headerlink" href="#consejo-tecnico-usar-un-programa-de-reciclaje-de-baterias" title="Permanent link">&para;</a></h3>
+<p>Muchos estados tienen regulaciones ambientales sobre la eliminación de baterías. Muchas empresas también tienen programas de reciclaje de baterías. El sitio web earth911.com proporciona información sobre el reciclaje y la eliminación de baterías y componentes de computadora por código postal o ciudad/estado.</p>
+<h2 id="actualizaciones-de-firmware-flashearlimpiar-el-biosuefi">Actualizaciones de firmware: flashear/limpiar el BIOS/UEFI<a class="headerlink" href="#actualizaciones-de-firmware-flashearlimpiar-el-biosuefi" title="Permanent link">&para;</a></h2>
+<p>Las actualizaciones de firmware son necesarias para obtener nuevas funciones y abordar fallas de seguridad que puedan surgir. Los términos usados para este proceso son "flashear el BIOS" y "actualizar o mejorar el firmware". Una computadora puede necesitar una actualización del BIOS/UEFI por diversas razones, entre ellas las siguientes:</p>
+<ul>
+<li>Proporcionar soporte para hardware nuevo o actualizado, como un procesador o un puerto USB más rápido</li>
+<li>Proporcionar soporte para un disco duro de mayor capacidad</li>
+<li>Para mayor protección contra virus</li>
+<li>Para protección opcional con contraseña</li>
+<li>Para resolver problemas con la versión actual</li>
+<li>Para proporcionar un parche de seguridad</li>
+</ul>
+<p>Los virus pueden infectar el BIOS/UEFI, así que debes mantener el BIOS protegido contra escritura hasta que necesites actualizarlo. El siguiente procedimiento es un ejemplo de cómo flashear el BIOS/UEFI:</p>
+<p>Paso 1. Después de descargar la actualización del BIOS/UEFI del sistema desde internet, ejecuta la actualización haciendo doble clic en el nombre del archivo.</p>
+<p>Paso 2. Sigue las instrucciones en pantalla o del fabricante.</p>
+<p>Paso 3. Reinicia la computadora.</p>
+<p>A veces, es posible que necesites restablecer el BIOS, y hay cuatro formas comunes de hacerlo: puente CMOS (<em>jumper</em>), botón de reinicio del CMOS, quitar la batería del CMOS, ajuste del BIOS/UEFI para restablecer a los valores predeterminados de fábrica. Un puente es una pequeña pieza de plástico que se ajusta sobre los pines. Un puente se puede usar para habilitar o deshabilitar una función en particular. La Figura 4.7 muestra un puente ampliado y un puente de contraseña del CMOS. La Figura 4.8 muestra un botón de reinicio del CMOS.</p>
+<blockquote>
+<p>Figura 4.7 Bloque de puentes JP1 con los pines 1 y 2 conectados entre sí, y puente de contraseña del CMOS</p>
+<p>Figura 4.8 Botón de reinicio del CMOS</p>
+</blockquote>
+<h3 id="consejo-tecnico-no-limpiar-el-cmos-despues-de-una-actualizacion-del-biosuefi">Consejo técnico: no limpiar el CMOS después de una actualización del BIOS/UEFI<a class="headerlink" href="#consejo-tecnico-no-limpiar-el-cmos-despues-de-una-actualizacion-del-biosuefi" title="Permanent link">&para;</a></h3>
+<p>No limpies el CMOS inmediatamente después de actualizar el BIOS/UEFI. Apaga el sistema y vuelve a encenderlo antes de limpiar los datos del CMOS.</p>
+<p>Si vas a flashear el BIOS/UEFI de una laptop, asegúrate de que la batería de la laptop esté completamente cargada o, mejor aún, conecta la laptop a la corriente alterna. Si el BIOS se descarga (y no se guarda localmente), conecta la laptop a una red cableada para hacer la descarga y garantizar la conectividad durante el proceso de descarga.</p>
+<p>Ten en cuenta que no todos los proveedores ofrecen un método para recuperar un BIOS/UEFI si una actualización por flash no sale bien. Una computadora sin un BIOS/UEFI operativo no puede arrancar, y hay que comprar una placa madre nueva. Por lo tanto, deberías tener una buena razón para flashear el BIOS/UEFI e investigar el método de respaldo que usa la placa madre antes de flashear el BIOS/UEFI.</p>
+<h2 id="otros-parametros-de-configuracion">Otros parámetros de configuración<a class="headerlink" href="#otros-parametros-de-configuracion" title="Permanent link">&para;</a></h2>
+<p>Otros parámetros posibles contenidos y establecidos mediante el programa Setup o el sistema operativo son las <strong>solicitudes de interrupción (IRQ)</strong>, las <strong>direcciones de entrada/salida (E/S)</strong>, los <strong>canales de acceso directo a memoria (DMA)</strong> y las <strong>direcciones de memoria</strong>. Estos parámetros se asignan a los adaptadores y puertos. Sin importar cómo se asignen los parámetros, en conjunto se conocen como <strong>recursos del sistema</strong>. Veamos las IRQ, las direcciones de E/S y las direcciones de memoria. La Tabla 4.3 describe brevemente estos recursos.</p>
+<blockquote>
+<p>Tabla 4.3 Recursos del sistema</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IRQ</td>
+<td>Un número asignado a un adaptador, un puerto o un dispositivo para que pueda ocurrir una comunicación ordenada entre este y el procesador. Por ejemplo, cuando se presiona una tecla al mismo tiempo que se mueve el ratón, el teclado tiene la prioridad más alta debido a su número de IRQ.</td>
+</tr>
+<tr>
+<td>Dirección de E/S</td>
+<td>Una dirección única que permite a un adaptador, un puerto o un dispositivo intercambiar datos con un procesador. Estas direcciones permiten al procesador distinguir entre los dispositivos con los que se comunica.</td>
+</tr>
+<tr>
+<td>Dirección de memoria</td>
+<td>Una dirección única asignada a un chip de memoria instalado en cualquier parte del sistema. La CPU usa estas direcciones cuando accede a información dentro del chip de memoria.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="irq">IRQ<a class="headerlink" href="#irq" title="Permanent link">&para;</a></h3>
+<p>Imagina estar en una sala con 20 estudiantes cuando 4 estudiantes quieren la atención del maestro. El maestro necesita un proceso ordenado para reconocer cada solicitud, priorizar las solicitudes (qué estudiante va primero) y luego responder cada pregunta. Surge una situación similar cuando varios dispositivos quieren la atención de la CPU. Por ejemplo, ¿qué dispositivo pasa primero si se presiona una tecla del teclado y se mueve el ratón USB simultáneamente? La respuesta está en la solicitud de interrupción asignada al teclado y al ratón. Cada dispositivo solicita permiso para hacer algo interrumpiendo al procesador (lo que es similar a un estudiante levantando la mano). La CPU tiene un sistema de prioridades para manejar tales situaciones.</p>
+<h3 id="consejo-tecnico-como-se-asignan-las-irq-a-los-puertos-de-multiples-dispositivos">Consejo técnico: cómo se asignan las IRQ a los puertos de múltiples dispositivos<a class="headerlink" href="#consejo-tecnico-como-se-asignan-las-irq-a-los-puertos-de-multiples-dispositivos" title="Permanent link">&para;</a></h3>
+<p>Los puertos como USB que admiten varios dispositivos requieren solo una interrupción por puerto. Por ejemplo, un solo puerto USB puede admitir hasta 127 dispositivos pero solo necesita una IRQ para todos los dispositivos que se conecten a un concentrador USB.</p>
+<p>Las interrupciones de adaptadores y dispositivos se ven y se establecen usando el <strong>Administrador de dispositivos</strong> en Windows o usando varios Paneles de control. Los técnicos necesitan saber cómo usar el Administrador de dispositivos, que muestra el estado del hardware instalado. Estas son las distintas formas de acceder al Administrador de dispositivos:</p>
+<ul>
+<li>Escribe devmgmt.msc desde un símbolo del sistema o el cuadro de texto de búsqueda.</li>
+<li>Escribe administrador de dispositivos desde el cuadro de texto de búsqueda en la barra de tareas.</li>
+<li>Selecciona Configuración &gt; escribe administrador de dispositivos en el cuadro de búsqueda Buscar un ajuste.</li>
+<li>Selecciona el Panel de control Dispositivos e impresoras &gt; vínculo Administrador de dispositivos.</li>
+<li>Selecciona el Panel de control Sistema y seguridad &gt; Herramientas administrativas &gt; Administración de equipos &gt; Administrador de dispositivos.</li>
+<li>Haz clic con el botón derecho en el botón Inicio &gt; Administrador de dispositivos.</li>
+</ul>
+<p>Dentro del Administrador de dispositivos, selecciona Ver &gt; Recursos por tipo y expande la sección Solicitud de interrupción (IRQ). Algunas interrupciones tienen varias entradas. Las entradas múltiples no siempre indican un conflicto de recursos; se permiten porque los dispositivos pueden compartir IRQ.</p>
+<p>Para acceder a los detalles en el Administrador de dispositivos, usa la opción Ver &gt; Dispositivos por tipo. Luego expande cualquier sección específica, como Adaptadores de red, haz clic con el botón derecho en un dispositivo o adaptador en particular y selecciona Propiedades. La Figura 4.9 muestra las propiedades de una tarjeta de red integrada, que no se pueden cambiar a través del Administrador de dispositivos, como lo indica el botón Cambiar configuración que aparece atenuado. (Sin embargo, las propiedades podrían modificarse a través del programa Setup del BIOS/UEFI del sistema.)</p>
+<blockquote>
+<p>Figura 4.9 Pestaña Recursos en el Administrador de dispositivos</p>
+</blockquote>
+<h3 id="consejo-tecnico-que-hacer-cuando-ocurre-un-conflicto">Consejo técnico: qué hacer cuando ocurre un conflicto<a class="headerlink" href="#consejo-tecnico-que-hacer-cuando-ocurre-un-conflicto" title="Permanent link">&para;</a></h3>
+<p>Si sospechas de un conflicto de recursos con una tarjeta, reinicia la computadora. El BIOS/UEFI y el sistema operativo tratarán de resolverlo. Esto puede requerir varios reinicios. Además, si hay un adaptador instalado, moverlo a otra ranura puede resolver la situación.</p>
+<h3 id="direcciones-de-es-entradasalida">Direcciones de E/S (entrada/salida)<a class="headerlink" href="#direcciones-de-es-entradasalida" title="Permanent link">&para;</a></h3>
+<p>Una <strong>dirección de E/S</strong>, también conocida como dirección de entrada/salida o dirección de puerto, permite a un dispositivo y a un procesador intercambiar datos. Una dirección de E/S es como un número de buzón; debe ser única. Las direcciones de E/S son simplemente direcciones que el procesador puede usar para distinguir entre los dispositivos con los que se comunica.</p>
+<h3 id="consejo-tecnico-cuando-se-necesita-una-direccion-de-es">Consejo técnico: ¿cuándo se necesita una dirección de E/S?<a class="headerlink" href="#consejo-tecnico-cuando-se-necesita-una-direccion-de-es" title="Permanent link">&para;</a></h3>
+<p>Recuerda que cada dispositivo debe tener una dirección de E/S separada. De lo contrario, la CPU no puede distinguir entre los dispositivos instalados.</p>
+<p>Las direcciones de E/S se muestran en formato hexadecimal (base 16), de 0000 a FFFF. Algunas salidas se muestran con ocho posiciones, como de 00000000 a FFFFFFFF. Los números hexadecimales son 0, 1, 2, 3, 4, 5, 6, 7, 8 y 9, así como las letras A, B, C, D, E y F. Un ejemplo de dirección de E/S es 390h. Normalmente, los dispositivos necesitan más de una ubicación de dirección hexadecimal.</p>
+<h3 id="direcciones-de-memoria">Direcciones de memoria<a class="headerlink" href="#direcciones-de-memoria" title="Permanent link">&para;</a></h3>
+<p>Una <strong>dirección de memoria</strong> es una dirección única asignada a un chip de memoria instalado en cualquier parte del sistema. La CPU usa una dirección de memoria cuando accede a información dentro del chip. Las direcciones de memoria se muestran como un rango de direcciones hexadecimales en el Administrador de dispositivos (ver la Figura 4.10).</p>
+<blockquote>
+<p>Figura 4.10 Direcciones de memoria en el Administrador de dispositivos</p>
+</blockquote>
+<h2 id="descripcion-general-de-la-configuracion-de-hardware">Descripción general de la configuración de hardware<a class="headerlink" href="#descripcion-general-de-la-configuracion-de-hardware" title="Permanent link">&para;</a></h2>
+<p>La configuración de adaptadores y otro hardware es fácil si sigues la documentación y sabes cómo obtener los controladores de dispositivo. La documentación para la instalación con frecuencia está disponible en internet, al igual que muchos controladores de dispositivo. Los controladores de dispositivo también se proporcionan como parte del proceso de actualización de Windows.</p>
+<p>El BIOS/UEFI del sistema desempeña un papel importante como parte de la rutina de inicio. No solo comprueba el hardware en busca de errores como parte de POST, sino que también detecta los adaptadores y dispositivos instalados. El BIOS/UEFI, junto con el sistema operativo, determina qué recursos asignar a un dispositivo o adaptador. Esta información se almacena en una parte del CMOS conocida como área <strong>Extended System Configuration Data (ESCD)</strong>. Una vez que la información se configura en el área ESCD, permanece allí y no tiene que volver a calcularse a menos que se agregue otro dispositivo.</p>
+<p>Después de que se asignan los recursos, el BIOS busca en la configuración guardada del CMOS para determinar qué dispositivo debe consultar primero en busca de un sistema operativo. Esta parte de la rutina del BIOS/UEFI se conoce como <strong>cargador de arranque</strong> (<em>bootstrap loader</em>). Si el BIOS/UEFI no puede localizar un sistema operativo en la primera ubicación especificada en la configuración guardada, prueba el segundo dispositivo y continúa, buscando un sistema operativo en cada dispositivo especificado en la configuración guardada. Cuando se encuentra un sistema operativo, este se carga.</p>
+<h3 id="instalacion-de-controladores">Instalación de controladores<a class="headerlink" href="#instalacion-de-controladores" title="Permanent link">&para;</a></h3>
+<p>Al instalar hardware o un adaptador en el entorno Windows, se requiere un controlador. Recuerda que un controlador es software que permite al sistema operativo controlar el hardware. El sistema operativo detecta la instalación del adaptador o hardware y agrega la información de configuración del dispositivo al registro. El <strong>registro</strong> (<em>registry</em>) es una base de datos central en Windows que contiene información de hardware y otros datos. Todas las aplicaciones de software acceden al registro para obtener información de configuración en lugar de ir al adaptador.</p>
+<p>Windows viene con muchos controladores para dispositivos comunes como teclados, ratones, impresoras y pantallas. Estos son algunos procesos usados para instalar un controlador:</p>
+<ul>
+<li>Puede que se te solicite instalar o buscar el controlador como parte del proceso de instalación. Es posible que debas indicar dónde se encuentra el controlador, como en un medio que viene con el hardware. También es posible que se te pida descargarlo e indicar dónde se encuentra el archivo descargado.</li>
+<li>Usa el Administrador de dispositivos para instalar un controlador. Abre el Administrador de dispositivos &gt; expande la categoría de hardware relevante en particular &gt; haz clic con el botón derecho en el dispositivo &gt; Actualizar software de controlador, como se muestra en la Figura 4.11.</li>
+</ul>
+<blockquote>
+<p>Figura 4.11 Opción Actualizar software de controlador en el Administrador de dispositivos</p>
+</blockquote>
+<ul>
+<li>Usa el Explorador de archivos para localizar un archivo ejecutable que viene con el hardware. Haz doble clic en el archivo Setup proporcionado para instalar el software y/o un controlador.</li>
+<li>Usa la opción de Panel de control Agregar un dispositivo o el vínculo de Configuración Agregar Bluetooth u otro dispositivo (Windows 10)/Agregar un dispositivo (Windows 11).</li>
+<li>Usa el Asistente para agregar hardware escribiendo hdwwiz en el cuadro de texto de búsqueda de Windows.</li>
+</ul>
+<h2 id="instalacion-de-un-dispositivo-usb">Instalación de un dispositivo USB<a class="headerlink" href="#instalacion-de-un-dispositivo-usb" title="Permanent link">&para;</a></h2>
+<p>Para instalar un dispositivo USB, realiza los siguientes pasos:</p>
+<p>Paso 1. Enciende la computadora.</p>
+<p>Paso 2. Opcionalmente, instala el software del dispositivo USB. Ten en cuenta que algunos fabricantes requieren que el software y/o los controladores del dispositivo se instalen antes de conectar el dispositivo USB.</p>
+<p>Paso 3. Opcionalmente, enciende el dispositivo. No todos los dispositivos USB tienen adaptadores de alimentación externos o un botón de encendido, porque reciben energía del bus USB.</p>
+<p>Paso 4. Localiza un puerto USB en la parte trasera o frontal de la computadora o en un concentrador USB. Conecta el dispositivo USB en un puerto libre. El sistema operativo normalmente detecta el dispositivo USB y carga el controlador del dispositivo. Es posible que tengas que buscar el controlador.</p>
+<p>Paso 5. Verifica la instalación en el Administrador de dispositivos.</p>
+<h3 id="consejo-tecnico-ignorar-las-recomendaciones-del-fabricante-te-trae-problemas">Consejo técnico: ignorar las recomendaciones del fabricante te trae problemas<a class="headerlink" href="#consejo-tecnico-ignorar-las-recomendaciones-del-fabricante-te-trae-problemas" title="Permanent link">&para;</a></h3>
+<p>Si un fabricante recomienda instalar el controlador del dispositivo antes de conectar el dispositivo USB, ¡sigue las instrucciones! No hacerlo puede requerir la desinstalación del controlador y luego la reinstalación usando los procedimientos recomendados, para que el dispositivo funcione correctamente.</p>
+<h3 id="instalacionconfiguracion-de-tarjetas-usb">Instalación/configuración de tarjetas USB<a class="headerlink" href="#instalacionconfiguracion-de-tarjetas-usb" title="Permanent link">&para;</a></h3>
+<p>Se pueden agregar puertos USB adicionales usando un concentrador USB o conectando una tarjeta de expansión USB, que es una placa metálica que tiene puertos USB adicionales que se conectan a los pines de la placa madre. La placa se inserta donde va una tarjeta de expansión, pero no tiene conectores que encajen en una ranura de expansión. La placa metálica simplemente se desliza en el lugar donde normalmente iría una tarjeta. La Figura 4.12 muestra una de estas placas; esta tiene dos puertos USB y un puerto eSATA. También puedes revisar la Figura 2.20 para ver cómo conectar los cables a la placa madre.</p>
+<blockquote>
+<p>Figura 4.12 Soporte/puertos USB y eSATA que se conectan a los pines de la placa madre</p>
+</blockquote>
+<p>Ten en cuenta que si una placa madre no tiene pines, puedes agregar más puertos USB comprando un adaptador USB PCI o PCIe con varios puertos. Es posible que el adaptador no tenga la capacidad de proporcionar energía a menos que admita tener un cable de alimentación de la fuente de alimentación conectado a la tarjeta.</p>
+<p>Es posible instalar una tarjeta USB para agregar puertos USB adicionales a una computadora. Los puertos USB reciben energía; por lo tanto, una tarjeta USB normalmente tiene un lugar para conectar la alimentación. Si la fuente de alimentación no tiene el conector de energía adecuado, es posible que haya que comprar un adaptador de energía. A continuación se presentan instrucciones genéricas:</p>
+<p>Paso 1. Apaga la computadora y quita el cable de alimentación.</p>
+<p>Paso 2. Quita la cubierta de la computadora. Localiza una ranura de expansión vacía. Es posible que tengas que quitar un tornillo o levantar una barra de retención para poder usar la ranura de expansión (ver la Figura 4.13).</p>
+<blockquote>
+<p>Figura 4.13 Tornillo del adaptador o barra de retención</p>
+</blockquote>
+<p>Paso 3. Usando procedimientos antiestáticos adecuados (ver el Capítulo 5, «Desmontaje y energía»), conéctate a tierra o usa guantes antiestáticos.</p>
+<p>Paso 4. Agrega un cable a la placa madre si usas un soporte USB. Opcionalmente, conecta un conector de energía al adaptador.</p>
+<p>Paso 5. Asegúrate de que se use la ranura de expansión adecuada e inserta la tarjeta firmemente en la ranura (ver la Figura 4.14). Asegúrate de que la tarjeta esté completamente insertada presionando firmemente hacia abajo sobre el adaptador e inspeccionándolo visualmente después. La tarjeta debe estar en un ángulo de 90 grados respecto de la PC. No debe inclinarse en ninguno de sus extremos. Asegúrate de que la tarjeta encaje bien en la ranura de expansión.</p>
+<blockquote>
+<p>Figura 4.14 Inserción de un adaptador directamente en una ranura de expansión</p>
+</blockquote>
+<p>Paso 6. Baja la barra de expansión o coloca un tornillo, si es necesario.</p>
+<p>Paso 7. Vuelve a instalar la cubierta de la computadora, vuelve a conectar el cable de alimentación y enciende la computadora. Instala los controladores según sea necesario.</p>
+<p>Paso 8. Prueba conectando un dispositivo USB a cada puerto.</p>
+<h3 id="solucion-de-problemas-de-usb">Solución de problemas de USB<a class="headerlink" href="#solucion-de-problemas-de-usb" title="Permanent link">&para;</a></h3>
+<p>Para solucionar problemas de dispositivos USB, comprueba primero lo obvio: el cableado y la energía. Verifica si funciona algún dispositivo USB que se conecte a un concentrador USB. Si ningún dispositivo funciona, cambia el concentrador o conéctalo a un puerto USB diferente. Si algunos puertos del concentrador funcionan y otros no, conecta una fuente de alimentación externa al concentrador, cambia su configuración si es necesario y vuelve a probar los dispositivos. Reinicia la computadora y vuelve a probar el dispositivo USB.</p>
+<p>Los puertos USB pueden proporcionar energía a diferentes niveles, como 2 A a 5 V (10 W), 5 A a 12 V (60 W) y 5 A a 20 V (100 W). Tampoco todos los cables USB-C pueden proporcionar 100 W de energía. Asegúrate de usar un cable USB-C a USB-C con clasificación de 5 A.</p>
+<p>Puedes verificar cuánta energía está usando un dispositivo USB usando software externo como USBDeview. Puedes ver el estado de energía usando el Administrador de dispositivos con estos pasos.</p>
+<p>Paso 1. Expande la sección Controladoras de bus serie universal (USB).</p>
+<p>Paso 2. Haz clic con el botón derecho en cada opción Concentrador USB genérico y selecciona Propiedades.</p>
+<p>Paso 3. Accede a la pestaña Detalles y usa la flecha desplegable Propiedad para seleccionar Datos de energía.</p>
+<p>Paso 4. En la sección Estado de energía actual, observa el estado de D0 a D3. Un estado D0 es el estado totalmente encendido y D3 es el estado de menor consumo de energía (modo de suspensión incluso si tiene dispositivos conectados).</p>
+<p>Un dispositivo USB podría estar consumiendo más energía de la permitida. Si es el caso, la computadora puede deshabilitar el puerto. La única forma de volver a habilitar el puerto es reiniciar la computadora. Si un dispositivo usa menos de 50 mA de energía, el puerto USB nunca se activa. Intenta conectar el dispositivo USB en un puerto USB diferente o verifica que el dispositivo funcione en otra computadora.</p>
+<p>En Windows 10 y 11, en Propiedades del concentrador USB &gt; pestaña Administración de energía, es posible permitir (ajuste predeterminado) o impedir que la computadora apague el puerto/concentrador USB para ahorrar energía (ver la Figura 4.15).</p>
+<blockquote>
+<p>Figura 4.15 Administración de energía de Windows para el puerto USB</p>
+</blockquote>
+<p>Un dispositivo USB requiere un controlador que puede cargarse automáticamente. Se podría haber cargado un controlador incorrecto o desactualizado que esté causando problemas. La siguiente lista también puede ayudar al solucionar problemas de dispositivos USB:</p>
+<ul>
+<li>Usa el Administrador de dispositivos para asegurarte de que un concentrador funcione correctamente.</li>
+<li>Asegúrate de que el firmware del BIOS/UEFI esté actualizado.</li>
+<li>Usa el Administrador de dispositivos para asegurarte de que ningún dispositivo USB tenga asignada una IRQ y la comparta con otro dispositivo que no sea USB.</li>
+<li>Los dispositivos USB a veces no funcionan en modo seguro y requieren soporte de hardware configurado a través del BIOS/UEFI.</li>
+<li>A veces un dispositivo USB deja de funcionar en un concentrador que tiene una fuente de alimentación externa. En tal caso, quita la fuente de alimentación externa del concentrador y vuelve a probar.</li>
+<li>Si a un concentrador USB autoalimentado se le desconecta la energía, el concentrador se convierte en un concentrador alimentado por bus y emite solo menor energía en cada puerto. Vuelve a conectar el cable de alimentación o quita el concentrador y vuelve a conectarlo.</li>
+<li>Si un dispositivo USB recién conectado informa que está conectado pero no funciona correctamente, actualiza el controlador.</li>
+<li>No conectes dispositivos USB a una computadora que esté en modo de espera o de suspensión. Hacerlo puede impedir que la computadora salga del modo de espera.</li>
+<li>Para problemas intermitentes de dispositivos USB, deshabilita la administración de energía para ver si eso resuelve el problema.</li>
+<li>Prueba un dispositivo conectado a un concentrador USB conectándolo directamente a un puerto USB que no tenga nada más conectado. El problema puede deberse a otros dispositivos USB o a un concentrador USB.</li>
+<li>Quita el controlador del dispositivo USB y vuelve a instalarlo. A veces debes reiniciar la computadora para dar a los nuevos controladores prioridad sobre los controladores de uso general.</li>
+<li>Si un dispositivo USB funciona lentamente, intenta conectarlo a un puerto diferente que tenga menos dispositivos conectados al mismo puerto.</li>
+<li>Verifica que el puerto USB esté habilitado en el BIOS/UEFI si está integrado en la placa madre o conectado a la placa madre mediante un cable adaptador.</li>
+<li>Consulta el sitio web del fabricante del dispositivo USB para obtener detalles específicos de solución de problemas.</li>
+</ul>
+<h2 id="instalacion-de-una-tarjeta-esata">Instalación de una tarjeta eSATA<a class="headerlink" href="#instalacion-de-una-tarjeta-esata" title="Permanent link">&para;</a></h2>
+<p>Un puerto <strong>Serial ATA (SATA)</strong> permite la conexión de un dispositivo de almacenamiento SATA, como un disco duro o una unidad óptica. Los puertos <strong>SATA externo (eSATA)</strong> permiten la conectividad de dispositivos de almacenamiento fuera de la computadora o laptop. Si una computadora no tiene puertos eSATA o no tiene suficientes, existen dos opciones. La primera opción es que puedes instalar un soporte eSATA, como se muestra en la Figura 4.16. Observa que los cables SATA simplemente se conectan a la parte posterior de los puertos. Cada cable SATA se conecta a un puerto de la placa madre. Para el soporte mostrado, la placa madre necesita tener dos puertos SATA disponibles para tener dos puertos externos.</p>
+<blockquote>
+<p>Figura 4.16 Soporte eSATA con cables</p>
+</blockquote>
+<p>La segunda opción es tener una tarjeta eSATA PCIe, como se muestra en la Figura 4.17. Observa que esta tarjeta no trae cables, como sí hace un soporte eSATA, y tiene puertos en la parte superior de la tarjeta además de los externos. Podrías conectar un cable SATA desde la parte superior de esta tarjeta a un dispositivo interno o conectar un cable eSATA desde uno de los puertos externos a un dispositivo eSATA externo.</p>
+<blockquote>
+<p>Figura 4.17 Tarjeta eSATA PCIe</p>
+</blockquote>
+<p>Para instalar una tarjeta o soporte eSATA, realiza los siguientes pasos:</p>
+<p>Paso 1. Apaga la computadora y desenchúfala.</p>
+<p>Paso 2. Quita la cubierta de la computadora y localiza una ranura de expansión sin usar. Es posible que tengas que quitar un tornillo o levantar una barra de retención para poder usar la ranura de expansión.</p>
+<p>Paso 3. Quita la cubierta de la ranura.</p>
+<p>Paso 4. Usando procedimientos antiestáticos adecuados (ver el Capítulo 5, «Desmontaje y energía»), conéctate a tierra o usa guantes antiestáticos.</p>
+<p>Paso 5. Asegúrate de que se use la ranura de expansión adecuada. Inserta la tarjeta firmemente en la ranura de expansión. Si solo se usa un soporte, insértalo entre la placa madre y la parte posterior del gabinete donde hay una ranura de expansión vacía.</p>
+<p>Paso 6. Baja la barra de expansión o coloca un tornillo para mantener la tarjeta o el soporte firmemente en su lugar.</p>
+<p>Paso 7. Si se usa un soporte, conecta cada cable SATA a un puerto SATA disponible de la placa madre. Toma nota de qué puerto SATA se usa, ya que cada uno puede necesitar habilitarse dentro del BIOS/UEFI.</p>
+<p>Paso 8. Vuelve a instalar la cubierta de la computadora, vuelve a conectar el cable de alimentación y enciende la computadora. Entra al BIOS/UEFI y habilita los puertos SATA apropiados según sea necesario. Instala cualquier software que venga con la tarjeta.</p>
+<p>Paso 9. Prueba conectando un dispositivo eSATA a cada puerto.</p>
+<h2 id="instalacion-de-una-tarjeta-de-interfaz-de-red">Instalación de una tarjeta de interfaz de red<a class="headerlink" href="#instalacion-de-una-tarjeta-de-interfaz-de-red" title="Permanent link">&para;</a></h2>
+<p>Casi todos los dispositivos se conectan a una red cableada o inalámbrica usando una <strong>tarjeta de interfaz de red (NIC)</strong>. Muchos dispositivos tienen NIC cableadas e inalámbricas integradas, pero si tal NIC falla, se debe instalar una NIC nueva, como la NIC Ethernet que se muestra en la Figura 4.18.</p>
+<blockquote>
+<p>Figura 4.18 Tarjeta de interfaz de red Ethernet</p>
+</blockquote>
+<p>Debes seguir varios pasos como parte del proceso de instalación antes de conectarte a la red:</p>
+<p>Paso 1. Determina que haya una ranura de expansión adecuada disponible.</p>
+<p>Paso 2. Quita la cubierta de la computadora y localiza una ranura de expansión sin usar. Quita la cubierta de la ranura.</p>
+<p>Paso 3. Conéctate a tierra y asegúrate de que se use la ranura de expansión adecuada. Inserta la tarjeta firmemente en la ranura de expansión. Asegura la tarjeta.</p>
+<p>Paso 4. Vuelve a instalar la cubierta de la computadora, vuelve a conectar la energía y enciende la computadora. Descarga e instala el controlador más reciente.</p>
+<p>Paso 5. Dale a la computadora un nombre único y, opcionalmente, únete a un grupo de trabajo o dominio.</p>
+<p>Paso 6. Configura la información de direccionamiento TCP/IP, como se describe en el Capítulo 13, «Redes».</p>
+<h2 id="solucion-de-problemas-de-configuraciones">Solución de problemas de configuraciones<a class="headerlink" href="#solucion-de-problemas-de-configuraciones" title="Permanent link">&para;</a></h2>
+<p>Las siguientes son posibles indicaciones de que un dispositivo no funciona:</p>
+<ul>
+<li>Se instala un dispositivo nuevo, y el dispositivo nuevo o un dispositivo previamente instalado no funciona.</li>
+<li>La computadora se bloquea o se reinicia al realizar una función específica, como al reproducir o grabar audio.</li>
+<li>La computadora se cuelga durante el inicio o el apagado.</li>
+<li>Un dispositivo no funciona correctamente o no funciona en absoluto.</li>
+</ul>
+<h3 id="consejo-tecnico-verificar-el-hardware-con-el-administrador-de-dispositivos">Consejo técnico: verificar el hardware con el Administrador de dispositivos<a class="headerlink" href="#consejo-tecnico-verificar-el-hardware-con-el-administrador-de-dispositivos" title="Permanent link">&para;</a></h3>
+<p>Una pequeña flecha hacia abajo junto al ícono de un dispositivo en el Administrador de dispositivos significa que el dispositivo está deshabilitado, y un signo de exclamación (!) sobre un campo amarillo generalmente indica un conflicto de recursos o un problema de controlador. Una "i" indica que la función Usar configuración automática no se está usando para el dispositivo y que los recursos se configuraron manualmente.</p>
+<p>En el Administrador de dispositivos, si aparece un signo de exclamación (!), el dispositivo de hardware no funciona correctamente y debes comprobar problemas de cableado, conflictos de recursos y problemas de configuración. Si aparece un signo de interrogación amarillo, Windows no reconoce el dispositivo, y puedes intentar una de las siguientes opciones:</p>
+<ul>
+<li>Realiza una actualización de Windows para asegurarte de tener los controladores, las actualizaciones de seguridad y las correcciones más recientes.</li>
+<li>Actualiza manualmente el controlador haciendo clic con el botón derecho en el dispositivo en el Administrador de dispositivos y seleccionando Propiedades &gt; pestaña Controlador &gt; Actualizar controlador. Puedes descargar este controlador del sitio web del fabricante del dispositivo o dejar que Windows intente encontrar el controlador.</li>
+</ul>
+<h3 id="consejo-tecnico-usar-la-pestana-general-para-la-solucion-de-problemas">Consejo técnico: usar la pestaña General para la solución de problemas<a class="headerlink" href="#consejo-tecnico-usar-la-pestana-general-para-la-solucion-de-problemas" title="Permanent link">&para;</a></h3>
+<p>En la pestaña General del cuadro de diálogo Propiedades de cualquier adaptador o puerto, comprueba la sección Estado del dispositivo en busca de códigos de error, incluidos los de conflictos de recursos.</p>
+<p>Con cualquier problema del Administrador de dispositivos, puedes hacer clic con el botón derecho en el dispositivo y seleccionar Propiedades. Mira la pestaña General para ver si hay códigos de error.</p>
+<p>Los problemas de configuración también pueden estar asociados con ajustes específicos del BIOS/UEFI. La Tabla 4.5 enumera algunos problemas y cómo podrías resolverlos.</p>
+<blockquote>
+<p>Tabla 4.5 Solución de problemas relacionados con el BIOS/UEFI</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Cosas que probar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aparece un mensaje que indica que la fecha y la hora no están configuradas, que el reloj no está configurado, que todos los ajustes guardados del BIOS/UEFI se perdieron, o que ocurren problemas inesperados en más de una aplicación.</td>
+<td>Comprueba la fecha y la hora a través del sistema operativo. Reemplaza la batería CMOS de la placa madre.</td>
+</tr>
+<tr>
+<td>No se puede configurar un sistema para virtualización.</td>
+<td>Habilita la virtualización en el BIOS/UEFI.</td>
+</tr>
+<tr>
+<td>El dispositivo conectado no funciona.</td>
+<td>Si el dispositivo se conecta a un puerto de la placa madre, asegúrate de que el puerto no esté deshabilitado en el BIOS/UEFI. Asegúrate de que el dispositivo se conecte al puerto correcto, incluido un posible puerto en un adaptador en lugar de en la placa madre. Si el dispositivo se conecta a un puerto de un adaptador del mismo tipo que uno de la placa madre, es posible que el puerto integrado deba deshabilitarse en el BIOS/UEFI.</td>
+</tr>
+<tr>
+<td>El sistema se bloquea esporádicamente.</td>
+<td>Si hay overclocking, devuelve el sistema a su configuración original.</td>
+</tr>
+<tr>
+<td>El sistema tarda en arrancar o arranca desde el dispositivo incorrecto.</td>
+<td>Comprueba el ajuste del orden de arranque del BIOS/UEFI.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="habilidades-blandas-buena-practica-de-un-tecnico-cambia-solo-una-cosa-a-la-vez-y-documenta">Habilidades blandas: buena práctica de un técnico: cambia solo una cosa a la vez y documenta<a class="headerlink" href="#habilidades-blandas-buena-practica-de-un-tecnico-cambia-solo-una-cosa-a-la-vez-y-documenta" title="Permanent link">&para;</a></h2>
+<p>El tipo menos eficaz de técnico de computadoras es un "pistolero". El término pistolero trae a la mente imágenes de matones del Viejo Oeste que tenían tiroteos con otros forajidos en la calle principal del pueblo. Los pistoleros desenfundaban sus armas con frecuencia y con poca provocación. No pensaban mucho en su método ni consideraban otras posibles soluciones. Debes esforzarte por no ser este tipo de técnico.</p>
+<p>Un técnico pistolero cambia varias cosas simultáneamente. Por ejemplo, si no hay imagen en la salida, el técnico podría cambiar el monitor, deshabilitar el puerto de video integrado, agregar un nuevo adaptador de video, encender la computadora y, cuando aparece la imagen, dar el problema por "resuelto". Si un problema de computadora se repara usando tal técnica, el técnico nunca sabe exactamente qué lo resolvió. Un técnico pistolero puede frustrarse fácilmente porque es fácil olvidar lo que se ha probado cuando se han probado varias cosas simultáneamente, y es casi imposible saber cuál funcionó (ver la Figura 4.19).</p>
+<blockquote>
+<p>Figura 4.19 Un técnico "pistolero" en acción</p>
+</blockquote>
+<p>Un buen técnico, en cambio, hace una lista de síntomas (aunque sea simplemente mental) seguida de una lista de cosas que probar. Luego el técnico prueba las posibles soluciones, empezando por la más simple (la que cuesta menos tiempo al usuario de la computadora). El técnico documenta cada paso. Después de cada enfoque que no resuelve el problema, el técnico devuelve el sistema a su configuración original antes de intentar la siguiente solución posible. Este método mantiene al técnico enfocado en lo que se ha probado, y si otro técnico toma el relevo, los pasos no tienen que repetirse. Lo mejor de todo es que, cuando una de las posibles soluciones resuelve el problema, se conoce la solución exacta.</p>
+<p>Los técnicos pistoleros no aprenden tan rápido como otros técnicos porque no determinan las causas reales de los problemas. Cada vez que se les presenta un problema similar a uno que han visto en el pasado, los técnicos pistoleros usan el mismo método de solución de problemas desordenado. Estos técnicos son en realidad peligrosos para una organización porque no son buenos documentando lo que han hecho ni determinando exactamente qué soluciona un problema en particular. Un buen técnico de computadoras debe solucionar los problemas metódicamente haciendo solo un cambio a la vez y revirtiendo el cambio si este no resuelve el problema. Además, el técnico necesita documentar el problema y su resolución para problemas futuros.</p>
+<h2 id="resumen-del-capitulo">Resumen del capítulo<a class="headerlink" href="#resumen-del-capitulo" title="Permanent link">&para;</a></h2>
+<ul>
+<li>El BIOS/UEFI se usa para habilitar/deshabilitar, configurar y solucionar problemas de componentes de la placa madre, ranuras de expansión y puertos, y establece las contraseñas de encendido y del BIOS/UEFI.</li>
+<li>Un tipo actualizado de BIOS es el BIOS/UEFI, que permite el uso de un ratón y un entorno gráfico. También puede incluir opciones de seguridad, soporte para discos duros más grandes, software antivirus, administración remota y utilidades.</li>
+<li>Cuando una computadora está apagada, una batería de la placa madre mantiene los ajustes guardados en el CMOS. Si una computadora no conserva la fecha y la hora, reemplaza la batería.</li>
+<li>El TPM se puede habilitar o borrar a través del UEFI. Ten en cuenta que si borras el TPM, todos los certificados de seguridad digital, las contraseñas y los datos cifrados se pierden. Considera deshabilitar el TPM en su lugar.</li>
+<li>Cada puerto y tarjeta usa recursos del sistema, como interrupciones, direcciones de E/S y direcciones de memoria.</li>
+<li>Los recursos del sistema se pueden ver y cambiar usando el Administrador de dispositivos. También puedes usar el Administrador de dispositivos para ver que un dispositivo funcione correctamente.</li>
+<li>Se puede agregar una tarjeta USB, una tarjeta o soporte eSATA, o una NIC a una computadora para proporcionar puertos adicionales.</li>
+</ul>
+<h3 id="consejos-para-el-examen-de-certificacion-a">Consejos para el examen de certificación A+<a class="headerlink" href="#consejos-para-el-examen-de-certificacion-a" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Muchas preguntas de ambos exámenes pueden venir de este capítulo, especialmente en las áreas de solución de problemas. Revisa las viñetas de solución de problemas. Investiga los problemas en internet y lee las publicaciones de la gente. Sus historias y frustraciones (y éxitos) se te quedarán grabados y te ayudarán en el examen.</li>
+<li>Usando al menos una computadora, recorre los menús del BIOS/UEFI. Revisa qué tipos de cosas se pueden configurar a través del BIOS/UEFI. Los ajustes importantes incluyen los siguientes: opciones de arranque, ajustes USB, incluidos permisos y la capacidad de deshabilitar los puertos, opciones de ventilador, ajustes de seguridad (contraseñas, incluida una contraseña de arranque) y ajustes de TPM.</li>
+<li>Sé capaz de instalar y configurar una tarjeta de interfaz de red (NIC) y otros adaptadores.</li>
+<li>Saber qué hacer si un sistema intenta arrancar desde un dispositivo incorrecto o si la fecha/hora del sistema es incorrecta.</li>
+</ul>
+<h2 id="terminos-clave">Términos clave<a class="headerlink" href="#terminos-clave" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Contraseña de administrador — <em>Administrator Password</em></li>
+<li>BIOS</li>
+<li>Contraseña de arranque — <em>boot password</em></li>
+<li>Opciones de arranque — <em>Boot Options</em></li>
+<li>CMOS</li>
+<li>Batería CMOS — <em>CMOS battery</em></li>
+<li>Administrador de dispositivos — <em>Device Manager</em></li>
+<li>Disable Execute Bit</li>
+<li>Cifrado de unidad — <em>Drive Encryption</em></li>
+<li>Soporte eSATA — <em>eSATA bracket</em></li>
+<li>Tarjeta eSATA — <em>eSATA card</em></li>
+<li>ESCD</li>
+<li>Control de ventilador — <em>Fan Control</em></li>
+<li>Actualización de firmware — <em>firmware update</em></li>
+<li>Flashear el BIOS — <em>flash BIOS</em></li>
+<li>fTPM</li>
+<li>Dirección de E/S — <em>I/O address</em></li>
+<li>Fecha/hora del sistema inexacta — <em>inaccurate system date/time</em></li>
+<li>Detección/notificación de intrusión — <em>Intrusion Detection/Notification</em></li>
+<li>IRQ</li>
+<li>Puente — <em>jumper</em></li>
+<li>LoJack</li>
+<li>Dirección de memoria — <em>memory address</em></li>
+<li>NIC</li>
+<li>Contraseñas — <em>Passwords</em></li>
+<li>POST</li>
+<li>Registro — <em>registry</em></li>
+<li>Arranque seguro — <em>Secure Boot</em></li>
+<li>Ajustes de seguridad — <em>security settings</em></li>
+<li>Setup</li>
+<li>El sistema intenta arrancar desde un dispositivo incorrecto — <em>system attempts to boot to an incorrect device</em></li>
+<li>Recursos del sistema — <em>system resources</em></li>
+<li>TPM</li>
+<li>UEFI</li>
+<li>Tarjeta de expansión USB — <em>USB expansion card</em></li>
+<li>Permisos USB — <em>USB Permissions</em></li>
+<li>Soporte de virtualización — <em>Virtualization Support</em></li>
+</ul>
+<h2 id="preguntas-de-repaso">Preguntas de repaso<a class="headerlink" href="#preguntas-de-repaso" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>¿Cuándo flashearía un técnico el BIOS/UEFI?
+   a. Cuando la fecha y la hora empiezan a ser incorrectas
+   b. Cuando un puerto o componente de la placa madre no funciona a su máximo potencial
+   c. Cuando el controlador de un puerto de la placa madre está desactualizado
+   d. Cuando la placa madre tiene una actualización, como un nuevo procesador, RAM adicional o un adaptador adicional instalado en una ranura de expansión</p>
+</li>
+<li>
+<p>¿Cuál es el efecto de establecer una contraseña de administrador en el BIOS/UEFI?
+   a. Evita que la computadora tenga varios dispositivos que puedan iniciar el sistema.
+   b. Evita que el BIOS/UEFI se infecte con un virus.
+   c. Evita que un usuario acceda al sistema operativo de la computadora.
+   d. Evita que un usuario cambie la configuración de Setup del sistema.</p>
+</li>
+<li>
+<p>¿Qué programa se usa para determinar la versión del controlador que se usa para una tarjeta instalada en una computadora?
+   [ BIOS | CMOS | Administrador de tareas | Administrador de dispositivos | System Setup ]</p>
+</li>
+<li>
+<p>¿Qué programa se usa comúnmente para verificar que el sistema operativo reconozca un nuevo componente de hardware, que funcione y los recursos del sistema asignados?
+   [ BIOS/UEFI | CMOS | aplicación proporcionada por el fabricante | Administrador de dispositivos ]</p>
+</li>
+<li>
+<p>¿Dónde se usaría más probablemente una batería de litio CR2032 en una PC de torre?
+   a. Como batería de Bluetooth
+   b. Dentro del procesador
+   c. Como componente de la placa madre
+   d. En el CMOS</p>
+</li>
+<li>
+<p>¿Qué opción del BIOS/UEFI podría necesitar modificarse para arrancar una computadora Windows desde una unidad flash que contiene Ubuntu, un sistema operativo basado en Linux?
+   [ LoJack | Secure Boot | Protección contra virus | Configuración USB | Hyper-Threading ]</p>
+</li>
+<li>
+<p>¿Qué es un TPM?
+   a. Un método para compartir recursos entre adaptadores
+   b. Un módulo físico que almacena contraseñas y certificados digitales
+   c. La técnica usada por un concentrador USB cuando se conectan varios dispositivos
+   d. Un tipo de batería de litio usada para mantener los datos de configuración actuales de Setup</p>
+</li>
+<li>
+<p>Un técnico está revisando una computadora usada que alguien compró recientemente, y la computadora solicita una contraseña antes de que se cargue el sistema operativo. ¿Qué puede hacer el técnico para quitar la contraseña?
+   a. Presionar la tecla para entrar al BIOS
+   b. Presionar la tecla F8 mientras arranca la computadora
+   c. Quitar la batería CMOS durante un minuto y luego reinstalarla
+   d. Mantener presionado el botón de encendido durante 10 segundos mientras arranca la computadora</p>
+</li>
+<li>
+<p>¿Qué pestaña del cuadro de diálogo Propiedades de un dispositivo tiene una sección Estado del dispositivo que puede contener información útil para la solución de problemas o el estado del dispositivo?
+   [ General | Avanzado | Controlador | Detalles | Administración ]</p>
+</li>
+<li>
+<p>Un técnico recibe una queja sobre una computadora que responde lentamente a las pulsaciones de teclas. El técnico instala más memoria y un teclado nuevo. El cliente queda satisfecho. ¿Qué, si algo, podría haberse hecho mejor?</p>
+</li>
+<li>
+<p>¿Cuál es el vataje máximo que puede proporcionar un puerto USB?
+   [ 100 | 5 | 2.5 | 4.5 ]</p>
+</li>
+</ol>
+<p>Para responder las preguntas 12 a 15, considera las siguientes opciones del menú de configuración del BIOS/UEFI.</p>
+<ol>
+<li>
+<p>¿Qué menú usarías para determinar si el sistema debería flashearse?
+   a. Menú principal (Main)
+   b. Dispositivos integrados (Onboard Devices)
+   c. Prioridad de dispositivo de arranque (Boot Device Priority)</p>
+</li>
+<li>
+<p>Una computadora está montada dentro de un gabinete, y quieres saber si el puerto USB 3.0 ha sido deshabilitado. ¿Qué menú usarías?
+   a. Menú principal (Main)
+   b. Dispositivos integrados (Onboard Devices)
+   c. Prioridad de dispositivo de arranque (Boot Device Priority)</p>
+</li>
+<li>
+<p>¿Qué menú usarías para determinar si el puerto SATA particular que usaste para conectar un soporte eSATA está habilitado?
+   a. Menú principal (Main)
+   b. Dispositivos integrados (Onboard Devices)
+   c. Prioridad de dispositivo de arranque (Boot Device Priority)</p>
+</li>
+<li>
+<p>Un técnico quiere arrancar desde un disco duro externo eSATA. ¿Qué elemento del submenú debería usar?
+   [ Controlador SATA OnChip | SATA | PCIe Training | 1er dispositivo de arranque ]</p>
+</li>
+<li>
+<p>Un técnico tiene que configurar la fecha y la hora repetidamente. ¿Qué componente es sospechoso?
+   [ CPU | BIOS/UEFI | batería | chipset | CMOS ]</p>
+</li>
+<li>
+<p>¿Cuáles son tres formas de obtener más puertos USB? (Elige tres.)
+   a. Conectar un concentrador USB a un puerto USB existente.
+   b. Conectar un concentrador de red a un puerto USB existente.
+   c. Instalar un adaptador PCIe que tenga puertos USB.
+   d. Instalar un adaptador AGP que tenga puertos USB.
+   e. Instalar un soporte USB que tenga puertos USB y se conecte a los pines de la placa madre.
+   f. Usar un multiplexor de puertos USB.</p>
+</li>
+<li>
+<p>¿Cuándo usaría un técnico UEFI?
+   a. Al gestionar la configuración mediante el Administrador de dispositivos
+   b. Cuando la fecha y/o la hora siguen siendo incorrectas
+   c. Cuando se acaba de instalar un adaptador
+   d. Al reemplazar una placa madre</p>
+</li>
+</ol>
+<p>Nota del instructor: cuando se reemplaza una placa madre, deben realizarse las configuraciones de BIOS/UEFI.</p>
+<ol>
+<li>
+<p>Una computadora se usa en un consultorio médico. Por razones de seguridad, se le ha pedido al técnico que garantice razonablemente que nadie conecte ningún medio externo. ¿Qué haría probablemente el técnico?
+   a. Proteger con contraseña el BIOS/UEFI y deshabilitar los puertos no usados.
+   b. Cambiar la placa madre por una que no tenga puertos adicionales.
+   c. Asignar derechos de usuario mediante contraseñas de usuario en la computadora.
+   d. Cifrar el disco duro.
+   e. Flashear el chipset.</p>
+</li>
+<li>
+<p>Un técnico de una empresa pequeña estableció una contraseña de BIOS/UEFI en cada computadora. El técnico deja la empresa, y el técnico de reemplazo necesita acceder al BIOS/UEFI. ¿Qué debería hacer el nuevo técnico?</p>
+</li>
+</ol>
+<h2 id="ejercicios">Ejercicios<a class="headerlink" href="#ejercicios" title="Permanent link">&para;</a></h2>
+<p><strong>Ejercicio 4.1 Expansión del sistema</strong></p>
+<p>Objetivo:
+ Poder explorar diferentes formas de expandir un sistema</p>
+<p>Partes:
+ Ninguna</p>
+<p>Procedimiento: usa la documentación de la Tabla 4.6 para responder las preguntas.</p>
+<blockquote>
+<p>Tabla 4.6 Especificaciones de la placa madre</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU</td>
+<td>Soporte para Intel Celeron, Core i3 y Core i5</td>
+</tr>
+<tr>
+<td>Chipset</td>
+<td>Intel B150 Express</td>
+</tr>
+<tr>
+<td>Memoria</td>
+<td>2 zócalos DIMM DDR4 que admiten hasta 32 GB; soporte de doble canal; soporte para DDR4 a 2133 MHz</td>
+</tr>
+<tr>
+<td>Gráficos integrados</td>
+<td>Procesador de gráficos integrado; 2 puertos HDMI; memoria compartida máxima de 512 MB</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>Códec Realtek ALC887; 2/&#8536;.1/7.1 canales; soporte de salida S/PDIF</td>
+</tr>
+<tr>
+<td>LAN</td>
+<td>2 chips Intel GbE LAN que admiten 10/100/1000 Mb/s</td>
+</tr>
+<tr>
+<td>Ranuras de expansión</td>
+<td>Ranura PCIe 3.0 x16; 1 conector M.2 Socket 1 para módulo inalámbrico</td>
+</tr>
+<tr>
+<td>USB</td>
+<td>Chipset: 4 puertos USB 2.0/1.1 (2 en la parte trasera y 2 a través de la cabecera USB interna); 6 puertos USB 3.0/2.0 (4 en la parte trasera y 2 a través de la cabecera USB interna)</td>
+</tr>
+<tr>
+<td>Conectores internos</td>
+<td>1 conector de alimentación principal ATX de 24 pines; 1 conector de alimentación ATX de 4 pines y 12 V; 6 conectores SATA de 6 Gb/s; 1 conector M.2 Socket 3; 1 cabecera de ventilador de CPU; 1 cabecera de ventilador del sistema; 1 cabecera del panel frontal; 1 cabecera de audio del panel frontal; 1 cabecera USB 3.0/2.0; 1 cabecera USB 2.0/1.1; 4 cabeceras de puerto serie; 1 cabecera de salida S/PDIF; 1 cabecera de altavoz; 1 puente para borrar CMOS</td>
+</tr>
+<tr>
+<td>Conectores del panel trasero</td>
+<td>2 puertos USB 2.0/1.1; 1 puerto de teclado/ratón PS/2; 2 conectores de antena Wi-Fi; 2 puertos HDMI; 4 puertos USB 3.0/2.0; 2 puertos RJ45; 6 tomas de audio</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>La computadora que usa esta placa madre tiene un disco duro SATA conectado. El propietario de esta computadora quiere usar una unidad eSATA.
+   Según la documentación proporcionada, ¿puede el usuario conectar una unidad eSATA a la computadora tal como está configurada ahora?
+   [ Sí | No ]</p>
+</li>
+<li>
+<p>El técnico quiere usar un soporte eSATA que tiene dos puertos/cables eSATA además de un dispositivo SATA interno.
+   ¿Admite esto la placa madre? Explica cómo lo sabes.</p>
+</li>
+<li>
+<p>Al usuario propietario de la computadora no le gusta usar concentradores USB.
+   ¿Cuál es la cantidad máxima de dispositivos que el usuario puede conectar a la parte trasera de la computadora sin usar concentradores USB? ¿Qué consejo podrías darle al usuario respecto de estos puertos?</p>
+</li>
+<li>
+<p>El usuario quiere puertos USB adicionales en la parte trasera de la computadora. Al técnico le gustaría usar un soporte USB para proporcionar dos puertos adicionales.
+   Según la documentación, ¿se puede usar un soporte USB con esta placa madre? ¿Cómo puedes saberlo? Sé específico.</p>
+</li>
+</ol>
+<p><strong>Ejercicio 4.2 Opciones del BIOS/UEFI</strong></p>
+<p>Objetivo:
+ Usar la información que se encuentra en la pantalla del BIOS/UEFI para determinar qué opción usar</p>
+<p>Partes:
+ Ninguna</p>
+<p>Procedimiento:
+ Usa las Figuras 4.20 y 4.21 para responder las preguntas.</p>
+<p>Usa la Figura 4.20 para responder las preguntas 1–5.</p>
+<blockquote>
+<p>Figura 4.20 Ventana de ejemplo del BIOS/UEFI 1</p>
+</blockquote>
+<ol>
+<li>
+<p>El usuario ha modificado las opciones del BIOS/UEFI hasta el punto de que la mitad de los puertos no funcionan y la computadora va lenta.
+   ¿Qué opción de menú o tecla debería usar el técnico para resolver este problema?</p>
+</li>
+<li>
+<p>El técnico ha modificado algunos ajustes, pero ahora quiere investigar algunas alternativas y no quiere conservar los ajustes que acaba de cambiar.
+   ¿Qué opción de menú o tecla debería usar el técnico en esta situación?</p>
+</li>
+<li>
+<p>Las computadoras del laboratorio de investigación deben tener seguridad adicional. Un técnico que configura una computadora nueva para ese laboratorio está usando el BIOS/UEFI para deshabilitar todos los puertos USB de los paneles frontal y trasero.
+   ¿Qué opción de menú se usa para completar esta tarea?
+   [ Main | Advanced | Monitor | Boot | Tools ]</p>
+</li>
+<li>
+<p>El técnico quiere ver la última vez que alguien abrió el gabinete.
+   ¿Qué opción de menú se usa para completar esta tarea?
+   [ Main | Advanced | Monitor | Boot | Tools ]</p>
+</li>
+<li>
+<p>El usuario se ha quejado de que el sistema tarda demasiado en arrancar. Algo que hizo un técnico anterior fue hacer que el sistema siempre intentara arrancar desde una unidad externa usada para reimagenar la computadora. Si no se encontraba la unidad externa, entonces usaba el disco duro interno para cargar el sistema operativo.
+   ¿Qué opción de menú debería usar el nuevo técnico para cambiar el sistema y que use el disco duro interno para cargar el sistema operativo como primera opción de la computadora?
+   [ Main | Advanced | Monitor | Boot | Tools ]</p>
+</li>
+</ol>
+<p>Usa la Figura 4.21 para responder las preguntas 6–10.</p>
+<blockquote>
+<p>Figura 4.21 Ventana de ejemplo del BIOS/UEFI 2</p>
+</blockquote>
+<ol>
+<li>
+<p>El técnico quiere impedir que el usuario cambie los ajustes del BIOS/UEFI.
+   ¿Qué opción de menú o tecla debería usar el técnico para establecer una contraseña de administrador del BIOS/UEFI?
+   [ Home | System Info | Peripherals | Power Management ]</p>
+</li>
+<li>
+<p>Hace una semana, un usuario se quejó de que la hora de la computadora estaba mal. El técnico cambió la hora y la fecha. Ahora el usuario se ha quejado de nuevo de que la fecha y la hora son incorrectas. Si el técnico cambia la hora otra vez y comprueba la computadora al día siguiente y la encuentra mal de nuevo, ¿qué debería hacer el técnico?
+   a. Flashear el BIOS/UEFI.
+   b. Reemplazar la placa madre.
+   c. Reemplazar la batería de la placa madre.
+   d. Restablecer la hora por tercera vez.</p>
+</li>
+<li>
+<p>Un jugador ha estado ajustando funciones de temporización en esta placa madre para acelerar el sistema.
+   ¿Qué tecla podría usar el usuario para tomar una captura de pantalla de la configuración actual?
+   F10</p>
+</li>
+<li>
+<p>El técnico ha estado modificando ajustes del BIOS/UEFI.
+   ¿Qué tecla debería usar el técnico al salir de la pantalla de Setup?
+   F9</p>
+</li>
+<li>
+<p>El técnico quiere habilitar dos puertos SATA para que un soporte eSATA de dos puertos pueda conectarse a la placa madre.
+    ¿Qué opción de menú debería usar el técnico para asegurarse de que los dos puertos SATA estén habilitados?
+    [ Home | System Info | Peripherals | Power Management ]</p>
+</li>
+</ol>
+<h2 id="actividades">Actividades<a class="headerlink" href="#actividades" title="Permanent link">&para;</a></h2>
+<p><strong>Descubrimiento en internet</strong></p>
+<p>Objetivo:
+ Obtener información específica en internet sobre una computadora o sus partes asociadas</p>
+<p>Partes:
+ Computadora con acceso a internet</p>
+<p>Procedimiento:
+ Usa internet para responder las siguientes preguntas. Supón que el cliente posee una computadora todo-en-uno Asus M241 al responder las preguntas 1 y 2.</p>
+<p>Preguntas:</p>
+<ol>
+<li>Un cliente posee una computadora todo-en-uno Asus M241. Determina el procedimiento para acceder al programa Setup de la computadora. Escribe la(s) tecla(s) que hay que presionar y la URL donde encuentras esta información.</li>
+<li>¿Cuál es la última versión de BIOS/UEFI para la Asus M241?</li>
+<li>Un propietario de una computadora Asus con Windows 10 quiere saber si este modelo se puede actualizar a Windows 11. Proporciona la URL donde encontraste esta información.</li>
+<li>Un cliente posee una placa madre Tyan S7025. ¿Cuántas ranuras PCIe y de qué tipo tiene esta placa madre? Escribe la respuesta y la URL donde encuentras la respuesta.</li>
+<li>En la misma placa madre Tyan S7025 de la pregunta 4, ¿qué puente de la placa madre se usa para limpiar el CMOS? Escribe la respuesta y la URL donde encuentras la información.</li>
+<li>En la misma placa madre Tyan S7025 de la pregunta 4, ¿qué opción del menú del BIOS/UEFI se usa para configurar el orden en que el sistema busca dispositivos para arrancar la computadora? Escribe la respuesta y la URL donde encuentras la respuesta.</li>
+</ol>
+<p><strong>Habilidades blandas</strong></p>
+<p>Objetivo:
+ Mejorar y afinar la capacidad de un futuro técnico para escuchar, comunicarse tanto de forma escrita como oral, y apoyar de manera profesional a las personas que usan computadoras</p>
+<p>Actividades:</p>
+<ol>
+<li>En equipos, planteen un escenario de solución de problemas que involucre a un técnico de computadoras que use técnicas de "pistolero" y el mismo escenario con un técnico que sea metódico. Expliquen qué hace cada tipo de técnico y cómo cada uno resuelve el problema. Además, detallen cómo estos dos técnicos tratan al cliente de forma diferente. Determinen las formas en que un técnico pistolero podría ser perjudicial para un negocio de reparación de computadoras. Demuestren o informen sobre sus hallazgos.</li>
+<li>Después de explorar las opciones del BIOS/UEFI, dirígete a un compañero de clase, finge que él o ella es un cliente por teléfono y guía al estudiante a través del proceso de acceder a Setup. Explica los propósitos de al menos cinco de las opciones. Inviertan los roles y cubran otras cinco opciones. Asegúrate de actuar como un usuario típico de computadoras al desempeñar el papel de cliente.</li>
+<li>Realiza una lluvia de ideas sobre un escenario de solución de problemas en el que arregles un problema que involucre acceder al programa Setup y/o a un adaptador. Documenta el problema usando una aplicación de procesamiento de textos. Crea una factura usando una aplicación de procesamiento de textos o de hojas de cálculo. Comparte tus documentos con otros en la clase.</li>
+</ol>
+<p><strong>Habilidades de pensamiento crítico</strong></p>
+<p>Objetivo:
+ Analizar y evaluar información, así como aplicar la información aprendida a situaciones nuevas o diferentes</p>
+<p>Actividades:</p>
+<ol>
+<li>Describe una situación en la que creas que agregar una tarjeta eSATA tiene sentido.</li>
+<li>Compara y contrasta una oficina de correos con las IRQ, las direcciones de E/S y las direcciones de memoria que se muestran en el Administrador de dispositivos. Por ejemplo, ¿cómo podría relacionarse algo que ocurre en una oficina de correos con una IRQ en una PC (o una dirección de E/S o de memoria)?</li>
+<li>Tus padres tienen una computadora nueva, y ven un mensaje para presionar F2 para entrar a Setup. Lo hacen, y quieren que les expliques qué están viendo.</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../capitulo-3/placa-madre/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Capítulo 3 - Placa madre">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 3 - Placa madre
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../capitulo-5/desmontaje-energia/" class="md-footer__link md-footer__link--next" aria-label="Next: Capítulo 5 - Desmontaje y energía">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Capítulo 5 - Desmontaje y energía
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 The authors
+
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dbc0afdc.min.js"></script>
+      
+    
+  </body>
+</html>
