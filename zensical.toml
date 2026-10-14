@@ -52,6 +52,7 @@ nav = [
   { "Capítulo 4 - Introducción a la configuración" = "capitulo-4/configuracion.md" },
   { "Capítulo 5 - Desmontaje y energía" = "capitulo-5/desmontaje-energia.md" },
   { "Capítulo 6 - Memoria" = "capitulo-6/memoria.md" },
+  { "Capítulo 7 - Dispositivos de almacenamiento" = "capitulo-7/almacenamiento.md" },
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
